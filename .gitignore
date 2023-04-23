@@ -1,3 +1,6 @@
+# SBT
+project/project/
+project/target/
 target/
 
 ### IntelliJ IDEA ###
