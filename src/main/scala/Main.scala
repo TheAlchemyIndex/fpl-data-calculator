@@ -1,5 +1,7 @@
-import GameweekHelper.{booleanColumnToBinary, dropExtraColumns}
+import DateFormatter.extractDateElements
+import GameweekHelper.{booleanColumnToBinary, dropColumnsAfterAvg, dropUnnecessaryColumns}
 import GameweekSchema.gameweekStruct
+import RollingAverage.applyRollingAvg
 import org.apache.spark.sql.SparkSession
 
 object Main {
@@ -15,10 +17,13 @@ object Main {
       .csv("data/2019-23 seasons.csv")
 
     val gameweeksBooleanConvertedDf = booleanColumnToBinary(gameweeksDf, "home_fixture", "was_home")
-    val gameweeksFilteredDf = dropExtraColumns(gameweeksBooleanConvertedDf)
+    val gameweeksDateDf = extractDateElements(gameweeksBooleanConvertedDf)
+    val gameweeksFilteredDf = dropUnnecessaryColumns(gameweeksDateDf)
+    val rollingAvgDf = applyRollingAvg(gameweeksFilteredDf, 5)
+    val rollingAvgFilteredDf = dropColumnsAfterAvg(rollingAvgDf)
 
-    gameweeksFilteredDf.printSchema()
-    gameweeksFilteredDf.show()
+    rollingAvgFilteredDf.printSchema()
+    rollingAvgFilteredDf.show()
 
     spark.stop()
   }
