@@ -1,8 +1,9 @@
-import DateFormatter.extractDateElements
-import GameweekHelper.{booleanColumnToBinary, dropColumnsAfterAvg, dropUnnecessaryColumns}
-import GameweekSchema.gameweekStruct
-import RollingAverage.applyRollingAvg
+import gameweek.GameweekSchema.gameweekStruct
+import understat.UnderstatSchema.understatStruct
+import gameweek.GameweekProvider
 import org.apache.spark.sql.SparkSession
+import understat.UnderstatProvider
+import unifiedData.UnifiedDataProvider
 
 object Main {
   def main(args: Array[String]): Unit = {
@@ -11,19 +12,24 @@ object Main {
       .master("local[*]")
       .getOrCreate()
 
-    val gameweeksDf = spark.read
+    val gameweekDf = spark.read
       .option("header", value = true)
       .schema(gameweekStruct)
       .csv("data/2019-23 seasons.csv")
 
-    val gameweeksBooleanConvertedDf = booleanColumnToBinary(gameweeksDf, "home_fixture", "was_home")
-    val gameweeksDateDf = extractDateElements(gameweeksBooleanConvertedDf)
-    val gameweeksFilteredDf = dropUnnecessaryColumns(gameweeksDateDf)
-    val rollingAvgDf = applyRollingAvg(gameweeksFilteredDf, 5)
-    val rollingAvgFilteredDf = dropColumnsAfterAvg(rollingAvgDf)
+    val understatDf = spark.read
+      .option("header", value = true)
+      .schema(understatStruct)
+      .csv("data/Understat - 2019-23 seasons.csv")
 
-    rollingAvgFilteredDf.printSchema()
-    rollingAvgFilteredDf.show()
+    val gameweekFilteredDf = new GameweekProvider(gameweekDf).getData
+    val understatFilteredDf = new UnderstatProvider(understatDf).getData
+    val unifiedDf = new UnifiedDataProvider(gameweekFilteredDf, understatFilteredDf).getData
+
+//    unifiedDf.write
+//      .option("header", "true")
+//      .format("csv")
+//      .save("data/out")
 
     spark.stop()
   }
