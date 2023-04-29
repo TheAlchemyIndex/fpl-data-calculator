@@ -10,22 +10,37 @@ import java.sql.Timestamp
 
 class GameweekHelperTests extends TestHelper {
 
+  final val GENERIC_COL: String = "col1"
+  final val TRANSFERS_BALANCE_COL: String = "transfersBalance"
+  final val OWN_GOALS_COL: String = "ownGoals"
+  final val KICKOFF_COL: String = "kickoffTime"
+  final val RED_CARDS_COL: String = "redCards"
+  final val ELEMENT_COL: String = "element"
+  final val BPS_COL: String = "bps"
+  final val WAS_HOME_COL: String = "wasHome"
+  final val PENS_MISSED_COL: String = "penaltiesMissed"
+  final val FIXTURE_COL: String = "fixture"
+  final val HOME_FIXTURE_COL: String = "homeFixture"
+
+  val DROPPED_COLUMNS: Seq[String] = Seq(TRANSFERS_BALANCE_COL, OWN_GOALS_COL, KICKOFF_COL, RED_CARDS_COL, ELEMENT_COL,
+    BPS_COL, WAS_HOME_COL, PENS_MISSED_COL, FIXTURE_COL)
+
   val TEST_BOOLEAN_DF: DataFrame = SPARK.createDF(
     List(
       ("value1", 100000L, 0, Timestamp.valueOf("2019-08-10 11:30:00"), 0, 100, 10, true, 0, 100),
       ("value2", 200000L, 0, Timestamp.valueOf("2020-09-11 12:00:00"), 0, 200, 20, false, 0, 200),
       ("value3", 300000L, 0, Timestamp.valueOf("2021-10-12 15:00:00"), 0, 300, 20, true, 0, 300)
     ), List(
-      ("col1", StringType, true),
-      ("transfersBalance", LongType, true),
-      ("ownGoals", IntegerType, true),
-      ("kickoffTime", TimestampType, true),
-      ("redCards", IntegerType, true),
-      ("element", IntegerType, true),
-      ("bps", IntegerType, true),
-      ("wasHome", BooleanType, true),
-      ("penaltiesMissed", IntegerType, true),
-      ("fixture", IntegerType, true)
+      (GENERIC_COL, StringType, true),
+      (TRANSFERS_BALANCE_COL, LongType, true),
+      (OWN_GOALS_COL, IntegerType, true),
+      (KICKOFF_COL, TimestampType, true),
+      (RED_CARDS_COL, IntegerType, true),
+      (ELEMENT_COL, IntegerType, true),
+      (BPS_COL, IntegerType, true),
+      (WAS_HOME_COL, BooleanType, true),
+      (PENS_MISSED_COL, IntegerType, true),
+      (FIXTURE_COL, IntegerType, true)
     )
   )
 
@@ -35,8 +50,8 @@ class GameweekHelperTests extends TestHelper {
       (null, "value2"),
       (null, "value3")
     ), List(
-      ("wasHome", BooleanType, true),
-      ("col1", StringType, true)
+      (WAS_HOME_COL, BooleanType, true),
+      (GENERIC_COL, StringType, true)
     )
   )
 
@@ -46,17 +61,17 @@ class GameweekHelperTests extends TestHelper {
       ("value2", 200000L, 0, Timestamp.valueOf("2020-09-11 12:00:00"), 0, 200, 20, false, 0, 200, 0),
       ("value3", 300000L, 0, Timestamp.valueOf("2021-10-12 15:00:00"), 0, 300, 20, true, 0, 300, 1)
     ), List(
-      ("col1", StringType, true),
-      ("transfersBalance", LongType, true),
-      ("ownGoals", IntegerType, true),
-      ("kickoffTime", TimestampType, true),
-      ("redCards", IntegerType, true),
-      ("element", IntegerType, true),
-      ("bps", IntegerType, true),
-      ("wasHome", BooleanType, true),
-      ("penaltiesMissed", IntegerType, true),
-      ("fixture", IntegerType, true),
-      ("homeFixture", IntegerType, false)
+      (GENERIC_COL, StringType, true),
+      (TRANSFERS_BALANCE_COL, LongType, true),
+      (OWN_GOALS_COL, IntegerType, true),
+      (KICKOFF_COL, TimestampType, true),
+      (RED_CARDS_COL, IntegerType, true),
+      (ELEMENT_COL, IntegerType, true),
+      (BPS_COL, IntegerType, true),
+      (WAS_HOME_COL, BooleanType, true),
+      (PENS_MISSED_COL, IntegerType, true),
+      (FIXTURE_COL, IntegerType, true),
+      (HOME_FIXTURE_COL, IntegerType, false)
     )
   )
 
@@ -66,9 +81,9 @@ class GameweekHelperTests extends TestHelper {
       (null, "value2", 0),
       (null, "value3", 0)
     ), List(
-      ("wasHome", BooleanType, true),
-      ("col1", StringType, true),
-      ("homeFixture", IntegerType, false),
+      (WAS_HOME_COL, BooleanType, true),
+      (GENERIC_COL, StringType, true),
+      (HOME_FIXTURE_COL, IntegerType, false),
     )
   )
 
@@ -78,27 +93,25 @@ class GameweekHelperTests extends TestHelper {
       "value2",
       "value3"
     ), List(
-      ("col1", StringType, true)
+      (GENERIC_COL, StringType, true)
     )
   )
 
-  val DROPPED_COLUMNS: Seq[String] = Seq("transfersBalance", "ownGoals", "kickoffTime", "redCards", "element", "bps", "wasHome", "penaltiesMissed", "fixture")
-
   test("booleanColumnToBinary - It should return a DataFrame containing a new homeFixture column with 1 or 0 values") {
-    val binaryDf = booleanColumnToBinary(TEST_BOOLEAN_DF, "homeFixture", "wasHome")
+    val binaryDf: DataFrame = booleanColumnToBinary(TEST_BOOLEAN_DF, HOME_FIXTURE_COL, WAS_HOME_COL)
     assert(EXPECTED_BINARY_DF.schema === binaryDf.schema)
     assert(EXPECTED_BINARY_DF.collect().sameElements(binaryDf.collect()))
   }
 
   test("booleanColumnToBinary - null values - It should return a DataFrame containing a new homeFixture column with 0 values") {
-    val binaryDf = booleanColumnToBinary(TEST_BOOLEAN_DF_NULL_VALUES, "homeFixture", "wasHome")
+    val binaryDf: DataFrame = booleanColumnToBinary(TEST_BOOLEAN_DF_NULL_VALUES, HOME_FIXTURE_COL, WAS_HOME_COL)
     assert(EXPECTED_BINARY_DF_NULL_VALUES.schema === binaryDf.schema)
     assert(EXPECTED_BINARY_DF_NULL_VALUES.collect().sameElements(binaryDf.collect()))
   }
 
   test("dropColumns - It should return a DataFrame excluding columns that were to be dropped") {
-    val droppedColumnsDf = dropColumns(TEST_BOOLEAN_DF)
-    val remainingColumns = droppedColumnsDf.columns.toSeq
+    val droppedColumnsDf: DataFrame = dropColumns(TEST_BOOLEAN_DF)
+    val remainingColumns: Seq[String] = droppedColumnsDf.columns.toSeq
 
     assert(EXPECTED_BINARY_DF_DROPPED_COLUMNS.schema === droppedColumnsDf.schema)
     assert(EXPECTED_BINARY_DF_DROPPED_COLUMNS.collect().sameElements(droppedColumnsDf.collect()))

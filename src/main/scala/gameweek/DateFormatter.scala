@@ -18,8 +18,8 @@ object DateFormatter {
   }
 
   def formatDate(df: DataFrame): DataFrame = {
-    val dateDf = timestampToDate(df)
-    val monthYearDf = dateToMonthAndYear(dateDf)
+    val dateDf: DataFrame = timestampToDate(df)
+    val monthYearDf: DataFrame = dateToMonthAndYear(dateDf)
     monthYearDf
   }
 }

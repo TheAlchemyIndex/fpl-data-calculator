@@ -1,7 +1,7 @@
 import gameweek.GameweekSchema.gameweekStruct
 import understat.UnderstatSchema.understatStruct
 import gameweek.GameweekProvider
-import org.apache.spark.sql.SparkSession
+import org.apache.spark.sql.{DataFrame, SparkSession}
 import understat.UnderstatProvider
 import unifiedData.UnifiedDataProvider
 
@@ -22,9 +22,9 @@ object Main {
       .schema(understatStruct)
       .csv("data/Understat - 2019-23 seasons.csv")
 
-    val gameweekFilteredDf = new GameweekProvider(gameweekDf).getData
-    val understatFilteredDf = new UnderstatProvider(understatDf).getData
-    val unifiedDf = new UnifiedDataProvider(gameweekFilteredDf, understatFilteredDf).getData
+    val gameweekFilteredDf: DataFrame = new GameweekProvider(gameweekDf).getData
+    val understatFilteredDf: DataFrame = new UnderstatProvider(understatDf).getData
+    val unifiedDf: DataFrame = new UnifiedDataProvider(gameweekFilteredDf, understatFilteredDf).getData
 
 //    unifiedDf.write
 //      .option("header", "true")

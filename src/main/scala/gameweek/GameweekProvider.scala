@@ -9,9 +9,9 @@ import util.DataFrameHelper.renameColumns
 class GameweekProvider(gameweekDf: DataFrame) {
 
   def getData: DataFrame = {
-    val camelCaseDf = renameColumns(gameweekDf)
-    val homeFixtureToBinaryDf = booleanColumnToBinary(camelCaseDf, GameweekColumns.HOME_FIXTURE, GameweekColumns.WAS_HOME)
-    val formattedDateDf = formatDate(homeFixtureToBinaryDf)
+    val camelCaseDf: DataFrame = renameColumns(gameweekDf)
+    val homeFixtureToBinaryDf: DataFrame = booleanColumnToBinary(camelCaseDf, GameweekColumns.HOME_FIXTURE, GameweekColumns.WAS_HOME)
+    val formattedDateDf: DataFrame = formatDate(homeFixtureToBinaryDf)
     dropColumns(formattedDateDf)
   }
 }

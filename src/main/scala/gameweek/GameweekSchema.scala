@@ -4,7 +4,7 @@ import org.apache.spark.sql.types.{DataTypes, Metadata, StructField, StructType}
 
 object GameweekSchema {
 
-  val gameweekStruct = new StructType(
+  val gameweekStruct: StructType = new StructType(
     Array[StructField](
       StructField("transfers_balance", DataTypes.LongType, true, Metadata.empty),
       StructField("opponent_team", DataTypes.StringType, true, Metadata.empty),
