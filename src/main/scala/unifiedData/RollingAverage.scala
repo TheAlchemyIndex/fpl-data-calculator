@@ -8,8 +8,8 @@ import org.apache.spark.sql.functions.avg
 object RollingAverage {
 
   def calculateRollingAvg(df: DataFrame, partitionCol: String, targetCol: String, numOfRows: Long): DataFrame = {
-    val windowSpec = Window.partitionBy(partitionCol).orderBy(CommonColumns.DATE).rowsBetween(-(numOfRows - 1), 0)
-    val rollingAvgDF = df.withColumn(s"${targetCol}Avg", avg(targetCol).over(windowSpec))
+    val window = Window.partitionBy(partitionCol).orderBy(CommonColumns.DATE).rowsBetween(-(numOfRows - 1), 0)
+    val rollingAvgDF = df.withColumn(s"${targetCol}Avg", avg(targetCol).over(window))
     rollingAvgDF
   }
 

@@ -12,12 +12,12 @@ object Main {
       .master("local[*]")
       .getOrCreate()
 
-    val gameweekDf = spark.read
+    val gameweekDf: DataFrame = spark.read
       .option("header", value = true)
       .schema(gameweekStruct)
       .csv("data/2019-23 seasons.csv")
 
-    val understatDf = spark.read
+    val understatDf: DataFrame = spark.read
       .option("header", value = true)
       .schema(understatStruct)
       .csv("data/Understat - 2019-23 seasons.csv")
@@ -26,7 +26,7 @@ object Main {
     val understatFilteredDf: DataFrame = new UnderstatProvider(understatDf).getData
     val unifiedDf: DataFrame = new UnifiedDataProvider(gameweekFilteredDf, understatFilteredDf).getData
 
-//    unifiedDf.write
+//    understatFilteredDf.write
 //      .option("header", "true")
 //      .format("csv")
 //      .save("data/out")
