@@ -67,7 +67,7 @@ class GameweekProviderTests extends TestHelper {
     )
   )
 
-  val EXPECTED_GAMEWEEK_FILTERED_DATAFRAME: DataFrame = SPARK.createDF(
+  val EXPECTED_GAMEWEEK_FILTERED_DF: DataFrame = SPARK.createDF(
     List(
       ("value1", 1, Date.valueOf("2019-08-10"), 8, 2019),
       ("value2", 0, Date.valueOf("2020-09-11"), 9, 2020),
@@ -81,7 +81,7 @@ class GameweekProviderTests extends TestHelper {
     )
   )
 
-  val EXPECTED_GAMEWEEK_FILTERED_DATAFRAME_NULL_VALUES: DataFrame = SPARK.createDF(
+  val EXPECTED_GAMEWEEK_FILTERED_DF_NULL_VALUES: DataFrame = SPARK.createDF(
     List(
       ("value1", 0, null, null, null),
       ("value2", 0, null, null, null),
@@ -101,8 +101,8 @@ class GameweekProviderTests extends TestHelper {
     val gameweekFilteredDf: DataFrame = new GameweekProvider(TEST_GAMEWEEK_DF).getData
     val remainingColumns: Seq[String] = gameweekFilteredDf.columns.toSeq
 
-    assert(EXPECTED_GAMEWEEK_FILTERED_DATAFRAME.schema === gameweekFilteredDf.schema)
-    assert(EXPECTED_GAMEWEEK_FILTERED_DATAFRAME.collect().sameElements(gameweekFilteredDf.collect()))
+    assert(EXPECTED_GAMEWEEK_FILTERED_DF.schema === gameweekFilteredDf.schema)
+    assert(EXPECTED_GAMEWEEK_FILTERED_DF.collect().sameElements(gameweekFilteredDf.collect()))
     assert(DROPPED_COLUMNS.intersect(remainingColumns).isEmpty)
   }
 
@@ -112,8 +112,8 @@ class GameweekProviderTests extends TestHelper {
     val gameweekFilteredDf: DataFrame = new GameweekProvider(TEST_GAMEWEEK_DF_NULL_VALUES).getData
     val remainingColumns: Seq[String] = gameweekFilteredDf.columns.toSeq
 
-    assert(EXPECTED_GAMEWEEK_FILTERED_DATAFRAME_NULL_VALUES.schema === gameweekFilteredDf.schema)
-    assert(EXPECTED_GAMEWEEK_FILTERED_DATAFRAME_NULL_VALUES.collect().sameElements(gameweekFilteredDf.collect()))
+    assert(EXPECTED_GAMEWEEK_FILTERED_DF_NULL_VALUES.schema === gameweekFilteredDf.schema)
+    assert(EXPECTED_GAMEWEEK_FILTERED_DF_NULL_VALUES.collect().sameElements(gameweekFilteredDf.collect()))
     assert(DROPPED_COLUMNS.intersect(remainingColumns).isEmpty)
   }
 }

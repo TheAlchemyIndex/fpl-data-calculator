@@ -15,7 +15,7 @@ object UnderstatSchema {
       StructField("h_goals", DataTypes.IntegerType, true, Metadata.empty),
       StructField("a_team", DataTypes.StringType, true, Metadata.empty),
       StructField("xG", DataTypes.DoubleType, true, Metadata.empty),
-      StructField("roster_id", DataTypes.IntegerType, true, Metadata.empty),
+      StructField("roster_id", DataTypes.LongType, true, Metadata.empty),
       StructField("assists", DataTypes.IntegerType, true, Metadata.empty),
       StructField("name", DataTypes.StringType, true, Metadata.empty),
       StructField("season", DataTypes.IntegerType, true, Metadata.empty),
