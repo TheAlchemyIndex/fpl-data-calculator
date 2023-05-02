@@ -7,7 +7,7 @@ object JoinedDataAvgSchema {
   val joinedDataAvgStruct: StructType = new StructType(
     Array[StructField](
       StructField("name", DataTypes.StringType, nullable = true, Metadata.empty),
-      StructField("date", DataTypes.StringType, nullable = true, Metadata.empty),
+      StructField("unformattedDate", DataTypes.StringType, nullable = true, Metadata.empty),
       StructField("opponentTeam", DataTypes.StringType, nullable = true, Metadata.empty),
       StructField("bonus", DataTypes.IntegerType, nullable = true, Metadata.empty),
       StructField("cleanSheets", DataTypes.IntegerType, nullable = true, Metadata.empty),

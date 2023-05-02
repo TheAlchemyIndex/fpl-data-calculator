@@ -30,4 +30,8 @@ class UnifiedDataProviderTests extends TestHelper {
     assert(EXPECTED_JOINED_DF.schema === joinedDf.schema)
     assert(EXPECTED_JOINED_DF.collect().sameElements(joinedDf.collect()))
   }
+
+  test("getData") {
+    val joinedDf = new UnifiedDataProvider(TEST_GAMEWEEK_DF, TEST_UNDERSTAT_DF).getData
+  }
 }

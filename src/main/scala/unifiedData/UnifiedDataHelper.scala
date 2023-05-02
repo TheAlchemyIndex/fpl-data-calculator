@@ -1,7 +1,8 @@
 package unifiedData
 
-import constants.{GameweekColumns, UnderstatColumns}
+import constants.{CommonColumns, GameweekColumns, UnderstatColumns}
 import org.apache.spark.sql.DataFrame
+import org.apache.spark.sql.functions.col
 
 object UnifiedDataHelper {
 
@@ -35,4 +36,8 @@ object UnifiedDataHelper {
         UnderstatColumns.SHOTS,
         UnderstatColumns.X_G_BUILDUP)
   }
+
+    def dropNullAvgs(df: DataFrame): DataFrame = {
+        df.na.drop(Seq("bonusAvg")).orderBy(col(CommonColumns.DATE).asc)
+    }
 }

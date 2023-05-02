@@ -5,12 +5,16 @@ import helpers.schemas.JoinedDataSchema.joinedDataStruct
 import helpers.TestHelper
 import helpers.schemas.JoinedDataAvgSchema.joinedDataAvgStruct
 import org.apache.spark.sql.DataFrame
+import org.apache.spark.sql.functions.{col, to_date}
 import org.apache.spark.sql.types.{DateType, DoubleType, IntegerType, LongType, StringType}
 import unifiedData.RollingAverage.{applyRollingAvg, calculateRollingAvg}
 
 import java.sql.Date
 
 class RollingAverageTests extends TestHelper {
+
+  final val UNFORMATTED_DATE = "unformattedDate"
+  final val DATE_FORMAT = "dd/MM/yyyy"
 
   final val NAME_COL = "name"
   final val DATE_COL = "date"
@@ -211,10 +215,27 @@ class RollingAverageTests extends TestHelper {
     .schema(joinedDataStruct)
     .csv("src/test/resources/joined_data.csv")
 
+  val TEST_JOINED_DF_FORMATTED_DATE: DataFrame = TEST_JOINED_DF
+    .withColumn(DATE_COL, to_date(col(UNFORMATTED_DATE), DATE_FORMAT))
+    .drop(UNFORMATTED_DATE)
+
   val EXPECTED_JOINED_AVG_DF: DataFrame = SPARK.read
     .option("header", value = true)
     .schema(joinedDataAvgStruct)
     .csv("src/test/resources/joined_data_avg.csv")
+
+  val EXPECTED_JOINED_AVG_DF_FORMATTED_DATE: DataFrame = EXPECTED_JOINED_AVG_DF
+    .withColumn(DATE_COL, to_date(col(UNFORMATTED_DATE), DATE_FORMAT))
+    .drop(UNFORMATTED_DATE)
+
+  val EXPECTED_JOINED_AVG_DF_REORDERED_COLS: DataFrame = EXPECTED_JOINED_AVG_DF_FORMATTED_DATE.select(
+    "name", "opponentTeam", "bonus", "cleanSheets", "goalsConceded", "totalPoints", "teamAScore", "influence",
+    "saves", "assists", "transfersIn", "creativity", "value", "selected", "goalsScored", "minutes", "yellowCards", "team",
+    "transfersOut", "round", "threat", "position", "ictIndex", "penaltiesSaved", "teamHScore", "homeFixture", "month",
+    "year", "npxG", "keyPasses", "npg", "xA", "xG", "shots", "xGBuildup", "date", "bonusAvg", "cleanSheetsAvg",
+    "goalsConcededAvg", "totalPointsAvg", "influenceAvg", "assistsAvg", "creativityAvg", "valueAvg", "goalsScoredAvg",
+    "minutesAvg", "yellowCardsAvg", "threatAvg", "ictIndexAvg", "npxGAvg", "keyPassesAvg", "npgAvg", "xAAvg", "xGAvg",
+    "shotsAvg", "xGBuildupAvg")
 
   test("calculateRollingAvg - Integer - It should return a DataFrame containing a new column of rolling " +
     "averages for integerColumn") {
@@ -245,8 +266,8 @@ class RollingAverageTests extends TestHelper {
   }
 
   test("applyRollingAvg - It should return a DataFrame containing rolling averages for all relevant columns") {
-    val applyRollingAvgDf: DataFrame = applyRollingAvg(TEST_JOINED_DF, NUM_OF_ROWS)
-    assert(EXPECTED_JOINED_AVG_DF.schema === applyRollingAvgDf.schema)
-    assert(EXPECTED_JOINED_AVG_DF.collect().sameElements(applyRollingAvgDf.collect()))
+    val applyRollingAvgDf: DataFrame = applyRollingAvg(TEST_JOINED_DF_FORMATTED_DATE, NUM_OF_ROWS)
+    assert(EXPECTED_JOINED_AVG_DF_REORDERED_COLS.schema === applyRollingAvgDf.schema)
+    assert(EXPECTED_JOINED_AVG_DF_REORDERED_COLS.collect().sameElements(applyRollingAvgDf.collect()))
   }
 }
