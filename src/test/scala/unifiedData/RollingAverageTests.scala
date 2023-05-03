@@ -13,7 +13,7 @@ import java.sql.Date
 
 class RollingAverageTests extends TestHelper {
 
-  final val UNFORMATTED_DATE = "unformattedDate"
+  final val UNFORMATTED_DATE_COL = "unformattedDate"
   final val DATE_FORMAT = "dd/MM/yyyy"
 
   final val NAME_COL = "name"
@@ -216,8 +216,8 @@ class RollingAverageTests extends TestHelper {
     .csv("src/test/resources/joined_data.csv")
 
   val TEST_JOINED_DF_FORMATTED_DATE: DataFrame = TEST_JOINED_DF
-    .withColumn(DATE_COL, to_date(col(UNFORMATTED_DATE), DATE_FORMAT))
-    .drop(UNFORMATTED_DATE)
+    .withColumn(DATE_COL, to_date(col(UNFORMATTED_DATE_COL), DATE_FORMAT))
+    .drop(UNFORMATTED_DATE_COL)
 
   val EXPECTED_JOINED_AVG_DF: DataFrame = SPARK.read
     .option("header", value = true)
@@ -225,17 +225,15 @@ class RollingAverageTests extends TestHelper {
     .csv("src/test/resources/joined_data_avg.csv")
 
   val EXPECTED_JOINED_AVG_DF_FORMATTED_DATE: DataFrame = EXPECTED_JOINED_AVG_DF
-    .withColumn(DATE_COL, to_date(col(UNFORMATTED_DATE), DATE_FORMAT))
-    .drop(UNFORMATTED_DATE)
-
-  val EXPECTED_JOINED_AVG_DF_REORDERED_COLS: DataFrame = EXPECTED_JOINED_AVG_DF_FORMATTED_DATE.select(
-    "name", "opponentTeam", "bonus", "cleanSheets", "goalsConceded", "totalPoints", "teamAScore", "influence",
-    "saves", "assists", "transfersIn", "creativity", "value", "selected", "goalsScored", "minutes", "yellowCards", "team",
-    "transfersOut", "round", "threat", "position", "ictIndex", "penaltiesSaved", "teamHScore", "homeFixture", "month",
-    "year", "npxG", "keyPasses", "npg", "xA", "xG", "shots", "xGBuildup", "date", "bonusAvg", "cleanSheetsAvg",
-    "goalsConcededAvg", "totalPointsAvg", "influenceAvg", "assistsAvg", "creativityAvg", "valueAvg", "goalsScoredAvg",
-    "minutesAvg", "yellowCardsAvg", "threatAvg", "ictIndexAvg", "npxGAvg", "keyPassesAvg", "npgAvg", "xAAvg", "xGAvg",
-    "shotsAvg", "xGBuildupAvg")
+    .withColumn(DATE_COL, to_date(col(UNFORMATTED_DATE_COL), DATE_FORMAT))
+    .drop(UNFORMATTED_DATE_COL)
+    .select("name", "opponentTeam", "bonus", "cleanSheets", "goalsConceded", "totalPoints", "teamAScore",
+      "influence", "saves", "assists", "transfersIn", "creativity", "value", "selected", "goalsScored", "minutes",
+      "yellowCards", "team", "transfersOut", "round", "threat", "position", "ictIndex", "penaltiesSaved",
+      "teamHScore", "homeFixture", "month", "year", "npxG", "keyPasses", "npg", "xA", "xG", "shots", "xGBuildup",
+      "date", "bonusAvg", "cleanSheetsAvg", "goalsConcededAvg", "totalPointsAvg", "influenceAvg", "assistsAvg",
+      "creativityAvg", "valueAvg", "goalsScoredAvg", "minutesAvg", "yellowCardsAvg", "threatAvg", "ictIndexAvg",
+      "npxGAvg", "keyPassesAvg", "npgAvg", "xAAvg", "xGAvg", "shotsAvg", "xGBuildupAvg")
 
   test("calculateRollingAvg - Integer - It should return a DataFrame containing a new column of rolling " +
     "averages for integerColumn") {
@@ -267,7 +265,7 @@ class RollingAverageTests extends TestHelper {
 
   test("applyRollingAvg - It should return a DataFrame containing rolling averages for all relevant columns") {
     val applyRollingAvgDf: DataFrame = applyRollingAvg(TEST_JOINED_DF_FORMATTED_DATE, NUM_OF_ROWS)
-    assert(EXPECTED_JOINED_AVG_DF_REORDERED_COLS.schema === applyRollingAvgDf.schema)
-    assert(EXPECTED_JOINED_AVG_DF_REORDERED_COLS.collect().sameElements(applyRollingAvgDf.collect()))
+    assert(EXPECTED_JOINED_AVG_DF_FORMATTED_DATE.schema === applyRollingAvgDf.schema)
+    assert(EXPECTED_JOINED_AVG_DF_FORMATTED_DATE.collect().sameElements(applyRollingAvgDf.collect()))
   }
 }

@@ -32,7 +32,7 @@ object GameweekFilteredSchema {
       StructField("penaltiesSaved", DataTypes.IntegerType, nullable = true, Metadata.empty),
       StructField("teamHScore", DataTypes.IntegerType, nullable = true, Metadata.empty),
       StructField("homeFixture", DataTypes.IntegerType, nullable = true, Metadata.empty),
-      StructField("date", DataTypes.StringType, nullable = true, Metadata.empty),
+      StructField("unformattedDate", DataTypes.StringType, nullable = true, Metadata.empty),
       StructField("month", DataTypes.IntegerType, nullable = true, Metadata.empty),
       StructField("year", DataTypes.IntegerType, nullable = true, Metadata.empty)
     )

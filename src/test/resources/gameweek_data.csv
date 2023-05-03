@@ -1,4 +1,4 @@
-opponentTeam,bonus,cleanSheets,goalsConceded,totalPoints,teamAScore,influence,saves,assists,transfersIn,creativity,value,selected,goalsScored,minutes,yellowCards,team,transfersOut,round,name,threat,position,ictIndex,penaltiesSaved,teamHScore,homeFixture,date,month,year
+opponentTeam,bonus,cleanSheets,goalsConceded,totalPoints,teamAScore,influence,saves,assists,transfersIn,creativity,value,selected,goalsScored,minutes,yellowCards,team,transfersOut,round,name,threat,position,ictIndex,penaltiesSaved,teamHScore,homeFixture,unformattedDate,month,year
 Sheffield Utd,0,0,1,2,1,9.8,2,0,0,0,45,3091,0,90,0,Bournemouth,0,1,Aaron Ramsdale,0,GK,1,0,1,1,10/08/2019,8,2019
 Aston Villa,0,0,1,4,2,39.8,6,0,3794,0,45,8566,0,90,0,Bournemouth,992,2,Aaron Ramsdale,0,GK,4,0,1,0,17/08/2019,8,2019
 Man City,0,0,3,1,3,19,2,0,5460,0,45,13643,0,90,0,Bournemouth,2224,3,Aaron Ramsdale,0,GK,1.9,0,1,1,25/08/2019,8,2019

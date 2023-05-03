@@ -11,7 +11,6 @@ class UnifiedDataProvider(gameweekFilteredDf: DataFrame, understatFilteredDf: Da
     val joinedDf = joinData(Seq(CommonColumns.NAME, CommonColumns.DATE))
     val joinedDfRollingAvg = applyRollingAvg(joinedDf, 5)
     val filteredColumnsDf = dropColumnsAfterAvg(joinedDfRollingAvg).orderBy(CommonColumns.DATE)
-    dropNullAvgs(filteredColumnsDf).show()
     dropNullAvgs(filteredColumnsDf)
   }
 
