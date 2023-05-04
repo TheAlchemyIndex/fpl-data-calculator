@@ -24,7 +24,7 @@ class FileWriter(sourceLocation: String, targetLocation: String, fileType: Strin
     moveAndDeleteFiles()
   }
 
-  def moveAndDeleteFiles(): Unit = {
+  private def moveAndDeleteFiles(): Unit = {
     val sourceDirectory: File = new File(sourceLocation)
     val targetDirectory: File = new File(targetLocation)
     val fileType: Option[File] = sourceDirectory.listFiles().find(_.getName.endsWith(".csv"))
@@ -43,7 +43,7 @@ class FileWriter(sourceLocation: String, targetLocation: String, fileType: Strin
     deleteDirectory(sourceDirectory)
   }
 
-  def deleteDirectory(directory: File): Unit = {
+  private def deleteDirectory(directory: File): Unit = {
     if (directory.exists() && directory.isDirectory) {
       directory.listFiles().foreach(file => file.delete())
       directory.delete()
