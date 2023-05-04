@@ -4,6 +4,7 @@ import gameweek.GameweekProvider
 import org.apache.spark.sql.{DataFrame, SparkSession}
 import understat.UnderstatProvider
 import unifiedData.UnifiedDataProvider
+import writers.FileWriter
 
 object Main {
   def main(args: Array[String]): Unit = {
@@ -26,10 +27,8 @@ object Main {
     val understatFilteredDf: DataFrame = new UnderstatProvider(understatDf).getData
     val unifiedDf: DataFrame = new UnifiedDataProvider(gameweekFilteredDf, understatFilteredDf).getData
 
-//    understatFilteredDf.write
-//      .option("header", "true")
-//      .format("csv")
-//      .save("data/out")
+    val fileWriter: FileWriter = new FileWriter("data/temp", "data", "csv")
+    fileWriter.writeToFile(unifiedDf)
 
     spark.stop()
   }
