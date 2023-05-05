@@ -3,13 +3,13 @@ package unifiedData
 import constants.{CommonColumns, GameweekColumns, UnderstatColumns}
 import org.apache.spark.sql.DataFrame
 import org.apache.spark.sql.expressions.Window
-import org.apache.spark.sql.functions.avg
+import org.apache.spark.sql.functions.{avg, round}
 
 object RollingAverage {
 
   def calculateRollingAvg(df: DataFrame, partitionCol: String, targetCol: String, numOfRows: Long): DataFrame = {
     val window = Window.partitionBy(partitionCol).orderBy(CommonColumns.DATE).rowsBetween(-numOfRows, -1)
-    val rollingAvgDF = df.withColumn(s"${targetCol}Avg", avg(targetCol).over(window))
+    val rollingAvgDF = df.withColumn(s"${targetCol}Avg", round(avg(targetCol).over(window), 5))
     rollingAvgDF
   }
 
@@ -20,7 +20,6 @@ object RollingAverage {
     val totalPointsAvgDf: DataFrame = calculateRollingAvg(goalsConcededAvgDf, CommonColumns.NAME, GameweekColumns.TOTAL_POINTS, numOfRows)
     val influenceAvgDf: DataFrame = calculateRollingAvg(totalPointsAvgDf, CommonColumns.NAME, GameweekColumns.INFLUENCE, numOfRows)
     val assistsAvgDf: DataFrame = calculateRollingAvg(influenceAvgDf, CommonColumns.NAME, GameweekColumns.ASSISTS, numOfRows)
-    //    val xpAvgDf: DataFrame = calculateRollingAvg(assistsAvgDf, CommonColumns.NAME, "xP", numOfRows)
     val creativityAvgDf: DataFrame = calculateRollingAvg(assistsAvgDf, CommonColumns.NAME, GameweekColumns.CREATIVITY, numOfRows)
     val valueAvgDf: DataFrame = calculateRollingAvg(creativityAvgDf, CommonColumns.NAME, GameweekColumns.VALUE, numOfRows)
     val goalsScoredAvgDf: DataFrame = calculateRollingAvg(valueAvgDf, CommonColumns.NAME, GameweekColumns.GOALS_SCORED, numOfRows)

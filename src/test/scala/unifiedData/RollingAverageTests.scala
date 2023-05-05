@@ -101,7 +101,7 @@ class RollingAverageTests extends TestHelper {
       ("name1", Date.valueOf("2019-08-10"), 2.0, null),
       ("name1", Date.valueOf("2019-08-11"), 4.1, 2.0),
       ("name1", Date.valueOf("2019-08-12"), 6.2, 3.05),
-      ("name1", Date.valueOf("2019-08-13"), 8.3, 4.1000000000000005),
+      ("name1", Date.valueOf("2019-08-13"), 8.3, 4.10000),
       ("name1", Date.valueOf("2019-08-14"), 10.4, 5.15),
       ("name1", Date.valueOf("2019-08-15"), 12.5, 6.2),
       ("name1", Date.valueOf("2019-08-16"), 14.6, 8.3),
@@ -148,7 +148,7 @@ class RollingAverageTests extends TestHelper {
       ("name1", Date.valueOf("2019-08-10"), 200L, null),
       ("name1", Date.valueOf("2019-08-11"), 410L, 200.0),
       ("name1", Date.valueOf("2019-08-12"), 625L, 305.0),
-      ("name1", Date.valueOf("2019-08-13"), 845L, 411.6666666666667),
+      ("name1", Date.valueOf("2019-08-13"), 845L, 411.66667),
       ("name1", Date.valueOf("2019-08-14"), 1060L, 520.0),
       ("name1", Date.valueOf("2019-08-15"), 1275L, 628.0),
       ("name1", Date.valueOf("2019-08-16"), 1490L, 843.0),
@@ -228,7 +228,7 @@ class RollingAverageTests extends TestHelper {
     .withColumn(DATE_COL, to_date(col(UNFORMATTED_DATE_COL), DATE_FORMAT))
     .drop(UNFORMATTED_DATE_COL)
     .select("name", "opponentTeam", "bonus", "cleanSheets", "goalsConceded", "totalPoints", "teamAScore",
-      "influence", "saves", "assists", "transfersIn", "creativity", "value", "selected", "goalsScored", "minutes",
+      "influence", "saves", "assists", "transfersIn", "xP", "creativity", "value", "selected", "goalsScored", "minutes",
       "yellowCards", "team", "transfersOut", "round", "threat", "position", "ictIndex", "penaltiesSaved",
       "teamHScore", "homeFixture", "month", "year", "npxG", "keyPasses", "npg", "xA", "xG", "shots", "xGBuildup",
       "date", "bonusAvg", "cleanSheetsAvg", "goalsConcededAvg", "totalPointsAvg", "influenceAvg", "assistsAvg",

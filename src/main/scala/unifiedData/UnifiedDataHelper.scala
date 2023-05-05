@@ -11,7 +11,6 @@ object UnifiedDataHelper {
       .drop(GameweekColumns.BONUS,
         GameweekColumns.CLEAN_SHEETS,
         GameweekColumns.GOALS_CONCEDED,
-        GameweekColumns.TOTAL_POINTS,
         GameweekColumns.TEAM_A_SCORE,
         GameweekColumns.INFLUENCE,
         GameweekColumns.TRANSFERS_IN,
@@ -38,6 +37,7 @@ object UnifiedDataHelper {
   }
 
     def dropNullAvgs(df: DataFrame): DataFrame = {
-        df.na.drop(Seq(CalculatedColumns.BONUS_AVG)).orderBy(col(CommonColumns.DATE).asc)
+        df.na.drop(Seq(CalculatedColumns.BONUS_AVG))
+          .orderBy(col(CommonColumns.DATE).asc)
     }
 }

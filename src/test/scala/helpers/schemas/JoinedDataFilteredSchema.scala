@@ -9,6 +9,8 @@ object JoinedDataFilteredSchema {
       StructField("name", DataTypes.StringType, nullable = true, Metadata.empty),
       StructField("unformattedDate", DataTypes.StringType, nullable = true, Metadata.empty),
       StructField("opponentTeam", DataTypes.StringType, nullable = true, Metadata.empty),
+      StructField("totalPoints", DataTypes.IntegerType, nullable = true, Metadata.empty),
+      StructField("xP", DataTypes.DoubleType, nullable = true, Metadata.empty),
       StructField("team", DataTypes.StringType, nullable = true, Metadata.empty),
       StructField("round", DataTypes.IntegerType, nullable = true, Metadata.empty),
       StructField("position", DataTypes.StringType, nullable = true, Metadata.empty),

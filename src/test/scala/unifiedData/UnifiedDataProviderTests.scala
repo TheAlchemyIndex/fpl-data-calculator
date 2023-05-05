@@ -41,7 +41,7 @@ class UnifiedDataProviderTests extends TestHelper {
     .withColumn(DATE_COL, to_date(col(UNFORMATTED_DATE_COL), DATE_FORMAT))
     .drop(UNFORMATTED_DATE_COL)
     .select("name", "date", "opponentTeam", "bonus", "cleanSheets", "goalsConceded", "totalPoints",
-      "teamAScore", "influence", "saves", "assists", "transfersIn", "creativity", "value", "selected",
+      "teamAScore", "influence", "saves", "assists", "transfersIn", "xP", "creativity", "value", "selected",
       "goalsScored", "minutes", "yellowCards", "team", "transfersOut", "round", "threat", "position", "ictIndex",
       "penaltiesSaved", "teamHScore", "homeFixture", "month", "year", "npxG", "keyPasses", "npg", "xA", "xG",
       "shots", "xGBuildup")
@@ -54,7 +54,7 @@ class UnifiedDataProviderTests extends TestHelper {
   val EXPECTED_JOINED_FILTERED_DF_FORMATTED_DATE: DataFrame = EXPECTED_JOINED_FILTERED_DF
     .withColumn(DATE_COL, to_date(col(UNFORMATTED_DATE_COL), DATE_FORMAT))
     .drop(UNFORMATTED_DATE_COL)
-    .select("name", "date", "opponentTeam", "team", "round", "position", "homeFixture", "month", "year",
+    .select("name", "date", "opponentTeam", "totalPoints", "xP", "team", "round", "position", "homeFixture", "month", "year",
       "bonusAvg", "cleanSheetsAvg", "goalsConcededAvg", "totalPointsAvg", "influenceAvg", "assistsAvg",
       "creativityAvg", "valueAvg", "goalsScoredAvg", "minutesAvg", "yellowCardsAvg", "threatAvg", "ictIndexAvg",
       "npxGAvg", "keyPassesAvg", "npgAvg", "xAAvg", "xGAvg", "shotsAvg", "xGBuildupAvg")

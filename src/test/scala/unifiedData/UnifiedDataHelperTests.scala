@@ -12,7 +12,7 @@ import java.sql.Date
 
 class UnifiedDataHelperTests extends TestHelper {
 
-  val DROPPED_COLUMNS: Seq[String] = Seq("bonus", "cleanSheets", "goalsConceded", "totalPoints", "teamAScore",
+  val DROPPED_COLUMNS: Seq[String] = Seq("bonus", "cleanSheets", "goalsConceded", "teamAScore",
     "influence", "transfersIn", "saves", "assists", "creativity", "value", "selected", "goalsScored", "minutes",
     "yellowCards", "transfersOut", "threat", "ictIndex", "penaltiesSaved", "teamHScore", "npxG", "keyPasses", "npg",
     "xA", "xG", "shots", "xGBuildup")
