@@ -1,8 +1,8 @@
 package gameweek
 
-import constants.GameweekColumns
-import org.apache.spark.sql.DataFrame
-import org.apache.spark.sql.functions.{col, when}
+import constants.{CommonColumns, GameweekColumns}
+import org.apache.spark.sql.{Column, DataFrame}
+import org.apache.spark.sql.functions.{col, element_at, split, when}
 
 object GameweekHelper {
 
@@ -10,6 +10,12 @@ object GameweekHelper {
     df
       .withColumn(newColumn, when(col(targetColumn) === true, 1)
         .otherwise(0))
+  }
+
+  def splitSurname(df: DataFrame): DataFrame = {
+    val splitName: Column = split(df(CommonColumns.NAME), " ")
+    val surname = element_at(splitName, -1)
+    df.withColumn(GameweekColumns.SURNAME, surname)
   }
 
   def dropColumns(df: DataFrame): DataFrame = {

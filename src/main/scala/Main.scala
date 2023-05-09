@@ -24,10 +24,9 @@ object Main {
       .csv("data/Understat - 2020-23 seasons.csv")
 
     val gameweekFilteredDf: DataFrame = new GameweekProvider(gameweekDf).getData
+    gameweekFilteredDf.show()
     val understatFilteredDf: DataFrame = new UnderstatProvider(understatDf).getData
     val unifiedDf: DataFrame = new UnifiedDataProvider(gameweekFilteredDf, understatFilteredDf).getData
-
-    unifiedDf.printSchema()
 
     val fileWriter: FileWriter = new FileWriter("data/temp", "data", "csv")
     fileWriter.writeToFile(unifiedDf)

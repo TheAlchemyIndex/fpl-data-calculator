@@ -36,4 +36,21 @@ class UnifiedDataProvider(gameweekFilteredDf: DataFrame, understatFilteredDf: Da
 
     nonNullDf.union(nullJoinedDf).orderBy(col(CommonColumns.DATE).asc) //.na.fill(0)
   }
+
+  private def joinDataSurname(joinedDf: DataFrame): DataFrame = {
+    val nonNullDf = joinedDf.na.drop(Seq(UnderstatColumns.NPX_G))
+    val nullDf = joinedDf.filter(joinedDf(UnderstatColumns.NPX_G).isNull)
+    val nullDfDroppedCols = dropColumnsAfterJoin(nullDf)
+
+    val understatRenamedDf = this.understatFilteredDf.withColumnRenamed(CommonColumns.NAME, UnderstatColumns.UNDERSTAT_NAME)
+      .withColumnRenamed(CommonColumns.DATE, UnderstatColumns.UNDERSTAT_DATE)
+
+    val nullJoinedDf = nullDfDroppedCols.join(understatRenamedDf,
+      nullDfDroppedCols("surname") === understatRenamedDf(UnderstatColumns.UNDERSTAT_NAME)
+        && nullDfDroppedCols(CommonColumns.DATE) === understatRenamedDf(UnderstatColumns.UNDERSTAT_DATE),
+      "left_outer"
+    ).drop(UnderstatColumns.UNDERSTAT_NAME, UnderstatColumns.UNDERSTAT_DATE)
+
+    nonNullDf.union(nullJoinedDf).orderBy(col(CommonColumns.DATE).asc) //.na.fill(0)
+  }
 }

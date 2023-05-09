@@ -30,6 +30,7 @@ object GameweekColumns {
   final var HOME_FIXTURE = "homeFixture"
   final var MONTH = "month"
   final var YEAR = "year"
+  final var SURNAME = "surname"
 
   // Dropped columns
   final var TRANSFERS_BALANCE = "transfersBalance"

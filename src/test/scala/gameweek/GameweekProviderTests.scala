@@ -20,6 +20,7 @@ class GameweekProviderTests extends TestHelper {
   final val PENS_MISSED_COL: String = "penalties_missed"
   final val FIXTURE_COL: String = "fixture"
   final val HOME_FIXTURE_COL: String = "homeFixture"
+  final val NAME_COL: String = "name"
   final val DATE_COL: String = "date"
   final val MONTH_COL: String = "month"
   final val YEAR_COL: String = "year"
@@ -31,9 +32,9 @@ class GameweekProviderTests extends TestHelper {
 
   val TEST_GAMEWEEK_DF: DataFrame = SPARK.createDF(
     List(
-      ("value1", 100000L, 0, Timestamp.valueOf("2019-08-10 11:30:00"), 0, 100, 10, true, 0, 100),
-      ("value2", 200000L, 0, Timestamp.valueOf("2020-09-11 12:00:00"), 0, 200, 20, false, 0, 200),
-      ("value3", 300000L, 0, Timestamp.valueOf("2021-10-12 15:00:00"), 0, 300, 20, true, 0, 300)
+      ("value1", 100000L, 0, Timestamp.valueOf("2019-08-10 11:30:00"), 0, 100, 10, true, 0, "Test Name1", 100),
+      ("value2", 200000L, 0, Timestamp.valueOf("2020-09-11 12:00:00"), 0, 200, 20, false, 0, "Test Name2", 200),
+      ("value3", 300000L, 0, Timestamp.valueOf("2021-10-12 15:00:00"), 0, 300, 20, true, 0, "Test Name3", 300)
     ), List(
       (GENERIC_COL, StringType, true),
       (TRANSFERS_BALANCE_COL, LongType, true),
@@ -44,15 +45,16 @@ class GameweekProviderTests extends TestHelper {
       (BPS_COL, IntegerType, true),
       (WAS_HOME_COL, BooleanType, true),
       (PENS_MISSED_COL, IntegerType, true),
+      (NAME_COL, StringType, true),
       (FIXTURE_COL, IntegerType, true)
     )
   )
 
   val TEST_GAMEWEEK_DF_NULL_VALUES: DataFrame = SPARK.createDF(
     List(
-      ("value1", 100000L, 0, null, 0, 100, 10, null, 0, 100),
-      ("value2", 200000L, 0, null, 0, 200, 20, null, 0, 200),
-      ("value3", 300000L, 0, null, 0, 300, 20, null, 0, 300)
+      ("value1", 100000L, 0, null, 0, 100, 10, null, 0, 100, null),
+      ("value2", 200000L, 0, null, 0, 200, 20, null, 0, 200, null),
+      ("value3", 300000L, 0, null, 0, 300, 20, null, 0, 300, null)
     ), List(
       (GENERIC_COL, StringType, true),
       (TRANSFERS_BALANCE_COL, LongType, true),
@@ -63,35 +65,40 @@ class GameweekProviderTests extends TestHelper {
       (BPS_COL, IntegerType, true),
       (WAS_HOME_COL, BooleanType, true),
       (PENS_MISSED_COL, IntegerType, true),
-      (FIXTURE_COL, IntegerType, true)
+      (FIXTURE_COL, IntegerType, true),
+      (NAME_COL, StringType, true)
     )
   )
 
   val EXPECTED_GAMEWEEK_FILTERED_DF: DataFrame = SPARK.createDF(
     List(
-      ("value1", 1, Date.valueOf("2019-08-10"), 8, 2019),
-      ("value2", 0, Date.valueOf("2020-09-11"), 9, 2020),
-      ("value3", 1, Date.valueOf("2021-10-12"), 10, 2021)
+      ("value1", "Test Name1", 1, Date.valueOf("2019-08-10"), 8, 2019, "Name1"),
+      ("value2", "Test Name2", 0, Date.valueOf("2020-09-11"), 9, 2020, "Name2"),
+      ("value3", "Test Name3", 1, Date.valueOf("2021-10-12"), 10, 2021, "Name3")
     ), List(
       (EXPECTED_CAMEL_CASE_COL, StringType, true),
+      (NAME_COL, StringType, true),
       (HOME_FIXTURE_COL, IntegerType, false),
       (DATE_COL, DateType, true),
       (MONTH_COL, IntegerType, true),
       (YEAR_COL, IntegerType, true),
+      ("surname", StringType, true)
     )
   )
 
   val EXPECTED_GAMEWEEK_FILTERED_DF_NULL_VALUES: DataFrame = SPARK.createDF(
     List(
-      ("value1", 0, null, null, null),
-      ("value2", 0, null, null, null),
-      ("value3", 0, null, null, null)
+      ("value1", null, 0, null, null, null, null),
+      ("value2", null, 0, null, null, null, null),
+      ("value3", null, 0, null, null, null, null)
     ), List(
       (EXPECTED_CAMEL_CASE_COL, StringType, true),
+      (NAME_COL, StringType, true),
       (HOME_FIXTURE_COL, IntegerType, false),
       (DATE_COL, DateType, true),
       (MONTH_COL, IntegerType, true),
       (YEAR_COL, IntegerType, true),
+      ("surname", StringType, true)
     )
   )
 
