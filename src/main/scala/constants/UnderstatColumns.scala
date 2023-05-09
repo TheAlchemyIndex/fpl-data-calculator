@@ -23,4 +23,8 @@ object UnderstatColumns {
   final var ID = "id"
   final var H_TEAM = "hTeam"
   final var GOALS = "goals"
+
+  // Renamed columns
+  final var UNDERSTAT_NAME = "understatName"
+  final var UNDERSTAT_DATE = "understatDate"
 }

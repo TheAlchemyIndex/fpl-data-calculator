@@ -14,6 +14,7 @@ object JoinedDataDroppedSchema {
       StructField("team", DataTypes.StringType, nullable = true, Metadata.empty),
       StructField("round", DataTypes.IntegerType, nullable = true, Metadata.empty),
       StructField("position", DataTypes.StringType, nullable = true, Metadata.empty),
+      StructField("webName", DataTypes.StringType, nullable = true, Metadata.empty),
       StructField("homeFixture", DataTypes.IntegerType, nullable = true, Metadata.empty),
       StructField("month", DataTypes.IntegerType, nullable = true, Metadata.empty),
       StructField("year", DataTypes.IntegerType, nullable = true, Metadata.empty),

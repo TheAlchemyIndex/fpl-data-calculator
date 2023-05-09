@@ -229,7 +229,7 @@ class RollingAverageTests extends TestHelper {
     .drop(UNFORMATTED_DATE_COL)
     .select("name", "opponentTeam", "bonus", "cleanSheets", "goalsConceded", "totalPoints", "teamAScore",
       "influence", "saves", "assists", "transfersIn", "xP", "creativity", "value", "selected", "goalsScored", "minutes",
-      "yellowCards", "team", "transfersOut", "round", "threat", "position", "ictIndex", "penaltiesSaved",
+      "yellowCards", "team", "transfersOut", "round", "position", "threat", "webName", "ictIndex", "penaltiesSaved",
       "teamHScore", "homeFixture", "month", "year", "npxG", "keyPasses", "npg", "xA", "xG", "shots", "xGBuildup",
       "date", "bonusAvg", "cleanSheetsAvg", "goalsConcededAvg", "totalPointsAvg", "influenceAvg", "assistsAvg",
       "creativityAvg", "valueAvg", "goalsScoredAvg", "minutesAvg", "yellowCardsAvg", "threatAvg", "ictIndexAvg",
