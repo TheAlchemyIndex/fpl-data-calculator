@@ -13,6 +13,7 @@ class UnderstatProviderTests extends TestHelper {
   final val A_TEAM_COL: String = "a_team"
   final val ROSTER_ID_COL: String = "roster_id"
   final val ASSISTS_COL: String = "assists"
+  final val NAME_COL: String = "name"
   final val SEASON_COL: String = "season"
   final val A_GOALS_COL: String = "a_goals"
   final val TIME_COL: String = "time"
@@ -20,6 +21,7 @@ class UnderstatProviderTests extends TestHelper {
   final val ID_COL: String = "id"
   final val H_TEAM_COL: String = "h_team"
   final val GOALS_COL: String = "goals"
+  final val SURNAME_COL: String = "surname"
 
   final var EXPECTED_CAMEL_CASE_COL: String = "colNum1"
 
@@ -28,9 +30,9 @@ class UnderstatProviderTests extends TestHelper {
 
   val TEST_UNDERSTAT_DF: DataFrame = SPARK.createDF(
     List(
-      ("value1", 0.123, 1, "Arsenal", 100000L, 1, 2019, 0, 90, "FW", 10000, "Chelsea", 1),
-      ("value2", 0.456, 0, "Man Utd", 200000L, 0, 2020, 1, 45, "GK", 20000, "Fulham", 0),
-      ("value3", 0.789, 2, "Liverpool", 300000L, 2, 2021, 2, 70, "Sub", 30000, "Leicester", 2),
+      ("value1", 0.123, 1, "Arsenal", 100000L, 1, "Test Name1", 2019, 0, 90, "FW", 10000, "Chelsea", 1),
+      ("value2", 0.456, 0, "Man Utd", 200000L, 0, "Test Name2", 2020, 1, 45, "GK", 20000, "Fulham", 0),
+      ("value3", 0.789, 2, "Liverpool", 300000L, 2, "Test Name3", 2021, 2, 70, "Sub", 30000, "Leicester", 2),
     ), List(
       (GENERIC_COL, StringType, true),
       (X_G_CHAIN_COL, DoubleType, true),
@@ -38,6 +40,7 @@ class UnderstatProviderTests extends TestHelper {
       (A_TEAM_COL, StringType, true),
       (ROSTER_ID_COL, LongType, true),
       (ASSISTS_COL, IntegerType, true),
+      (NAME_COL, StringType, true),
       (SEASON_COL, IntegerType, true),
       (A_GOALS_COL, IntegerType, true),
       (TIME_COL, IntegerType, true),
@@ -50,11 +53,13 @@ class UnderstatProviderTests extends TestHelper {
 
   val EXPECTED_UNDERSTAT_FILTERED_DF: DataFrame = SPARK.createDF(
     List(
-      "value1",
-      "value2",
-      "value3"
+      ("value1", "Test Name1", "Name1"),
+      ("value2", "Test Name2", "Name2"),
+      ("value3", "Test Name3", "Name3"),
     ), List(
-      (EXPECTED_CAMEL_CASE_COL, StringType, true)
+      (EXPECTED_CAMEL_CASE_COL, StringType, true),
+      (NAME_COL, StringType, true),
+      (SURNAME_COL, StringType, true)
     )
   )
 
