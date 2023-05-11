@@ -36,17 +36,6 @@ object UnifiedDataHelper {
         UnderstatColumns.X_G_BUILDUP)
   }
 
-  def dropColumnsAfterJoin(df: DataFrame): DataFrame = {
-    df
-      .drop(UnderstatColumns.NPX_G,
-        UnderstatColumns.KEY_PASSES,
-        UnderstatColumns.NPG,
-        UnderstatColumns.X_A,
-        UnderstatColumns.X_G,
-        UnderstatColumns.SHOTS,
-        UnderstatColumns.X_G_BUILDUP)
-  }
-
   def dropNullAvgs(df: DataFrame): DataFrame = {
     df.na.drop(Seq(CalculatedColumns.BONUS_AVG))
       .orderBy(col(CommonColumns.DATE).asc)

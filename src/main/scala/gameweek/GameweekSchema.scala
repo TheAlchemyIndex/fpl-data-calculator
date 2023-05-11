@@ -36,9 +36,8 @@ object GameweekSchema {
       StructField("transfers_out", DataTypes.LongType, nullable = true, Metadata.empty),
       StructField("round", DataTypes.IntegerType, nullable = true, Metadata.empty),
       StructField("name", DataTypes.StringType, nullable = true, Metadata.empty),
-      StructField("position", DataTypes.StringType, nullable = true, Metadata.empty),
       StructField("threat", DataTypes.DoubleType, nullable = true, Metadata.empty),
-      StructField("web_name", DataTypes.StringType, nullable = true, Metadata.empty),
+      StructField("position", DataTypes.StringType, nullable = true, Metadata.empty),
       StructField("ict_index", DataTypes.DoubleType, nullable = true, Metadata.empty),
       StructField("penalties_saved", DataTypes.IntegerType, nullable = true, Metadata.empty),
       StructField("team_h_score", DataTypes.IntegerType, nullable = true, Metadata.empty)

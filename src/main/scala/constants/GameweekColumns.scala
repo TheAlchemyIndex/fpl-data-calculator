@@ -23,14 +23,12 @@ object GameweekColumns {
   final var ROUND = "round"
   final var POSITION = "position"
   final var THREAT = "threat"
-  final var WEB_NAME = "webName"
   final var ICT_INDEX = "ictIndex"
   final var PENALTIES_SAVED = "penaltiesSaved"
   final var TEAM_H_SCORE = "teamHScore"
   final var HOME_FIXTURE = "homeFixture"
   final var MONTH = "month"
   final var YEAR = "year"
-  final var SURNAME = "surname"
 
   // Dropped columns
   final var TRANSFERS_BALANCE = "transfersBalance"

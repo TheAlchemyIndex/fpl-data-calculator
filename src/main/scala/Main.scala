@@ -16,15 +16,14 @@ object Main {
     val gameweekDf: DataFrame = spark.read
       .option("header", value = true)
       .schema(gameweekStruct)
-      .csv("data/2020-23 seasons.csv")
+      .csv("data/2019-23 seasons.csv")
 
     val understatDf: DataFrame = spark.read
       .option("header", value = true)
       .schema(understatStruct)
-      .csv("data/Understat - 2020-23 seasons.csv")
+      .csv("data/Understat - 2019-23 seasons.csv")
 
     val gameweekFilteredDf: DataFrame = new GameweekProvider(gameweekDf).getData
-    gameweekFilteredDf.show()
     val understatFilteredDf: DataFrame = new UnderstatProvider(understatDf).getData
     val unifiedDf: DataFrame = new UnifiedDataProvider(gameweekFilteredDf, understatFilteredDf).getData
 
