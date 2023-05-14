@@ -6,20 +6,18 @@ import org.apache.spark.sql.functions.{col, month, to_date, year}
 
 object DateFormatter {
 
-  def timestampToDate(df: DataFrame): DataFrame = {
-    df
-      .withColumn(CommonColumns.DATE, to_date(col(GameweekColumns.KICKOFF_TIME), "yyyy-MM-dd"))
-  }
-
-  def dateToMonthAndYear(df: DataFrame): DataFrame = {
-    df
-      .withColumn(GameweekColumns.MONTH, month(col(CommonColumns.DATE)))
-      .withColumn(GameweekColumns.YEAR, year(col(CommonColumns.DATE)))
-  }
-
   def formatDate(df: DataFrame): DataFrame = {
     val dateDf: DataFrame = timestampToDate(df)
     val monthYearDf: DataFrame = dateToMonthAndYear(dateDf)
     monthYearDf
+  }
+
+  private def timestampToDate(df: DataFrame): DataFrame = {
+    df.withColumn(CommonColumns.DATE, to_date(col(GameweekColumns.KICKOFF_TIME), "yyyy-MM-dd"))
+  }
+
+  private def dateToMonthAndYear(df: DataFrame): DataFrame = {
+    df.withColumn(GameweekColumns.MONTH, month(col(CommonColumns.DATE)))
+      .withColumn(GameweekColumns.YEAR, year(col(CommonColumns.DATE)))
   }
 }

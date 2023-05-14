@@ -2,7 +2,7 @@ package writers
 
 import com.github.mrpowers.spark.daria.sql.SparkSessionExt.SparkSessionMethods
 import helpers.TestHelper
-import helpers.schemas.FileWriterTestSchema.fileWriterTestStruct
+import helpers.schemas.fileWriter.FileWriterTestSchema.fileWriterTestStruct
 import org.apache.spark.sql.DataFrame
 import org.apache.spark.sql.types.{IntegerType, StringType}
 import org.scalatest.BeforeAndAfterAll

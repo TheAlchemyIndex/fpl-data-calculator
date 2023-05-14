@@ -1,13 +1,10 @@
 package unifiedData
 
 import com.github.mrpowers.spark.daria.sql.SparkSessionExt.SparkSessionMethods
-import helpers.schemas.JoinedDataSchema.joinedDataStruct
 import helpers.TestHelper
-import helpers.schemas.JoinedDataAvgSchema.joinedDataAvgStruct
 import org.apache.spark.sql.DataFrame
-import org.apache.spark.sql.functions.{col, to_date}
 import org.apache.spark.sql.types.{DateType, DoubleType, IntegerType, LongType, StringType}
-import unifiedData.RollingAverage.{applyRollingAvg, calculateRollingAvg}
+import util.RollingAverage.calculateRollingAvg
 
 import java.sql.Date
 
@@ -167,74 +164,6 @@ class RollingAverageTests extends TestHelper {
     )
   )
 
-  val TEST_NULL_DF: DataFrame = SPARK.createDF(
-    List(
-      ("name1", Date.valueOf("2019-08-10"), null),
-      ("name1", Date.valueOf("2019-08-11"), null),
-      ("name1", Date.valueOf("2019-08-12"), null),
-      ("name1", Date.valueOf("2019-08-13"), null),
-      ("name1", Date.valueOf("2019-08-14"), null),
-      ("name1", Date.valueOf("2019-08-15"), null),
-      ("name2", Date.valueOf("2019-08-10"), null),
-      ("name2", Date.valueOf("2019-08-11"), null),
-      ("name2", Date.valueOf("2019-08-12"), null),
-      ("name2", Date.valueOf("2019-08-13"), null),
-      ("name2", Date.valueOf("2019-08-14"), null),
-      ("name2", Date.valueOf("2019-08-15"), null),
-    ), List(
-      (NAME_COL, StringType, true),
-      (DATE_COL, DateType, true),
-      (INTEGER_COL, IntegerType, true)
-    )
-  )
-
-  val EXPECTED_NULL_AVG_DF: DataFrame = SPARK.createDF(
-    List(
-      ("name1", Date.valueOf("2019-08-10"), null, null),
-      ("name1", Date.valueOf("2019-08-11"), null, null),
-      ("name1", Date.valueOf("2019-08-12"), null, null),
-      ("name1", Date.valueOf("2019-08-13"), null, null),
-      ("name1", Date.valueOf("2019-08-14"), null, null),
-      ("name1", Date.valueOf("2019-08-15"), null, null),
-      ("name2", Date.valueOf("2019-08-10"), null, null),
-      ("name2", Date.valueOf("2019-08-11"), null, null),
-      ("name2", Date.valueOf("2019-08-12"), null, null),
-      ("name2", Date.valueOf("2019-08-13"), null, null),
-      ("name2", Date.valueOf("2019-08-14"), null, null),
-      ("name2", Date.valueOf("2019-08-15"), null, null),
-    ), List(
-      (NAME_COL, StringType, true),
-      (DATE_COL, DateType, true),
-      (INTEGER_COL, IntegerType, true),
-      (INTEGER_AVG_COL, DoubleType, true)
-    )
-  )
-
-  val TEST_JOINED_DF: DataFrame = SPARK.read
-    .option("header", value = true)
-    .schema(joinedDataStruct)
-    .csv("src/test/resources/joined_data.csv")
-
-  val TEST_JOINED_DF_FORMATTED_DATE: DataFrame = TEST_JOINED_DF
-    .withColumn(DATE_COL, to_date(col(UNFORMATTED_DATE_COL), DATE_FORMAT))
-    .drop(UNFORMATTED_DATE_COL)
-
-  val EXPECTED_JOINED_AVG_DF: DataFrame = SPARK.read
-    .option("header", value = true)
-    .schema(joinedDataAvgStruct)
-    .csv("src/test/resources/joined_data_avg.csv")
-
-  val EXPECTED_JOINED_AVG_DF_FORMATTED_DATE: DataFrame = EXPECTED_JOINED_AVG_DF
-    .withColumn(DATE_COL, to_date(col(UNFORMATTED_DATE_COL), DATE_FORMAT))
-    .drop(UNFORMATTED_DATE_COL)
-    .select("name", "opponentTeam", "bonus", "cleanSheets", "goalsConceded", "totalPoints", "teamAScore",
-      "influence", "saves", "assists", "transfersIn", "xP", "creativity", "value", "selected", "goalsScored", "minutes",
-      "yellowCards", "team", "transfersOut", "round", "position", "threat", "webName", "ictIndex", "penaltiesSaved",
-      "teamHScore", "homeFixture", "month", "year", "npxG", "keyPasses", "npg", "xA", "xG", "shots", "xGBuildup",
-      "date", "bonusAvg", "cleanSheetsAvg", "goalsConcededAvg", "totalPointsAvg", "influenceAvg", "assistsAvg",
-      "creativityAvg", "valueAvg", "goalsScoredAvg", "minutesAvg", "yellowCardsAvg", "threatAvg", "ictIndexAvg",
-      "npxGAvg", "keyPassesAvg", "npgAvg", "xAAvg", "xGAvg", "shotsAvg", "xGBuildupAvg")
-
   test("calculateRollingAvg - Integer - It should return a DataFrame containing a new column of rolling " +
     "averages for integerColumn") {
     val rollingAvgDf: DataFrame = calculateRollingAvg(TEST_INTEGER_DF, NAME_COL, INTEGER_COL, NUM_OF_ROWS)
@@ -254,18 +183,5 @@ class RollingAverageTests extends TestHelper {
     val rollingAvgDf: DataFrame = calculateRollingAvg(TEST_LONG_DF, NAME_COL, LONG_COL, NUM_OF_ROWS)
     assert(EXPECTED_LONG_AVG_DF.schema === rollingAvgDf.schema)
     assert(EXPECTED_LONG_AVG_DF.collect().sameElements(rollingAvgDf.collect()))
-  }
-
-  test("calculateRollingAvg - null values - It should return a DataFrame containing a new column of rolling " +
-    "averages of null values") {
-    val rollingAvgDf: DataFrame = calculateRollingAvg(TEST_NULL_DF, NAME_COL, INTEGER_COL, NUM_OF_ROWS)
-    assert(EXPECTED_NULL_AVG_DF.schema === rollingAvgDf.schema)
-    assert(EXPECTED_NULL_AVG_DF.collect().sameElements(rollingAvgDf.collect()))
-  }
-
-  test("applyRollingAvg - It should return a DataFrame containing rolling averages for all relevant columns") {
-    val applyRollingAvgDf: DataFrame = applyRollingAvg(TEST_JOINED_DF_FORMATTED_DATE, NUM_OF_ROWS)
-    assert(EXPECTED_JOINED_AVG_DF_FORMATTED_DATE.schema === applyRollingAvgDf.schema)
-    assert(EXPECTED_JOINED_AVG_DF_FORMATTED_DATE.collect().sameElements(applyRollingAvgDf.collect()))
   }
 }

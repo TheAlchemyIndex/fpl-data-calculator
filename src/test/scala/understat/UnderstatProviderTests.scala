@@ -21,7 +21,6 @@ class UnderstatProviderTests extends TestHelper {
   final val ID_COL: String = "id"
   final val H_TEAM_COL: String = "h_team"
   final val GOALS_COL: String = "goals"
-  final val SURNAME_COL: String = "surname"
 
   final var EXPECTED_CAMEL_CASE_COL: String = "colNum1"
 
@@ -53,13 +52,12 @@ class UnderstatProviderTests extends TestHelper {
 
   val EXPECTED_UNDERSTAT_FILTERED_DF: DataFrame = SPARK.createDF(
     List(
-      ("value1", "Test Name1", "Name1"),
-      ("value2", "Test Name2", "Name2"),
-      ("value3", "Test Name3", "Name3"),
+      ("value1", "Test Name1"),
+      ("value2", "Test Name2"),
+      ("value3", "Test Name3"),
     ), List(
       (EXPECTED_CAMEL_CASE_COL, StringType, true),
-      (NAME_COL, StringType, true),
-      (SURNAME_COL, StringType, true)
+      (NAME_COL, StringType, true)
     )
   )
 

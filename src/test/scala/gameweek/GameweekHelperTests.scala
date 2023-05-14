@@ -46,12 +46,12 @@ class GameweekHelperTests extends TestHelper {
 
   val TEST_BOOLEAN_DF_NULL_VALUES: DataFrame = SPARK.createDF(
     List(
-      (null, "value1"),
-      (null, "value2"),
-      (null, "value3")
+      ("value1", null),
+      ("value2", null),
+      ("value3", null)
     ), List(
-      (WAS_HOME_COL, BooleanType, true),
-      (GENERIC_COL, StringType, true)
+      (GENERIC_COL, StringType, true),
+      (WAS_HOME_COL, BooleanType, true)
     )
   )
 
@@ -71,19 +71,19 @@ class GameweekHelperTests extends TestHelper {
       (WAS_HOME_COL, BooleanType, true),
       (PENS_MISSED_COL, IntegerType, true),
       (FIXTURE_COL, IntegerType, true),
-      (HOME_FIXTURE_COL, IntegerType, false)
+      (HOME_FIXTURE_COL, IntegerType, true)
     )
   )
 
   val EXPECTED_BINARY_DF_NULL_VALUES: DataFrame = SPARK.createDF(
     List(
-      (null, "value1", 0),
-      (null, "value2", 0),
-      (null, "value3", 0)
+      ("value1", null, null),
+      ("value2", null, null),
+      ("value3", null, null)
     ), List(
-      (WAS_HOME_COL, BooleanType, true),
       (GENERIC_COL, StringType, true),
-      (HOME_FIXTURE_COL, IntegerType, false),
+      (WAS_HOME_COL, BooleanType, true),
+      (HOME_FIXTURE_COL, IntegerType, true),
     )
   )
 

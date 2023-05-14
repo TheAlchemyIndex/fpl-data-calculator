@@ -1,9 +1,8 @@
 package unifiedData
 
-import RollingAverage.applyRollingAvg
 import constants.CommonColumns
 import org.apache.spark.sql.DataFrame
-import unifiedData.UnifiedDataHelper.{dropColumnsAfterAvg, dropNullAvgs}
+import unifiedData.UnifiedDataHelper.{applyRollingAvg, dropColumnsAfterAvg, dropNullAvgs}
 
 class UnifiedDataProvider(gameweekFilteredDf: DataFrame, understatFilteredDf: DataFrame) {
 
@@ -16,5 +15,6 @@ class UnifiedDataProvider(gameweekFilteredDf: DataFrame, understatFilteredDf: Da
 
   private def joinData(columns: Seq[String]): DataFrame = {
     this.gameweekFilteredDf.join(this.understatFilteredDf, columns, "left_outer")
+      .na.fill(0)
   }
 }
