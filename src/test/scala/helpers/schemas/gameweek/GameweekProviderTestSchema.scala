@@ -17,6 +17,7 @@ object GameweekProviderTestSchema {
       StructField("assists", DataTypes.IntegerType, nullable = true, Metadata.empty),
       StructField("transfersIn", DataTypes.LongType, nullable = true, Metadata.empty),
       StructField("xP", DataTypes.DoubleType, nullable = true, Metadata.empty),
+      StructField("season", DataTypes.StringType, nullable = true, Metadata.empty),
       StructField("creativity", DataTypes.DoubleType, nullable = true, Metadata.empty),
       StructField("value", DataTypes.IntegerType, nullable = true, Metadata.empty),
       StructField("selected", DataTypes.LongType, nullable = true, Metadata.empty),

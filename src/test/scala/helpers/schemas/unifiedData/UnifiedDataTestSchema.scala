@@ -2,15 +2,16 @@ package helpers.schemas.unifiedData
 
 import org.apache.spark.sql.types.{DataTypes, Metadata, StructField, StructType}
 
-object UnifiedDataSchema {
+object UnifiedDataTestSchema {
 
-  val unifiedDataStruct: StructType = new StructType(
+  val unifiedDataTestStruct: StructType = new StructType(
     Array[StructField](
       StructField("name", DataTypes.StringType, nullable = true, Metadata.empty),
       StructField("date", DataTypes.StringType, nullable = true, Metadata.empty),
       StructField("opponentTeam", DataTypes.StringType, nullable = true, Metadata.empty),
       StructField("totalPoints", DataTypes.IntegerType, nullable = true, Metadata.empty),
       StructField("xP", DataTypes.DoubleType, nullable = true, Metadata.empty),
+      StructField("season", DataTypes.StringType, nullable = true, Metadata.empty),
       StructField("minutes", DataTypes.IntegerType, nullable = true, Metadata.empty),
       StructField("team", DataTypes.StringType, nullable = true, Metadata.empty),
       StructField("round", DataTypes.IntegerType, nullable = true, Metadata.empty),

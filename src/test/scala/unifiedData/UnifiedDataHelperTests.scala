@@ -2,9 +2,9 @@ package unifiedData
 
 import com.github.mrpowers.spark.daria.sql.SparkSessionExt.SparkSessionMethods
 import helpers.TestHelper
-import helpers.schemas.joinedData.JoinedDataAvgSchema.joinedDataAvgStruct
-import helpers.schemas.joinedData.JoinedDataDroppedSchema.joinedDataDroppedStruct
-import helpers.schemas.joinedData.JoinedDataSchema.joinedDataStruct
+import helpers.schemas.joinedData.JoinedDataAvgTestSchema.joinedDataAvgTestStruct
+import helpers.schemas.joinedData.JoinedDataDroppedTestSchema.joinedDataDroppedTestStruct
+import helpers.schemas.joinedData.JoinedDataTestSchema.joinedDataTestStruct
 import org.apache.spark.sql.DataFrame
 import org.apache.spark.sql.functions.{col, to_date}
 import org.apache.spark.sql.types.{DateType, DoubleType, IntegerType, StringType}
@@ -23,19 +23,19 @@ class UnifiedDataHelperTests extends TestHelper {
 
   val TEST_JOINED_DF: DataFrame = SPARK.read
     .option("header", value = true)
-    .schema(joinedDataStruct)
+    .schema(joinedDataTestStruct)
     .csv("src/test/resources/joinedData/joined_data.csv")
     .withColumn(DATE_COL, to_date(col(DATE_COL), DATE_FORMAT))
 
   val EXPECTED_JOINED_AVG_DF: DataFrame = SPARK.read
     .option("header", value = true)
-    .schema(joinedDataAvgStruct)
+    .schema(joinedDataAvgTestStruct)
     .csv("src/test/resources/joinedData/joined_data_avg.csv")
     .withColumn(DATE_COL, to_date(col(DATE_COL), DATE_FORMAT))
 
   val EXPECTED_DROPPED_COLS_DF: DataFrame = SPARK.read
     .option("header", value = true)
-    .schema(joinedDataDroppedStruct)
+    .schema(joinedDataDroppedTestStruct)
     .csv("src/test/resources/joinedData/joined_data_dropped.csv")
     .withColumn(DATE_COL, to_date(col(DATE_COL), DATE_FORMAT))
 

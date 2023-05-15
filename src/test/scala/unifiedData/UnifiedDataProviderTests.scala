@@ -1,7 +1,7 @@
 package unifiedData
 
 import helpers.TestHelper
-import helpers.schemas.unifiedData.UnifiedDataSchema.unifiedDataStruct
+import helpers.schemas.unifiedData.UnifiedDataTestSchema.unifiedDataTestStruct
 import helpers.schemas.gameweek.GameweekProviderTestSchema.gameweekProviderTestStruct
 import helpers.schemas.understat.UnderstatTestSchema.understatTestStruct
 import org.apache.spark.sql.DataFrame
@@ -27,7 +27,7 @@ class UnifiedDataProviderTests extends TestHelper {
 
   val EXPECTED_UNIFIED_DATA_DF: DataFrame = SPARK.read
     .option("header", value = true)
-    .schema(unifiedDataStruct)
+    .schema(unifiedDataTestStruct)
     .csv("src/test/resources/unifiedData/unified_data.csv")
     .withColumn(DATE_COL, to_date(col(DATE_COL), DATE_FORMAT))
 
