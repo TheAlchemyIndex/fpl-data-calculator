@@ -38,7 +38,8 @@ object UnifiedDataTestSchema {
       StructField("xAAvg", DataTypes.DoubleType, nullable = true, Metadata.empty),
       StructField("xGAvg", DataTypes.DoubleType, nullable = true, Metadata.empty),
       StructField("shotsAvg", DataTypes.DoubleType, nullable = true, Metadata.empty),
-      StructField("xGBuildupAvg", DataTypes.DoubleType, nullable = true, Metadata.empty)
+      StructField("xGBuildupAvg", DataTypes.DoubleType, nullable = true, Metadata.empty),
+      StructField("totalPointsAgainstOpponentAvg", DataTypes.DoubleType, nullable = true, Metadata.empty)
     )
   )
 }

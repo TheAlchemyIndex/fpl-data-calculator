@@ -3,7 +3,7 @@ package unifiedData
 import constants.{CalculatedColumns, CommonColumns, GameweekColumns, UnderstatColumns}
 import org.apache.spark.sql.DataFrame
 import org.apache.spark.sql.functions.col
-import util.RollingAverage.calculateRollingAvg
+import util.AverageCalculator.calculateRollingAvg
 
 object UnifiedDataHelper {
 
