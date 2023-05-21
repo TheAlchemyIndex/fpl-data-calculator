@@ -4,8 +4,9 @@ import com.github.mrpowers.spark.daria.sql.SparkSessionExt.SparkSessionMethods
 import helpers.TestHelper
 import org.apache.spark.sql.DataFrame
 import org.apache.spark.sql.types.{DoubleType, IntegerType, LongType, StringType}
+import providers.understat.players.UnderstatPlayersProvider
 
-class UnderstatProviderTests extends TestHelper {
+class UnderstatPlayersProviderTests extends TestHelper {
 
   final val GENERIC_COL: String = "col_num1"
   final val X_G_CHAIN_COL: String = "x_g_chain"
@@ -63,7 +64,7 @@ class UnderstatProviderTests extends TestHelper {
 
   test("getData - It should return a DataFrame with column headers converted to camelCase and " +
     "exclude columns that were to be dropped") {
-    val understatFilteredDf: DataFrame = new UnderstatProvider(TEST_UNDERSTAT_DF).getData
+    val understatFilteredDf: DataFrame = new UnderstatPlayersProvider(TEST_UNDERSTAT_DF).getData
     val remainingColumns: Seq[String] = understatFilteredDf.columns.toSeq
 
     assert(EXPECTED_UNDERSTAT_FILTERED_DF.schema === understatFilteredDf.schema)

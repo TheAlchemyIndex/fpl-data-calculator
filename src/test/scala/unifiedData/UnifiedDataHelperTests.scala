@@ -8,7 +8,6 @@ import helpers.schemas.joinedData.JoinedDataTestSchema.joinedDataTestStruct
 import org.apache.spark.sql.DataFrame
 import org.apache.spark.sql.functions.{col, to_date}
 import org.apache.spark.sql.types.{DateType, DoubleType, IntegerType, StringType}
-import unifiedData.UnifiedDataHelper.{applyRollingAvg, dropColumnsAfterAvg, dropNullAvgs}
 
 import java.sql.Date
 
@@ -63,26 +62,4 @@ class UnifiedDataHelperTests extends TestHelper {
       ("date", DateType, true)
     )
   )
-
-  test("applyRollingAvg - It should return a DataFrame containing rolling averages for all relevant columns") {
-    val applyRollingAvgDf: DataFrame = applyRollingAvg(TEST_JOINED_DF, NUM_OF_ROWS)
-
-    assert(EXPECTED_JOINED_AVG_DF.schema === applyRollingAvgDf.schema)
-    assert(EXPECTED_JOINED_AVG_DF.collect().sameElements(applyRollingAvgDf.collect()))
-  }
-
-  test("dropColumnsAfterAvg - It should return a DataFrame excluding columns that were to be dropped") {
-    val dropColumnsAfterAvgDf: DataFrame = dropColumnsAfterAvg(EXPECTED_JOINED_AVG_DF)
-    val remainingColumns: Seq[String] = dropColumnsAfterAvgDf.columns.toSeq
-
-    assert(EXPECTED_DROPPED_COLS_DF.schema === dropColumnsAfterAvgDf.schema)
-    assert(EXPECTED_DROPPED_COLS_DF.collect().sameElements(dropColumnsAfterAvgDf.collect()))
-    assert(DROPPED_COLUMNS.intersect(remainingColumns).isEmpty)
-  }
-
-  test("dropNullAvgs - It should return a DataFrame excluding rows with null values in the avg columns") {
-    val dropNullAvgsDf: DataFrame = dropNullAvgs(TEST_NULL_AVGS_DF)
-    assert(EXPECTED_DROPPED_NULLS_DF.schema === dropNullAvgsDf.schema)
-    assert(EXPECTED_DROPPED_NULLS_DF.collect().sameElements(dropNullAvgsDf.collect()))
-  }
 }

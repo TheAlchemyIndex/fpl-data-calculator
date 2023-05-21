@@ -1,27 +1,39 @@
 package util
 
 import org.apache.spark.sql.DataFrame
-import org.apache.spark.sql.functions.col
+import org.apache.spark.sql.functions.{col, when}
 
 object DataFrameHelper {
 
-  def fromSnakeCaseToCamelCase(cols: Array[String]): Array[String] = {
-    val camelCols = cols.map { colName =>
-      val splitColName = colName.split("_")
-      val first = splitColName.head
-      val rest = splitColName.tail.map(_.capitalize)
+  def renameColumnsToCamelCase(df: DataFrame): DataFrame = {
+    val camelCols: Array[String] = snakeCaseToCamelCaseColumns(df.columns)
+    val renamedDf: DataFrame = df.select(df.columns.zip(camelCols).map {
+      case (a, b) => col(a).as(b)
+    }: _*)
+    renamedDf
+  }
+
+  private def snakeCaseToCamelCaseColumns(cols: Array[String]): Array[String] = {
+    val camelCols: Array[String] = cols.map { colName =>
+      val splitColName: Array[String] = colName.split("_")
+      val first: String = splitColName.head
+      val rest: Array[String] = splitColName.tail.map(_.capitalize)
       (first +: rest).mkString("")
     }
     camelCols
   }
 
-  def renameColumns(df: DataFrame): DataFrame = {
-    val camelCols = fromSnakeCaseToCamelCase(df.columns)
+  def booleanColumnToBinary(df: DataFrame, newColumn: String, targetColumn: String): DataFrame = {
+    df.withColumn(newColumn, when(col(targetColumn) === true, 1)
+      when(col(targetColumn) === false, 0))
+  }
 
-    val renamedDf = df.select(df.columns.zip(camelCols).map {
-      case (a, b) => col(a).as(b)
-    }: _*)
+  def dropNullRows(df: DataFrame, targetCols: Seq[String]): DataFrame = {
+    df.na.drop(targetCols)
+  }
 
-    renamedDf
+  def joinDataLeftOuter(leftDf: DataFrame, rightDf: DataFrame, columns: Seq[String]): DataFrame = {
+    leftDf.join(rightDf, columns, "left_outer")
+      .na.fill(0)
   }
 }

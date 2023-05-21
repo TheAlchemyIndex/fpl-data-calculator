@@ -4,7 +4,7 @@ import com.github.mrpowers.spark.daria.sql.SparkSessionExt.SparkSessionMethods
 import helpers.TestHelper
 import org.apache.spark.sql.DataFrame
 import org.apache.spark.sql.types.{DateType, DoubleType, IntegerType, LongType, StringType}
-import util.AverageCalculator.{calculateAvgAgainstOpponent, calculateRollingAvg}
+import util.AverageCalculator.calculateRollingAvg
 
 import java.sql.Date
 
@@ -232,12 +232,5 @@ class AverageCalculatorTests extends TestHelper {
     val rollingAvgDf: DataFrame = calculateRollingAvg(TEST_LONG_DF, NAME_COL, LONG_COL, NUM_OF_ROWS)
     assert(EXPECTED_LONG_AVG_DF.schema === rollingAvgDf.schema)
     assert(EXPECTED_LONG_AVG_DF.collect().sameElements(rollingAvgDf.collect()))
-  }
-
-  test("calculateAvgAgainstOpponent - It should return a DataFrame containing a new column of " +
-    "averages for INTEGER_COL grouped by NAME_COL and OPPONENT_TEAM_COL") {
-    val avgAgainstOpponentDf: DataFrame = calculateAvgAgainstOpponent(TEST_OPPONENT_TEAM_DF, INTEGER_COL)
-    assert(EXPECTED_OPPONENT_TEAM_AVG_DF.schema === avgAgainstOpponentDf.schema)
-    assert(EXPECTED_OPPONENT_TEAM_AVG_DF.collect().sameElements(avgAgainstOpponentDf.collect()))
   }
 }

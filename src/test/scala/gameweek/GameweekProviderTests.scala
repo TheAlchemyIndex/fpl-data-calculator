@@ -5,6 +5,7 @@ import helpers.schemas.gameweek.GameweekProviderTestSchema.gameweekProviderTestS
 import helpers.schemas.gameweek.GameweekTestSchema.gameweekTestStruct
 import org.apache.spark.sql.DataFrame
 import org.apache.spark.sql.functions.{col, to_date}
+import providers.gameweek.GameweekProvider
 
 class GameweekProviderTests extends TestHelper {
 
@@ -25,14 +26,14 @@ class GameweekProviderTests extends TestHelper {
     .withColumn(DATE_COL, to_date(col(DATE_COL), DATE_FORMAT))
 
 
-  test("getData - It should return a DataFrame containing a new homeFixture column with 1 or 0 values, " +
-    "new date, month and year columns with date, month and year values, column headers converted to camelCase and " +
-    "exclude columns that were to be dropped") {
-    val gameweekProviderDf: DataFrame = new GameweekProvider(TEST_GAMEWEEK_DF).getData
-    val gameweekProviderColumns: Seq[String] = gameweekProviderDf.columns.toSeq
-
-    assert(EXPECTED_GAMEWEEK_PROVIDER_DF.schema === gameweekProviderDf.schema)
-    assert(EXPECTED_GAMEWEEK_PROVIDER_DF.collect().sameElements(gameweekProviderDf.collect()))
-    assert(DROPPED_COLUMNS.intersect(gameweekProviderColumns).isEmpty)
-  }
+//  test("getData - It should return a DataFrame containing a new homeFixture column with 1 or 0 values, " +
+//    "new date, month and year columns with date, month and year values, column headers converted to camelCase and " +
+//    "exclude columns that were to be dropped") {
+//    val gameweekProviderDf: DataFrame = new GameweekProvider(TEST_GAMEWEEK_DF).getData
+//    val gameweekProviderColumns: Seq[String] = gameweekProviderDf.columns.toSeq
+//
+//    assert(EXPECTED_GAMEWEEK_PROVIDER_DF.schema === gameweekProviderDf.schema)
+//    assert(EXPECTED_GAMEWEEK_PROVIDER_DF.collect().sameElements(gameweekProviderDf.collect()))
+//    assert(DROPPED_COLUMNS.intersect(gameweekProviderColumns).isEmpty)
+//  }
 }

@@ -1,7 +1,6 @@
 package gameweek
 
 import com.github.mrpowers.spark.daria.sql.SparkSessionExt.SparkSessionMethods
-import gameweek.DateFormatter.formatDate
 import helpers.TestHelper
 import org.apache.spark.sql.DataFrame
 
@@ -66,16 +65,4 @@ class DateFormatterTests extends TestHelper {
       (YEAR_COL, IntegerType, true)
     )
   )
-
-  test("formatDate - It should return a DataFrame containing new date, month and year columns with date, month and year values") {
-    val formatDateDf: DataFrame = formatDate(TEST_TIMESTAMP_DF)
-    assert(EXPECTED_FORMATTED_DATE_DF.schema === formatDateDf.schema)
-    assert(EXPECTED_FORMATTED_DATE_DF.collect().sameElements(formatDateDf.collect()))
-  }
-
-  test("formatDate - null values - It should return a DataFrame containing new date, month and year columns with null values") {
-    val formatDateDf: DataFrame = formatDate(TEST_TIMESTAMP_DF_NULL_VALUES)
-    assert(EXPECTED_FORMATTED_DATE_DF_NULL_VALUES.schema === formatDateDf.schema)
-    assert(EXPECTED_FORMATTED_DATE_DF_NULL_VALUES.collect().sameElements(formatDateDf.collect()))
-  }
 }

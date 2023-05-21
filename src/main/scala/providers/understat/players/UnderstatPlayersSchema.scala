@@ -1,10 +1,10 @@
-package understat
+package providers.understat.players
 
 import org.apache.spark.sql.types.{DataTypes, Metadata, StructField, StructType}
 
-object UnderstatSchema {
+object UnderstatPlayersSchema {
 
-  val understatStruct = new StructType(
+  val understatPlayersStruct = new StructType(
     Array[StructField](
       StructField("date", DataTypes.DateType, true, Metadata.empty),
       StructField("npxG", DataTypes.DoubleType, true, Metadata.empty),

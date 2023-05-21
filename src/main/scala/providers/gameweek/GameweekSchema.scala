@@ -1,4 +1,4 @@
-package gameweek
+package providers.gameweek
 
 import org.apache.spark.sql.types.{DataTypes, Metadata, StructField, StructType}
 

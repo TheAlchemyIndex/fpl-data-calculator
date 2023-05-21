@@ -1,6 +1,6 @@
 package constants
 
-object UnderstatTeamColumns {
+object UnderstatTeamsColumns {
 
   final var DATE = "date"
   final var WINS = "wins"

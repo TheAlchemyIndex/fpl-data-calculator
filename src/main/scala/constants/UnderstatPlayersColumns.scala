@@ -1,6 +1,6 @@
 package constants
 
-object UnderstatColumns {
+object UnderstatPlayersColumns {
 
   final var NPX_G = "npxG"
   final var KEY_PASSES = "keyPasses"

@@ -1,7 +1,6 @@
 package gameweek
 
 import com.github.mrpowers.spark.daria.sql.SparkSessionExt.SparkSessionMethods
-import gameweek.GameweekHelper.{booleanColumnToBinary, dropColumns}
 import helpers.TestHelper
 import org.apache.spark.sql.DataFrame
 import org.apache.spark.sql.types.{BooleanType, IntegerType, LongType, StringType, TimestampType}
@@ -96,25 +95,4 @@ class GameweekHelperTests extends TestHelper {
       (GENERIC_COL, StringType, true)
     )
   )
-
-  test("booleanColumnToBinary - It should return a DataFrame containing a new homeFixture column with 1 or 0 values") {
-    val binaryDf: DataFrame = booleanColumnToBinary(TEST_BOOLEAN_DF, HOME_FIXTURE_COL, WAS_HOME_COL)
-    assert(EXPECTED_BINARY_DF.schema === binaryDf.schema)
-    assert(EXPECTED_BINARY_DF.collect().sameElements(binaryDf.collect()))
-  }
-
-  test("booleanColumnToBinary - null values - It should return a DataFrame containing a new homeFixture column with 0 values") {
-    val binaryDf: DataFrame = booleanColumnToBinary(TEST_BOOLEAN_DF_NULL_VALUES, HOME_FIXTURE_COL, WAS_HOME_COL)
-    assert(EXPECTED_BINARY_DF_NULL_VALUES.schema === binaryDf.schema)
-    assert(EXPECTED_BINARY_DF_NULL_VALUES.collect().sameElements(binaryDf.collect()))
-  }
-
-  test("dropColumns - It should return a DataFrame excluding columns that were to be dropped") {
-    val droppedColumnsDf: DataFrame = dropColumns(TEST_BOOLEAN_DF)
-    val remainingColumns: Seq[String] = droppedColumnsDf.columns.toSeq
-
-    assert(EXPECTED_BINARY_DF_DROPPED_COLUMNS.schema === droppedColumnsDf.schema)
-    assert(EXPECTED_BINARY_DF_DROPPED_COLUMNS.collect().sameElements(droppedColumnsDf.collect()))
-    assert(DROPPED_COLUMNS.intersect(remainingColumns).isEmpty)
-  }
 }

@@ -1,0 +1,3041 @@
+date,team,awayTeam
+09/08/2019,Liverpool,Norwich
+09/08/2019,Norwich,Liverpool
+10/08/2019,West Ham,Man City
+10/08/2019,Bournemouth,Sheffield Utd
+10/08/2019,Burnley,Southampton
+10/08/2019,Crystal Palace,Everton
+10/08/2019,Watford,Brighton
+10/08/2019,Spurs,Aston Villa
+10/08/2019,Man City,West Ham
+10/08/2019,Sheffield Utd,Bournemouth
+10/08/2019,Southampton,Burnley
+10/08/2019,Everton,Crystal Palace
+10/08/2019,Brighton,Watford
+10/08/2019,Aston Villa,Spurs
+11/08/2019,Leicester,Wolves
+11/08/2019,Newcastle,Arsenal
+11/08/2019,Man Utd,Chelsea
+11/08/2019,Wolves,Leicester
+11/08/2019,Arsenal,Newcastle
+11/08/2019,Chelsea,Man Utd
+17/08/2019,Arsenal,Burnley
+17/08/2019,Aston Villa,Bournemouth
+17/08/2019,Brighton,West Ham
+17/08/2019,Everton,Watford
+17/08/2019,Norwich,Newcastle
+17/08/2019,Southampton,Liverpool
+17/08/2019,Man City,Spurs
+17/08/2019,Burnley,Arsenal
+17/08/2019,Bournemouth,Aston Villa
+17/08/2019,West Ham,Brighton
+17/08/2019,Watford,Everton
+17/08/2019,Newcastle,Norwich
+17/08/2019,Liverpool,Southampton
+17/08/2019,Spurs,Man City
+18/08/2019,Sheffield Utd,Crystal Palace
+18/08/2019,Chelsea,Leicester
+18/08/2019,Crystal Palace,Sheffield Utd
+18/08/2019,Leicester,Chelsea
+19/08/2019,Wolves,Man Utd
+19/08/2019,Man Utd,Wolves
+23/08/2019,Aston Villa,Everton
+23/08/2019,Everton,Aston Villa
+24/08/2019,Norwich,Chelsea
+24/08/2019,Brighton,Southampton
+24/08/2019,Man Utd,Crystal Palace
+24/08/2019,Sheffield Utd,Leicester
+24/08/2019,Watford,West Ham
+24/08/2019,Liverpool,Arsenal
+24/08/2019,Chelsea,Norwich
+24/08/2019,Southampton,Brighton
+24/08/2019,Crystal Palace,Man Utd
+24/08/2019,Leicester,Sheffield Utd
+24/08/2019,West Ham,Watford
+24/08/2019,Arsenal,Liverpool
+25/08/2019,Bournemouth,Man City
+25/08/2019,Spurs,Newcastle
+25/08/2019,Wolves,Burnley
+25/08/2019,Man City,Bournemouth
+25/08/2019,Newcastle,Spurs
+25/08/2019,Burnley,Wolves
+31/08/2019,Southampton,Man Utd
+31/08/2019,Chelsea,Sheffield Utd
+31/08/2019,Crystal Palace,Aston Villa
+31/08/2019,Leicester,Bournemouth
+31/08/2019,Man City,Brighton
+31/08/2019,Newcastle,Watford
+31/08/2019,West Ham,Norwich
+31/08/2019,Burnley,Liverpool
+31/08/2019,Man Utd,Southampton
+31/08/2019,Sheffield Utd,Chelsea
+31/08/2019,Aston Villa,Crystal Palace
+31/08/2019,Bournemouth,Leicester
+31/08/2019,Brighton,Man City
+31/08/2019,Watford,Newcastle
+31/08/2019,Norwich,West Ham
+31/08/2019,Liverpool,Burnley
+01/09/2019,Everton,Wolves
+01/09/2019,Arsenal,Spurs
+01/09/2019,Wolves,Everton
+01/09/2019,Spurs,Arsenal
+14/09/2019,Liverpool,Newcastle
+14/09/2019,Brighton,Burnley
+14/09/2019,Man Utd,Leicester
+14/09/2019,Sheffield Utd,Southampton
+14/09/2019,Spurs,Crystal Palace
+14/09/2019,Wolves,Chelsea
+14/09/2019,Norwich,Man City
+14/09/2019,Newcastle,Liverpool
+14/09/2019,Burnley,Brighton
+14/09/2019,Leicester,Man Utd
+14/09/2019,Southampton,Sheffield Utd
+14/09/2019,Crystal Palace,Spurs
+14/09/2019,Chelsea,Wolves
+14/09/2019,Man City,Norwich
+15/09/2019,Bournemouth,Everton
+15/09/2019,Watford,Arsenal
+15/09/2019,Everton,Bournemouth
+15/09/2019,Arsenal,Watford
+16/09/2019,Aston Villa,West Ham
+16/09/2019,West Ham,Aston Villa
+20/09/2019,Southampton,Bournemouth
+20/09/2019,Bournemouth,Southampton
+21/09/2019,Leicester,Spurs
+21/09/2019,Burnley,Norwich
+21/09/2019,Everton,Sheffield Utd
+21/09/2019,Man City,Watford
+21/09/2019,Newcastle,Brighton
+21/09/2019,Spurs,Leicester
+21/09/2019,Norwich,Burnley
+21/09/2019,Sheffield Utd,Everton
+21/09/2019,Watford,Man City
+21/09/2019,Brighton,Newcastle
+22/09/2019,Crystal Palace,Wolves
+22/09/2019,West Ham,Man Utd
+22/09/2019,Arsenal,Aston Villa
+22/09/2019,Chelsea,Liverpool
+22/09/2019,Wolves,Crystal Palace
+22/09/2019,Man Utd,West Ham
+22/09/2019,Aston Villa,Arsenal
+22/09/2019,Liverpool,Chelsea
+28/09/2019,Sheffield Utd,Liverpool
+28/09/2019,Aston Villa,Burnley
+28/09/2019,Bournemouth,West Ham
+28/09/2019,Chelsea,Brighton
+28/09/2019,Crystal Palace,Norwich
+28/09/2019,Spurs,Southampton
+28/09/2019,Wolves,Watford
+28/09/2019,Everton,Man City
+28/09/2019,Liverpool,Sheffield Utd
+28/09/2019,Burnley,Aston Villa
+28/09/2019,West Ham,Bournemouth
+28/09/2019,Brighton,Chelsea
+28/09/2019,Norwich,Crystal Palace
+28/09/2019,Southampton,Spurs
+28/09/2019,Watford,Wolves
+28/09/2019,Man City,Everton
+29/09/2019,Leicester,Newcastle
+29/09/2019,Newcastle,Leicester
+30/09/2019,Man Utd,Arsenal
+30/09/2019,Arsenal,Man Utd
+05/10/2019,Brighton,Spurs
+05/10/2019,Burnley,Everton
+05/10/2019,Liverpool,Leicester
+05/10/2019,Norwich,Aston Villa
+05/10/2019,Watford,Sheffield Utd
+05/10/2019,West Ham,Crystal Palace
+05/10/2019,Spurs,Brighton
+05/10/2019,Everton,Burnley
+05/10/2019,Leicester,Liverpool
+05/10/2019,Aston Villa,Norwich
+05/10/2019,Sheffield Utd,Watford
+05/10/2019,Crystal Palace,West Ham
+06/10/2019,Arsenal,Bournemouth
+06/10/2019,Man City,Wolves
+06/10/2019,Southampton,Chelsea
+06/10/2019,Newcastle,Man Utd
+06/10/2019,Bournemouth,Arsenal
+06/10/2019,Wolves,Man City
+06/10/2019,Chelsea,Southampton
+06/10/2019,Man Utd,Newcastle
+19/10/2019,Everton,West Ham
+19/10/2019,Aston Villa,Brighton
+19/10/2019,Bournemouth,Norwich
+19/10/2019,Chelsea,Newcastle
+19/10/2019,Leicester,Burnley
+19/10/2019,Spurs,Watford
+19/10/2019,Wolves,Southampton
+19/10/2019,Crystal Palace,Man City
+19/10/2019,West Ham,Everton
+19/10/2019,Brighton,Aston Villa
+19/10/2019,Norwich,Bournemouth
+19/10/2019,Newcastle,Chelsea
+19/10/2019,Burnley,Leicester
+19/10/2019,Watford,Spurs
+19/10/2019,Southampton,Wolves
+19/10/2019,Man City,Crystal Palace
+20/10/2019,Man Utd,Liverpool
+20/10/2019,Liverpool,Man Utd
+21/10/2019,Sheffield Utd,Arsenal
+21/10/2019,Arsenal,Sheffield Utd
+25/10/2019,Southampton,Leicester
+25/10/2019,Leicester,Southampton
+26/10/2019,Man City,Aston Villa
+26/10/2019,Brighton,Everton
+26/10/2019,Watford,Bournemouth
+26/10/2019,West Ham,Sheffield Utd
+26/10/2019,Burnley,Chelsea
+26/10/2019,Aston Villa,Man City
+26/10/2019,Everton,Brighton
+26/10/2019,Bournemouth,Watford
+26/10/2019,Sheffield Utd,West Ham
+26/10/2019,Chelsea,Burnley
+27/10/2019,Newcastle,Wolves
+27/10/2019,Arsenal,Crystal Palace
+27/10/2019,Liverpool,Spurs
+27/10/2019,Norwich,Man Utd
+27/10/2019,Wolves,Newcastle
+27/10/2019,Crystal Palace,Arsenal
+27/10/2019,Spurs,Liverpool
+27/10/2019,Man Utd,Norwich
+02/11/2019,Bournemouth,Man Utd
+02/11/2019,Arsenal,Wolves
+02/11/2019,Aston Villa,Liverpool
+02/11/2019,Brighton,Norwich
+02/11/2019,Man City,Southampton
+02/11/2019,Sheffield Utd,Burnley
+02/11/2019,West Ham,Newcastle
+02/11/2019,Watford,Chelsea
+02/11/2019,Man Utd,Bournemouth
+02/11/2019,Wolves,Arsenal
+02/11/2019,Liverpool,Aston Villa
+02/11/2019,Norwich,Brighton
+02/11/2019,Southampton,Man City
+02/11/2019,Burnley,Sheffield Utd
+02/11/2019,Newcastle,West Ham
+02/11/2019,Chelsea,Watford
+03/11/2019,Crystal Palace,Leicester
+03/11/2019,Everton,Spurs
+03/11/2019,Leicester,Crystal Palace
+03/11/2019,Spurs,Everton
+08/11/2019,Norwich,Watford
+08/11/2019,Watford,Norwich
+09/11/2019,Chelsea,Crystal Palace
+09/11/2019,Burnley,West Ham
+09/11/2019,Newcastle,Bournemouth
+09/11/2019,Southampton,Everton
+09/11/2019,Spurs,Sheffield Utd
+09/11/2019,Leicester,Arsenal
+09/11/2019,Crystal Palace,Chelsea
+09/11/2019,West Ham,Burnley
+09/11/2019,Bournemouth,Newcastle
+09/11/2019,Everton,Southampton
+09/11/2019,Sheffield Utd,Spurs
+09/11/2019,Arsenal,Leicester
+10/11/2019,Man Utd,Brighton
+10/11/2019,Wolves,Aston Villa
+10/11/2019,Liverpool,Man City
+10/11/2019,Brighton,Man Utd
+10/11/2019,Aston Villa,Wolves
+10/11/2019,Man City,Liverpool
+23/11/2019,West Ham,Spurs
+23/11/2019,Arsenal,Southampton
+23/11/2019,Bournemouth,Wolves
+23/11/2019,Brighton,Leicester
+23/11/2019,Crystal Palace,Liverpool
+23/11/2019,Everton,Norwich
+23/11/2019,Watford,Burnley
+23/11/2019,Man City,Chelsea
+23/11/2019,Spurs,West Ham
+23/11/2019,Southampton,Arsenal
+23/11/2019,Wolves,Bournemouth
+23/11/2019,Leicester,Brighton
+23/11/2019,Liverpool,Crystal Palace
+23/11/2019,Norwich,Everton
+23/11/2019,Burnley,Watford
+23/11/2019,Chelsea,Man City
+24/11/2019,Sheffield Utd,Man Utd
+24/11/2019,Man Utd,Sheffield Utd
+25/11/2019,Aston Villa,Newcastle
+25/11/2019,Newcastle,Aston Villa
+30/11/2019,Newcastle,Man City
+30/11/2019,Burnley,Crystal Palace
+30/11/2019,Chelsea,West Ham
+30/11/2019,Liverpool,Brighton
+30/11/2019,Spurs,Bournemouth
+30/11/2019,Southampton,Watford
+30/11/2019,Man City,Newcastle
+30/11/2019,Crystal Palace,Burnley
+30/11/2019,West Ham,Chelsea
+30/11/2019,Brighton,Liverpool
+30/11/2019,Bournemouth,Spurs
+30/11/2019,Watford,Southampton
+01/12/2019,Norwich,Arsenal
+01/12/2019,Wolves,Sheffield Utd
+01/12/2019,Leicester,Everton
+01/12/2019,Man Utd,Aston Villa
+01/12/2019,Arsenal,Norwich
+01/12/2019,Sheffield Utd,Wolves
+01/12/2019,Everton,Leicester
+01/12/2019,Aston Villa,Man Utd
+03/12/2019,Crystal Palace,Bournemouth
+03/12/2019,Burnley,Man City
+03/12/2019,Bournemouth,Crystal Palace
+03/12/2019,Man City,Burnley
+04/12/2019,Chelsea,Aston Villa
+04/12/2019,Leicester,Watford
+04/12/2019,Man Utd,Spurs
+04/12/2019,Southampton,Norwich
+04/12/2019,Wolves,West Ham
+04/12/2019,Liverpool,Everton
+04/12/2019,Aston Villa,Chelsea
+04/12/2019,Watford,Leicester
+04/12/2019,Spurs,Man Utd
+04/12/2019,Norwich,Southampton
+04/12/2019,West Ham,Wolves
+04/12/2019,Everton,Liverpool
+05/12/2019,Sheffield Utd,Newcastle
+05/12/2019,Arsenal,Brighton
+05/12/2019,Newcastle,Sheffield Utd
+05/12/2019,Brighton,Arsenal
+07/12/2019,Everton,Chelsea
+07/12/2019,Bournemouth,Liverpool
+07/12/2019,Spurs,Burnley
+07/12/2019,Watford,Crystal Palace
+07/12/2019,Man City,Man Utd
+07/12/2019,Chelsea,Everton
+07/12/2019,Liverpool,Bournemouth
+07/12/2019,Burnley,Spurs
+07/12/2019,Crystal Palace,Watford
+07/12/2019,Man Utd,Man City
+08/12/2019,Aston Villa,Leicester
+08/12/2019,Newcastle,Southampton
+08/12/2019,Norwich,Sheffield Utd
+08/12/2019,Brighton,Wolves
+08/12/2019,Leicester,Aston Villa
+08/12/2019,Southampton,Newcastle
+08/12/2019,Sheffield Utd,Norwich
+08/12/2019,Wolves,Brighton
+09/12/2019,West Ham,Arsenal
+09/12/2019,Arsenal,West Ham
+14/12/2019,Liverpool,Watford
+14/12/2019,Burnley,Newcastle
+14/12/2019,Chelsea,Bournemouth
+14/12/2019,Leicester,Norwich
+14/12/2019,Sheffield Utd,Aston Villa
+14/12/2019,Southampton,West Ham
+14/12/2019,Watford,Liverpool
+14/12/2019,Newcastle,Burnley
+14/12/2019,Bournemouth,Chelsea
+14/12/2019,Norwich,Leicester
+14/12/2019,Aston Villa,Sheffield Utd
+14/12/2019,West Ham,Southampton
+15/12/2019,Man Utd,Everton
+15/12/2019,Wolves,Spurs
+15/12/2019,Arsenal,Man City
+15/12/2019,Everton,Man Utd
+15/12/2019,Spurs,Wolves
+15/12/2019,Man City,Arsenal
+16/12/2019,Crystal Palace,Brighton
+16/12/2019,Brighton,Crystal Palace
+21/12/2019,Everton,Arsenal
+21/12/2019,Aston Villa,Southampton
+21/12/2019,Bournemouth,Burnley
+21/12/2019,Brighton,Sheffield Utd
+21/12/2019,Newcastle,Crystal Palace
+21/12/2019,Norwich,Wolves
+21/12/2019,Man City,Leicester
+21/12/2019,Arsenal,Everton
+21/12/2019,Southampton,Aston Villa
+21/12/2019,Burnley,Bournemouth
+21/12/2019,Sheffield Utd,Brighton
+21/12/2019,Crystal Palace,Newcastle
+21/12/2019,Wolves,Norwich
+21/12/2019,Leicester,Man City
+22/12/2019,Watford,Man Utd
+22/12/2019,Spurs,Chelsea
+22/12/2019,Man Utd,Watford
+22/12/2019,Chelsea,Spurs
+26/12/2019,Spurs,Brighton
+26/12/2019,Aston Villa,Norwich
+26/12/2019,Bournemouth,Arsenal
+26/12/2019,Chelsea,Southampton
+26/12/2019,Crystal Palace,West Ham
+26/12/2019,Everton,Burnley
+26/12/2019,Sheffield Utd,Watford
+26/12/2019,Man Utd,Newcastle
+26/12/2019,Leicester,Liverpool
+26/12/2019,Brighton,Spurs
+26/12/2019,Norwich,Aston Villa
+26/12/2019,Arsenal,Bournemouth
+26/12/2019,Southampton,Chelsea
+26/12/2019,West Ham,Crystal Palace
+26/12/2019,Burnley,Everton
+26/12/2019,Watford,Sheffield Utd
+26/12/2019,Newcastle,Man Utd
+26/12/2019,Liverpool,Leicester
+27/12/2019,Wolves,Man City
+27/12/2019,Man City,Wolves
+28/12/2019,Brighton,Bournemouth
+28/12/2019,Newcastle,Everton
+28/12/2019,Southampton,Crystal Palace
+28/12/2019,Watford,Aston Villa
+28/12/2019,Norwich,Spurs
+28/12/2019,West Ham,Leicester
+28/12/2019,Burnley,Man Utd
+28/12/2019,Bournemouth,Brighton
+28/12/2019,Everton,Newcastle
+28/12/2019,Crystal Palace,Southampton
+28/12/2019,Aston Villa,Watford
+28/12/2019,Spurs,Norwich
+28/12/2019,Leicester,West Ham
+28/12/2019,Man Utd,Burnley
+29/12/2019,Arsenal,Chelsea
+29/12/2019,Liverpool,Wolves
+29/12/2019,Man City,Sheffield Utd
+29/12/2019,Chelsea,Arsenal
+29/12/2019,Wolves,Liverpool
+29/12/2019,Sheffield Utd,Man City
+01/01/2020,Brighton,Chelsea
+01/01/2020,Burnley,Aston Villa
+01/01/2020,Newcastle,Leicester
+01/01/2020,Southampton,Spurs
+01/01/2020,Watford,Wolves
+01/01/2020,Man City,Everton
+01/01/2020,Norwich,Crystal Palace
+01/01/2020,West Ham,Bournemouth
+01/01/2020,Arsenal,Man Utd
+01/01/2020,Chelsea,Brighton
+01/01/2020,Aston Villa,Burnley
+01/01/2020,Leicester,Newcastle
+01/01/2020,Spurs,Southampton
+01/01/2020,Wolves,Watford
+01/01/2020,Everton,Man City
+01/01/2020,Crystal Palace,Norwich
+01/01/2020,Bournemouth,West Ham
+01/01/2020,Man Utd,Arsenal
+02/01/2020,Liverpool,Sheffield Utd
+02/01/2020,Sheffield Utd,Liverpool
+10/01/2020,Sheffield Utd,West Ham
+10/01/2020,West Ham,Sheffield Utd
+11/01/2020,Crystal Palace,Arsenal
+11/01/2020,Chelsea,Burnley
+11/01/2020,Everton,Brighton
+11/01/2020,Leicester,Southampton
+11/01/2020,Man Utd,Norwich
+11/01/2020,Wolves,Newcastle
+11/01/2020,Spurs,Liverpool
+11/01/2020,Arsenal,Crystal Palace
+11/01/2020,Burnley,Chelsea
+11/01/2020,Brighton,Everton
+11/01/2020,Southampton,Leicester
+11/01/2020,Norwich,Man Utd
+11/01/2020,Newcastle,Wolves
+11/01/2020,Liverpool,Spurs
+12/01/2020,Bournemouth,Watford
+12/01/2020,Aston Villa,Man City
+12/01/2020,Watford,Bournemouth
+12/01/2020,Man City,Aston Villa
+18/01/2020,Watford,Spurs
+18/01/2020,Arsenal,Sheffield Utd
+18/01/2020,Brighton,Aston Villa
+18/01/2020,Man City,Crystal Palace
+18/01/2020,Norwich,Bournemouth
+18/01/2020,Southampton,Wolves
+18/01/2020,West Ham,Everton
+18/01/2020,Newcastle,Chelsea
+18/01/2020,Spurs,Watford
+18/01/2020,Sheffield Utd,Arsenal
+18/01/2020,Aston Villa,Brighton
+18/01/2020,Crystal Palace,Man City
+18/01/2020,Bournemouth,Norwich
+18/01/2020,Wolves,Southampton
+18/01/2020,Everton,West Ham
+18/01/2020,Chelsea,Newcastle
+19/01/2020,Burnley,Leicester
+19/01/2020,Liverpool,Man Utd
+19/01/2020,Leicester,Burnley
+19/01/2020,Man Utd,Liverpool
+21/01/2020,Aston Villa,Watford
+21/01/2020,Bournemouth,Brighton
+21/01/2020,Crystal Palace,Southampton
+21/01/2020,Everton,Newcastle
+21/01/2020,Sheffield Utd,Man City
+21/01/2020,Chelsea,Arsenal
+21/01/2020,Watford,Aston Villa
+21/01/2020,Brighton,Bournemouth
+21/01/2020,Southampton,Crystal Palace
+21/01/2020,Newcastle,Everton
+21/01/2020,Man City,Sheffield Utd
+21/01/2020,Arsenal,Chelsea
+22/01/2020,Leicester,West Ham
+22/01/2020,Spurs,Norwich
+22/01/2020,Man Utd,Burnley
+22/01/2020,West Ham,Leicester
+22/01/2020,Norwich,Spurs
+22/01/2020,Burnley,Man Utd
+23/01/2020,Wolves,Liverpool
+23/01/2020,Liverpool,Wolves
+29/01/2020,West Ham,Liverpool
+29/01/2020,Liverpool,West Ham
+01/02/2020,Leicester,Chelsea
+01/02/2020,Bournemouth,Aston Villa
+01/02/2020,Crystal Palace,Sheffield Utd
+01/02/2020,Liverpool,Southampton
+01/02/2020,Newcastle,Norwich
+01/02/2020,Watford,Everton
+01/02/2020,West Ham,Brighton
+01/02/2020,Man Utd,Wolves
+01/02/2020,Chelsea,Leicester
+01/02/2020,Aston Villa,Bournemouth
+01/02/2020,Sheffield Utd,Crystal Palace
+01/02/2020,Southampton,Liverpool
+01/02/2020,Norwich,Newcastle
+01/02/2020,Everton,Watford
+01/02/2020,Brighton,West Ham
+01/02/2020,Wolves,Man Utd
+02/02/2020,Burnley,Arsenal
+02/02/2020,Spurs,Man City
+02/02/2020,Arsenal,Burnley
+02/02/2020,Man City,Spurs
+08/02/2020,Everton,Crystal Palace
+08/02/2020,Brighton,Watford
+08/02/2020,Crystal Palace,Everton
+08/02/2020,Watford,Brighton
+09/02/2020,Sheffield Utd,Bournemouth
+09/02/2020,Bournemouth,Sheffield Utd
+14/02/2020,Wolves,Leicester
+14/02/2020,Leicester,Wolves
+15/02/2020,Southampton,Burnley
+15/02/2020,Norwich,Liverpool
+15/02/2020,Burnley,Southampton
+15/02/2020,Liverpool,Norwich
+16/02/2020,Aston Villa,Spurs
+16/02/2020,Arsenal,Newcastle
+16/02/2020,Spurs,Aston Villa
+16/02/2020,Newcastle,Arsenal
+17/02/2020,Chelsea,Man Utd
+17/02/2020,Man Utd,Chelsea
+19/02/2020,Man City,West Ham
+19/02/2020,West Ham,Man City
+22/02/2020,Chelsea,Spurs
+22/02/2020,Burnley,Bournemouth
+22/02/2020,Crystal Palace,Newcastle
+22/02/2020,Sheffield Utd,Brighton
+22/02/2020,Southampton,Aston Villa
+22/02/2020,Leicester,Man City
+22/02/2020,Spurs,Chelsea
+22/02/2020,Bournemouth,Burnley
+22/02/2020,Newcastle,Crystal Palace
+22/02/2020,Brighton,Sheffield Utd
+22/02/2020,Aston Villa,Southampton
+22/02/2020,Man City,Leicester
+23/02/2020,Man Utd,Watford
+23/02/2020,Wolves,Norwich
+23/02/2020,Arsenal,Everton
+23/02/2020,Watford,Man Utd
+23/02/2020,Norwich,Wolves
+23/02/2020,Everton,Arsenal
+24/02/2020,Liverpool,West Ham
+24/02/2020,West Ham,Liverpool
+28/02/2020,Norwich,Leicester
+28/02/2020,Leicester,Norwich
+29/02/2020,Brighton,Crystal Palace
+29/02/2020,Bournemouth,Chelsea
+29/02/2020,Newcastle,Burnley
+29/02/2020,West Ham,Southampton
+29/02/2020,Watford,Liverpool
+29/02/2020,Crystal Palace,Brighton
+29/02/2020,Chelsea,Bournemouth
+29/02/2020,Burnley,Newcastle
+29/02/2020,Southampton,West Ham
+29/02/2020,Liverpool,Watford
+01/03/2020,Everton,Man Utd
+01/03/2020,Spurs,Wolves
+01/03/2020,Man Utd,Everton
+01/03/2020,Wolves,Spurs
+07/03/2020,Liverpool,Bournemouth
+07/03/2020,Arsenal,West Ham
+07/03/2020,Crystal Palace,Watford
+07/03/2020,Sheffield Utd,Norwich
+07/03/2020,Southampton,Newcastle
+07/03/2020,Wolves,Brighton
+07/03/2020,Burnley,Spurs
+07/03/2020,Bournemouth,Liverpool
+07/03/2020,West Ham,Arsenal
+07/03/2020,Watford,Crystal Palace
+07/03/2020,Norwich,Sheffield Utd
+07/03/2020,Newcastle,Southampton
+07/03/2020,Brighton,Wolves
+07/03/2020,Spurs,Burnley
+08/03/2020,Chelsea,Everton
+08/03/2020,Man Utd,Man City
+08/03/2020,Everton,Chelsea
+08/03/2020,Man City,Man Utd
+09/03/2020,Leicester,Aston Villa
+09/03/2020,Aston Villa,Leicester
+17/06/2020,Aston Villa,Sheffield Utd
+17/06/2020,Man City,Arsenal
+17/06/2020,Sheffield Utd,Aston Villa
+17/06/2020,Arsenal,Man City
+19/06/2020,Norwich,Southampton
+19/06/2020,Spurs,Man Utd
+19/06/2020,Southampton,Norwich
+19/06/2020,Man Utd,Spurs
+20/06/2020,Watford,Leicester
+20/06/2020,Brighton,Arsenal
+20/06/2020,West Ham,Wolves
+20/06/2020,Bournemouth,Crystal Palace
+20/06/2020,Leicester,Watford
+20/06/2020,Arsenal,Brighton
+20/06/2020,Wolves,West Ham
+20/06/2020,Crystal Palace,Bournemouth
+21/06/2020,Newcastle,Sheffield Utd
+21/06/2020,Aston Villa,Chelsea
+21/06/2020,Everton,Liverpool
+21/06/2020,Sheffield Utd,Newcastle
+21/06/2020,Chelsea,Aston Villa
+21/06/2020,Liverpool,Everton
+22/06/2020,Man City,Burnley
+22/06/2020,Burnley,Man City
+23/06/2020,Leicester,Brighton
+23/06/2020,Spurs,West Ham
+23/06/2020,Brighton,Leicester
+23/06/2020,West Ham,Spurs
+24/06/2020,Man Utd,Sheffield Utd
+24/06/2020,Newcastle,Aston Villa
+24/06/2020,Norwich,Everton
+24/06/2020,Wolves,Bournemouth
+24/06/2020,Liverpool,Crystal Palace
+24/06/2020,Sheffield Utd,Man Utd
+24/06/2020,Aston Villa,Newcastle
+24/06/2020,Everton,Norwich
+24/06/2020,Bournemouth,Wolves
+24/06/2020,Crystal Palace,Liverpool
+25/06/2020,Burnley,Watford
+25/06/2020,Southampton,Arsenal
+25/06/2020,Chelsea,Man City
+25/06/2020,Watford,Burnley
+25/06/2020,Arsenal,Southampton
+25/06/2020,Man City,Chelsea
+27/06/2020,Aston Villa,Wolves
+27/06/2020,Wolves,Aston Villa
+28/06/2020,Watford,Southampton
+28/06/2020,Southampton,Watford
+29/06/2020,Crystal Palace,Burnley
+29/06/2020,Burnley,Crystal Palace
+30/06/2020,Brighton,Man Utd
+30/06/2020,Man Utd,Brighton
+01/07/2020,Arsenal,Norwich
+01/07/2020,Bournemouth,Newcastle
+01/07/2020,Everton,Leicester
+01/07/2020,West Ham,Chelsea
+01/07/2020,Norwich,Arsenal
+01/07/2020,Newcastle,Bournemouth
+01/07/2020,Leicester,Everton
+01/07/2020,Chelsea,West Ham
+02/07/2020,Sheffield Utd,Spurs
+02/07/2020,Man City,Liverpool
+02/07/2020,Spurs,Sheffield Utd
+02/07/2020,Liverpool,Man City
+04/07/2020,Norwich,Brighton
+04/07/2020,Leicester,Crystal Palace
+04/07/2020,Man Utd,Bournemouth
+04/07/2020,Wolves,Arsenal
+04/07/2020,Chelsea,Watford
+04/07/2020,Brighton,Norwich
+04/07/2020,Crystal Palace,Leicester
+04/07/2020,Bournemouth,Man Utd
+04/07/2020,Arsenal,Wolves
+04/07/2020,Watford,Chelsea
+05/07/2020,Burnley,Sheffield Utd
+05/07/2020,Newcastle,West Ham
+05/07/2020,Liverpool,Aston Villa
+05/07/2020,Southampton,Man City
+05/07/2020,Sheffield Utd,Burnley
+05/07/2020,West Ham,Newcastle
+05/07/2020,Aston Villa,Liverpool
+05/07/2020,Man City,Southampton
+06/07/2020,Spurs,Everton
+06/07/2020,Everton,Spurs
+07/07/2020,Crystal Palace,Chelsea
+07/07/2020,Watford,Norwich
+07/07/2020,Arsenal,Leicester
+07/07/2020,Chelsea,Crystal Palace
+07/07/2020,Norwich,Watford
+07/07/2020,Leicester,Arsenal
+08/07/2020,Man City,Newcastle
+08/07/2020,Sheffield Utd,Wolves
+08/07/2020,West Ham,Burnley
+08/07/2020,Brighton,Liverpool
+08/07/2020,Newcastle,Man City
+08/07/2020,Wolves,Sheffield Utd
+08/07/2020,Burnley,West Ham
+08/07/2020,Liverpool,Brighton
+09/07/2020,Bournemouth,Spurs
+09/07/2020,Everton,Southampton
+09/07/2020,Aston Villa,Man Utd
+09/07/2020,Spurs,Bournemouth
+09/07/2020,Southampton,Everton
+09/07/2020,Man Utd,Aston Villa
+11/07/2020,Norwich,West Ham
+11/07/2020,Watford,Newcastle
+11/07/2020,Liverpool,Burnley
+11/07/2020,Sheffield Utd,Chelsea
+11/07/2020,Brighton,Man City
+11/07/2020,West Ham,Norwich
+11/07/2020,Newcastle,Watford
+11/07/2020,Burnley,Liverpool
+11/07/2020,Chelsea,Sheffield Utd
+11/07/2020,Man City,Brighton
+12/07/2020,Wolves,Everton
+12/07/2020,Aston Villa,Crystal Palace
+12/07/2020,Spurs,Arsenal
+12/07/2020,Bournemouth,Leicester
+12/07/2020,Everton,Wolves
+12/07/2020,Crystal Palace,Aston Villa
+12/07/2020,Arsenal,Spurs
+12/07/2020,Leicester,Bournemouth
+13/07/2020,Man Utd,Southampton
+13/07/2020,Southampton,Man Utd
+14/07/2020,Chelsea,Norwich
+14/07/2020,Norwich,Chelsea
+15/07/2020,Burnley,Wolves
+15/07/2020,Man City,Bournemouth
+15/07/2020,Newcastle,Spurs
+15/07/2020,Arsenal,Liverpool
+15/07/2020,Wolves,Burnley
+15/07/2020,Bournemouth,Man City
+15/07/2020,Spurs,Newcastle
+15/07/2020,Liverpool,Arsenal
+16/07/2020,Everton,Aston Villa
+16/07/2020,Leicester,Sheffield Utd
+16/07/2020,Crystal Palace,Man Utd
+16/07/2020,Southampton,Brighton
+16/07/2020,Aston Villa,Everton
+16/07/2020,Sheffield Utd,Leicester
+16/07/2020,Man Utd,Crystal Palace
+16/07/2020,Brighton,Southampton
+17/07/2020,West Ham,Watford
+17/07/2020,Watford,West Ham
+18/07/2020,Norwich,Burnley
+18/07/2020,Burnley,Norwich
+19/07/2020,Bournemouth,Southampton
+19/07/2020,Spurs,Leicester
+19/07/2020,Southampton,Bournemouth
+19/07/2020,Leicester,Spurs
+20/07/2020,Brighton,Newcastle
+20/07/2020,Sheffield Utd,Everton
+20/07/2020,Wolves,Crystal Palace
+20/07/2020,Newcastle,Brighton
+20/07/2020,Everton,Sheffield Utd
+20/07/2020,Crystal Palace,Wolves
+21/07/2020,Watford,Man City
+21/07/2020,Aston Villa,Arsenal
+21/07/2020,Man City,Watford
+21/07/2020,Arsenal,Aston Villa
+22/07/2020,Man Utd,West Ham
+22/07/2020,Liverpool,Chelsea
+22/07/2020,West Ham,Man Utd
+22/07/2020,Chelsea,Liverpool
+26/07/2020,Arsenal,Watford
+26/07/2020,Burnley,Brighton
+26/07/2020,Chelsea,Wolves
+26/07/2020,Crystal Palace,Spurs
+26/07/2020,Everton,Bournemouth
+26/07/2020,Leicester,Man Utd
+26/07/2020,Man City,Norwich
+26/07/2020,Newcastle,Liverpool
+26/07/2020,Southampton,Sheffield Utd
+26/07/2020,West Ham,Aston Villa
+26/07/2020,Watford,Arsenal
+26/07/2020,Brighton,Burnley
+26/07/2020,Wolves,Chelsea
+26/07/2020,Spurs,Crystal Palace
+26/07/2020,Bournemouth,Everton
+26/07/2020,Man Utd,Leicester
+26/07/2020,Norwich,Man City
+26/07/2020,Liverpool,Newcastle
+26/07/2020,Sheffield Utd,Southampton
+26/07/2020,Aston Villa,West Ham
+12/09/2020,Fulham,Arsenal
+12/09/2020,Crystal Palace,Southampton
+12/09/2020,Liverpool,Leeds
+12/09/2020,West Ham,Newcastle
+12/09/2020,Arsenal,Fulham
+12/09/2020,Southampton,Crystal Palace
+12/09/2020,Leeds,Liverpool
+12/09/2020,Newcastle,West Ham
+13/09/2020,West Brom,Leicester
+13/09/2020,Spurs,Everton
+13/09/2020,Leicester,West Brom
+13/09/2020,Everton,Spurs
+14/09/2020,Sheffield Utd,Wolves
+14/09/2020,Brighton,Chelsea
+14/09/2020,Wolves,Sheffield Utd
+14/09/2020,Chelsea,Brighton
+19/09/2020,Everton,West Brom
+19/09/2020,Leeds,Fulham
+19/09/2020,Man Utd,Crystal Palace
+19/09/2020,Arsenal,West Ham
+19/09/2020,West Brom,Everton
+19/09/2020,Fulham,Leeds
+19/09/2020,Crystal Palace,Man Utd
+19/09/2020,West Ham,Arsenal
+20/09/2020,Southampton,Spurs
+20/09/2020,Newcastle,Brighton
+20/09/2020,Chelsea,Liverpool
+20/09/2020,Leicester,Burnley
+20/09/2020,Spurs,Southampton
+20/09/2020,Brighton,Newcastle
+20/09/2020,Liverpool,Chelsea
+20/09/2020,Burnley,Leicester
+21/09/2020,Aston Villa,Sheffield Utd
+21/09/2020,Wolves,Man City
+21/09/2020,Sheffield Utd,Aston Villa
+21/09/2020,Man City,Wolves
+26/09/2020,Brighton,Man Utd
+26/09/2020,Crystal Palace,Everton
+26/09/2020,West Brom,Chelsea
+26/09/2020,Burnley,Southampton
+26/09/2020,Man Utd,Brighton
+26/09/2020,Everton,Crystal Palace
+26/09/2020,Chelsea,West Brom
+26/09/2020,Southampton,Burnley
+27/09/2020,Sheffield Utd,Leeds
+27/09/2020,Spurs,Newcastle
+27/09/2020,Man City,Leicester
+27/09/2020,West Ham,Wolves
+27/09/2020,Leeds,Sheffield Utd
+27/09/2020,Newcastle,Spurs
+27/09/2020,Leicester,Man City
+27/09/2020,Wolves,West Ham
+28/09/2020,Fulham,Aston Villa
+28/09/2020,Liverpool,Arsenal
+28/09/2020,Aston Villa,Fulham
+28/09/2020,Arsenal,Liverpool
+03/10/2020,Chelsea,Crystal Palace
+03/10/2020,Everton,Brighton
+03/10/2020,Leeds,Man City
+03/10/2020,Newcastle,Burnley
+03/10/2020,Crystal Palace,Chelsea
+03/10/2020,Brighton,Everton
+03/10/2020,Man City,Leeds
+03/10/2020,Burnley,Newcastle
+04/10/2020,Leicester,West Ham
+04/10/2020,Southampton,West Brom
+04/10/2020,Arsenal,Sheffield Utd
+04/10/2020,Wolves,Fulham
+04/10/2020,Man Utd,Spurs
+04/10/2020,Aston Villa,Liverpool
+04/10/2020,West Ham,Leicester
+04/10/2020,West Brom,Southampton
+04/10/2020,Sheffield Utd,Arsenal
+04/10/2020,Fulham,Wolves
+04/10/2020,Spurs,Man Utd
+04/10/2020,Liverpool,Aston Villa
+17/10/2020,Everton,Liverpool
+17/10/2020,Chelsea,Southampton
+17/10/2020,Man City,Arsenal
+17/10/2020,Newcastle,Man Utd
+17/10/2020,Liverpool,Everton
+17/10/2020,Southampton,Chelsea
+17/10/2020,Arsenal,Man City
+17/10/2020,Man Utd,Newcastle
+18/10/2020,Sheffield Utd,Fulham
+18/10/2020,Crystal Palace,Brighton
+18/10/2020,Spurs,West Ham
+18/10/2020,Leicester,Aston Villa
+18/10/2020,Fulham,Sheffield Utd
+18/10/2020,Brighton,Crystal Palace
+18/10/2020,West Ham,Spurs
+18/10/2020,Aston Villa,Leicester
+19/10/2020,West Brom,Burnley
+19/10/2020,Leeds,Wolves
+19/10/2020,Burnley,West Brom
+19/10/2020,Wolves,Leeds
+23/10/2020,Aston Villa,Leeds
+23/10/2020,Leeds,Aston Villa
+24/10/2020,West Ham,Man City
+24/10/2020,Fulham,Crystal Palace
+24/10/2020,Man Utd,Chelsea
+24/10/2020,Liverpool,Sheffield Utd
+24/10/2020,Man City,West Ham
+24/10/2020,Crystal Palace,Fulham
+24/10/2020,Chelsea,Man Utd
+24/10/2020,Sheffield Utd,Liverpool
+25/10/2020,Southampton,Everton
+25/10/2020,Wolves,Newcastle
+25/10/2020,Arsenal,Leicester
+25/10/2020,Everton,Southampton
+25/10/2020,Newcastle,Wolves
+25/10/2020,Leicester,Arsenal
+26/10/2020,Brighton,West Brom
+26/10/2020,Burnley,Spurs
+26/10/2020,West Brom,Brighton
+26/10/2020,Spurs,Burnley
+30/10/2020,Wolves,Crystal Palace
+30/10/2020,Crystal Palace,Wolves
+31/10/2020,Sheffield Utd,Man City
+31/10/2020,Burnley,Chelsea
+31/10/2020,Liverpool,West Ham
+31/10/2020,Man City,Sheffield Utd
+31/10/2020,Chelsea,Burnley
+31/10/2020,West Ham,Liverpool
+01/11/2020,Aston Villa,Southampton
+01/11/2020,Newcastle,Everton
+01/11/2020,Man Utd,Arsenal
+01/11/2020,Spurs,Brighton
+01/11/2020,Southampton,Aston Villa
+01/11/2020,Everton,Newcastle
+01/11/2020,Arsenal,Man Utd
+01/11/2020,Brighton,Spurs
+02/11/2020,Fulham,West Brom
+02/11/2020,Leeds,Leicester
+02/11/2020,West Brom,Fulham
+02/11/2020,Leicester,Leeds
+06/11/2020,Brighton,Burnley
+06/11/2020,Southampton,Newcastle
+06/11/2020,Burnley,Brighton
+06/11/2020,Newcastle,Southampton
+07/11/2020,Everton,Man Utd
+07/11/2020,Crystal Palace,Leeds
+07/11/2020,Chelsea,Sheffield Utd
+07/11/2020,West Ham,Fulham
+07/11/2020,Man Utd,Everton
+07/11/2020,Leeds,Crystal Palace
+07/11/2020,Sheffield Utd,Chelsea
+07/11/2020,Fulham,West Ham
+08/11/2020,West Brom,Spurs
+08/11/2020,Leicester,Wolves
+08/11/2020,Man City,Liverpool
+08/11/2020,Arsenal,Aston Villa
+08/11/2020,Spurs,West Brom
+08/11/2020,Wolves,Leicester
+08/11/2020,Liverpool,Man City
+08/11/2020,Aston Villa,Arsenal
+21/11/2020,Newcastle,Chelsea
+21/11/2020,Aston Villa,Brighton
+21/11/2020,Spurs,Man City
+21/11/2020,Man Utd,West Brom
+21/11/2020,Chelsea,Newcastle
+21/11/2020,Brighton,Aston Villa
+21/11/2020,Man City,Spurs
+21/11/2020,West Brom,Man Utd
+22/11/2020,Fulham,Everton
+22/11/2020,Sheffield Utd,West Ham
+22/11/2020,Leeds,Arsenal
+22/11/2020,Liverpool,Leicester
+22/11/2020,Everton,Fulham
+22/11/2020,West Ham,Sheffield Utd
+22/11/2020,Arsenal,Leeds
+22/11/2020,Leicester,Liverpool
+23/11/2020,Burnley,Crystal Palace
+23/11/2020,Wolves,Southampton
+23/11/2020,Crystal Palace,Burnley
+23/11/2020,Southampton,Wolves
+27/11/2020,Crystal Palace,Newcastle
+27/11/2020,Newcastle,Crystal Palace
+28/11/2020,Brighton,Liverpool
+28/11/2020,Man City,Burnley
+28/11/2020,Everton,Leeds
+28/11/2020,West Brom,Sheffield Utd
+28/11/2020,Liverpool,Brighton
+28/11/2020,Burnley,Man City
+28/11/2020,Leeds,Everton
+28/11/2020,Sheffield Utd,West Brom
+29/11/2020,Southampton,Man Utd
+29/11/2020,Chelsea,Spurs
+29/11/2020,Arsenal,Wolves
+29/11/2020,Man Utd,Southampton
+29/11/2020,Spurs,Chelsea
+29/11/2020,Wolves,Arsenal
+30/11/2020,Leicester,Fulham
+30/11/2020,West Ham,Aston Villa
+30/11/2020,Fulham,Leicester
+30/11/2020,Aston Villa,West Ham
+05/12/2020,Burnley,Everton
+05/12/2020,Man City,Fulham
+05/12/2020,West Ham,Man Utd
+05/12/2020,Chelsea,Leeds
+05/12/2020,Everton,Burnley
+05/12/2020,Fulham,Man City
+05/12/2020,Man Utd,West Ham
+05/12/2020,Leeds,Chelsea
+06/12/2020,West Brom,Crystal Palace
+06/12/2020,Sheffield Utd,Leicester
+06/12/2020,Spurs,Arsenal
+06/12/2020,Liverpool,Wolves
+06/12/2020,Crystal Palace,West Brom
+06/12/2020,Leicester,Sheffield Utd
+06/12/2020,Arsenal,Spurs
+06/12/2020,Wolves,Liverpool
+07/12/2020,Brighton,Southampton
+07/12/2020,Southampton,Brighton
+11/12/2020,Leeds,West Ham
+11/12/2020,West Ham,Leeds
+12/12/2020,Wolves,Aston Villa
+12/12/2020,Newcastle,West Brom
+12/12/2020,Man Utd,Man City
+12/12/2020,Everton,Chelsea
+12/12/2020,Aston Villa,Wolves
+12/12/2020,West Brom,Newcastle
+12/12/2020,Man City,Man Utd
+12/12/2020,Chelsea,Everton
+13/12/2020,Southampton,Sheffield Utd
+13/12/2020,Crystal Palace,Spurs
+13/12/2020,Fulham,Liverpool
+13/12/2020,Arsenal,Burnley
+13/12/2020,Leicester,Brighton
+13/12/2020,Sheffield Utd,Southampton
+13/12/2020,Spurs,Crystal Palace
+13/12/2020,Liverpool,Fulham
+13/12/2020,Burnley,Arsenal
+13/12/2020,Brighton,Leicester
+15/12/2020,Wolves,Chelsea
+15/12/2020,Man City,West Brom
+15/12/2020,Chelsea,Wolves
+15/12/2020,West Brom,Man City
+16/12/2020,Arsenal,Southampton
+16/12/2020,Leeds,Newcastle
+16/12/2020,Leicester,Everton
+16/12/2020,Fulham,Brighton
+16/12/2020,Liverpool,Spurs
+16/12/2020,West Ham,Crystal Palace
+16/12/2020,Southampton,Arsenal
+16/12/2020,Newcastle,Leeds
+16/12/2020,Everton,Leicester
+16/12/2020,Brighton,Fulham
+16/12/2020,Spurs,Liverpool
+16/12/2020,Crystal Palace,West Ham
+17/12/2020,Aston Villa,Burnley
+17/12/2020,Sheffield Utd,Man Utd
+17/12/2020,Burnley,Aston Villa
+17/12/2020,Man Utd,Sheffield Utd
+19/12/2020,Crystal Palace,Liverpool
+19/12/2020,Southampton,Man City
+19/12/2020,Everton,Arsenal
+19/12/2020,Newcastle,Fulham
+19/12/2020,Liverpool,Crystal Palace
+19/12/2020,Man City,Southampton
+19/12/2020,Arsenal,Everton
+19/12/2020,Fulham,Newcastle
+20/12/2020,Brighton,Sheffield Utd
+20/12/2020,Spurs,Leicester
+20/12/2020,Man Utd,Leeds
+20/12/2020,West Brom,Aston Villa
+20/12/2020,Sheffield Utd,Brighton
+20/12/2020,Leicester,Spurs
+20/12/2020,Leeds,Man Utd
+20/12/2020,Aston Villa,West Brom
+21/12/2020,Burnley,Wolves
+21/12/2020,Chelsea,West Ham
+21/12/2020,Wolves,Burnley
+21/12/2020,West Ham,Chelsea
+26/12/2020,Leicester,Man Utd
+26/12/2020,Aston Villa,Crystal Palace
+26/12/2020,Fulham,Southampton
+26/12/2020,Arsenal,Chelsea
+26/12/2020,Man City,Newcastle
+26/12/2020,Sheffield Utd,Everton
+26/12/2020,Man Utd,Leicester
+26/12/2020,Crystal Palace,Aston Villa
+26/12/2020,Southampton,Fulham
+26/12/2020,Chelsea,Arsenal
+26/12/2020,Newcastle,Man City
+26/12/2020,Everton,Sheffield Utd
+27/12/2020,Leeds,Burnley
+27/12/2020,West Ham,Brighton
+27/12/2020,Liverpool,West Brom
+27/12/2020,Wolves,Spurs
+27/12/2020,Burnley,Leeds
+27/12/2020,Brighton,West Ham
+27/12/2020,West Brom,Liverpool
+27/12/2020,Spurs,Wolves
+28/12/2020,Crystal Palace,Leicester
+28/12/2020,Chelsea,Aston Villa
+28/12/2020,Leicester,Crystal Palace
+28/12/2020,Aston Villa,Chelsea
+29/12/2020,Brighton,Arsenal
+29/12/2020,Burnley,Sheffield Utd
+29/12/2020,Southampton,West Ham
+29/12/2020,West Brom,Leeds
+29/12/2020,Man Utd,Wolves
+29/12/2020,Arsenal,Brighton
+29/12/2020,Sheffield Utd,Burnley
+29/12/2020,West Ham,Southampton
+29/12/2020,Leeds,West Brom
+29/12/2020,Wolves,Man Utd
+30/12/2020,Newcastle,Liverpool
+30/12/2020,Liverpool,Newcastle
+01/01/2021,Everton,West Ham
+01/01/2021,Man Utd,Aston Villa
+01/01/2021,West Ham,Everton
+01/01/2021,Aston Villa,Man Utd
+02/01/2021,Spurs,Leeds
+02/01/2021,Crystal Palace,Sheffield Utd
+02/01/2021,Brighton,Wolves
+02/01/2021,West Brom,Arsenal
+02/01/2021,Leeds,Spurs
+02/01/2021,Sheffield Utd,Crystal Palace
+02/01/2021,Wolves,Brighton
+02/01/2021,Arsenal,West Brom
+03/01/2021,Newcastle,Leicester
+03/01/2021,Chelsea,Man City
+03/01/2021,Leicester,Newcastle
+03/01/2021,Man City,Chelsea
+04/01/2021,Southampton,Liverpool
+04/01/2021,Liverpool,Southampton
+12/01/2021,Sheffield Utd,Newcastle
+12/01/2021,Burnley,Man Utd
+12/01/2021,Wolves,Everton
+12/01/2021,Newcastle,Sheffield Utd
+12/01/2021,Man Utd,Burnley
+12/01/2021,Everton,Wolves
+13/01/2021,Man City,Brighton
+13/01/2021,Spurs,Fulham
+13/01/2021,Brighton,Man City
+13/01/2021,Fulham,Spurs
+14/01/2021,Arsenal,Crystal Palace
+14/01/2021,Crystal Palace,Arsenal
+16/01/2021,Wolves,West Brom
+16/01/2021,Leeds,Brighton
+16/01/2021,West Ham,Burnley
+16/01/2021,Fulham,Chelsea
+16/01/2021,Leicester,Southampton
+16/01/2021,West Brom,Wolves
+16/01/2021,Brighton,Leeds
+16/01/2021,Burnley,West Ham
+16/01/2021,Chelsea,Fulham
+16/01/2021,Southampton,Leicester
+17/01/2021,Sheffield Utd,Spurs
+17/01/2021,Liverpool,Man Utd
+17/01/2021,Man City,Crystal Palace
+17/01/2021,Spurs,Sheffield Utd
+17/01/2021,Man Utd,Liverpool
+17/01/2021,Crystal Palace,Man City
+18/01/2021,Arsenal,Newcastle
+18/01/2021,Newcastle,Arsenal
+19/01/2021,West Ham,West Brom
+19/01/2021,Leicester,Chelsea
+19/01/2021,West Brom,West Ham
+19/01/2021,Chelsea,Leicester
+20/01/2021,Man City,Aston Villa
+20/01/2021,Fulham,Man Utd
+20/01/2021,Aston Villa,Man City
+20/01/2021,Man Utd,Fulham
+21/01/2021,Liverpool,Burnley
+21/01/2021,Burnley,Liverpool
+23/01/2021,Aston Villa,Newcastle
+23/01/2021,Newcastle,Aston Villa
+26/01/2021,Crystal Palace,West Ham
+26/01/2021,Newcastle,Leeds
+26/01/2021,Southampton,Arsenal
+26/01/2021,West Brom,Man City
+26/01/2021,West Ham,Crystal Palace
+26/01/2021,Leeds,Newcastle
+26/01/2021,Arsenal,Southampton
+26/01/2021,Man City,West Brom
+27/01/2021,Burnley,Aston Villa
+27/01/2021,Chelsea,Wolves
+27/01/2021,Brighton,Fulham
+27/01/2021,Everton,Leicester
+27/01/2021,Man Utd,Sheffield Utd
+27/01/2021,Aston Villa,Burnley
+27/01/2021,Wolves,Chelsea
+27/01/2021,Fulham,Brighton
+27/01/2021,Leicester,Everton
+27/01/2021,Sheffield Utd,Man Utd
+28/01/2021,Spurs,Liverpool
+28/01/2021,Liverpool,Spurs
+30/01/2021,Everton,Newcastle
+30/01/2021,Crystal Palace,Wolves
+30/01/2021,Man City,Sheffield Utd
+30/01/2021,West Brom,Fulham
+30/01/2021,Arsenal,Man Utd
+30/01/2021,Southampton,Aston Villa
+30/01/2021,Newcastle,Everton
+30/01/2021,Wolves,Crystal Palace
+30/01/2021,Sheffield Utd,Man City
+30/01/2021,Fulham,West Brom
+30/01/2021,Man Utd,Arsenal
+30/01/2021,Aston Villa,Southampton
+31/01/2021,Chelsea,Burnley
+31/01/2021,Leicester,Leeds
+31/01/2021,West Ham,Liverpool
+31/01/2021,Brighton,Spurs
+31/01/2021,Burnley,Chelsea
+31/01/2021,Leeds,Leicester
+31/01/2021,Liverpool,West Ham
+31/01/2021,Spurs,Brighton
+02/02/2021,Sheffield Utd,West Brom
+02/02/2021,Wolves,Arsenal
+02/02/2021,Man Utd,Southampton
+02/02/2021,Newcastle,Crystal Palace
+02/02/2021,West Brom,Sheffield Utd
+02/02/2021,Arsenal,Wolves
+02/02/2021,Southampton,Man Utd
+02/02/2021,Crystal Palace,Newcastle
+03/02/2021,Burnley,Man City
+03/02/2021,Fulham,Leicester
+03/02/2021,Leeds,Everton
+03/02/2021,Aston Villa,West Ham
+03/02/2021,Liverpool,Brighton
+03/02/2021,Man City,Burnley
+03/02/2021,Leicester,Fulham
+03/02/2021,Everton,Leeds
+03/02/2021,West Ham,Aston Villa
+03/02/2021,Brighton,Liverpool
+04/02/2021,Spurs,Chelsea
+04/02/2021,Chelsea,Spurs
+06/02/2021,Aston Villa,Arsenal
+06/02/2021,Burnley,Brighton
+06/02/2021,Newcastle,Southampton
+06/02/2021,Fulham,West Ham
+06/02/2021,Man Utd,Everton
+06/02/2021,Arsenal,Aston Villa
+06/02/2021,Brighton,Burnley
+06/02/2021,Southampton,Newcastle
+06/02/2021,West Ham,Fulham
+06/02/2021,Everton,Man Utd
+07/02/2021,Spurs,West Brom
+07/02/2021,Wolves,Leicester
+07/02/2021,Liverpool,Man City
+07/02/2021,Sheffield Utd,Chelsea
+07/02/2021,West Brom,Spurs
+07/02/2021,Leicester,Wolves
+07/02/2021,Man City,Liverpool
+07/02/2021,Chelsea,Sheffield Utd
+08/02/2021,Leeds,Crystal Palace
+08/02/2021,Crystal Palace,Leeds
+13/02/2021,Leicester,Liverpool
+13/02/2021,Crystal Palace,Burnley
+13/02/2021,Man City,Spurs
+13/02/2021,Brighton,Aston Villa
+13/02/2021,Liverpool,Leicester
+13/02/2021,Burnley,Crystal Palace
+13/02/2021,Spurs,Man City
+13/02/2021,Aston Villa,Brighton
+14/02/2021,Southampton,Wolves
+14/02/2021,West Brom,Man Utd
+14/02/2021,Arsenal,Leeds
+14/02/2021,Everton,Fulham
+14/02/2021,Wolves,Southampton
+14/02/2021,Man Utd,West Brom
+14/02/2021,Leeds,Arsenal
+14/02/2021,Fulham,Everton
+15/02/2021,West Ham,Sheffield Utd
+15/02/2021,Chelsea,Newcastle
+15/02/2021,Sheffield Utd,West Ham
+15/02/2021,Newcastle,Chelsea
+17/02/2021,Burnley,Fulham
+17/02/2021,Everton,Man City
+17/02/2021,Fulham,Burnley
+17/02/2021,Man City,Everton
+19/02/2021,Wolves,Leeds
+19/02/2021,Leeds,Wolves
+20/02/2021,Southampton,Chelsea
+20/02/2021,Burnley,West Brom
+20/02/2021,Liverpool,Everton
+20/02/2021,Fulham,Sheffield Utd
+20/02/2021,Chelsea,Southampton
+20/02/2021,West Brom,Burnley
+20/02/2021,Everton,Liverpool
+20/02/2021,Sheffield Utd,Fulham
+21/02/2021,West Ham,Spurs
+21/02/2021,Aston Villa,Leicester
+21/02/2021,Arsenal,Man City
+21/02/2021,Man Utd,Newcastle
+21/02/2021,Spurs,West Ham
+21/02/2021,Leicester,Aston Villa
+21/02/2021,Man City,Arsenal
+21/02/2021,Newcastle,Man Utd
+22/02/2021,Brighton,Crystal Palace
+22/02/2021,Crystal Palace,Brighton
+23/02/2021,Leeds,Southampton
+23/02/2021,Southampton,Leeds
+27/02/2021,Man City,West Ham
+27/02/2021,West Brom,Brighton
+27/02/2021,Leeds,Aston Villa
+27/02/2021,Newcastle,Wolves
+27/02/2021,West Ham,Man City
+27/02/2021,Brighton,West Brom
+27/02/2021,Aston Villa,Leeds
+27/02/2021,Wolves,Newcastle
+28/02/2021,Crystal Palace,Fulham
+28/02/2021,Leicester,Arsenal
+28/02/2021,Spurs,Burnley
+28/02/2021,Chelsea,Man Utd
+28/02/2021,Sheffield Utd,Liverpool
+28/02/2021,Fulham,Crystal Palace
+28/02/2021,Arsenal,Leicester
+28/02/2021,Burnley,Spurs
+28/02/2021,Man Utd,Chelsea
+28/02/2021,Liverpool,Sheffield Utd
+01/03/2021,Everton,Southampton
+01/03/2021,Southampton,Everton
+02/03/2021,Man City,Wolves
+02/03/2021,Wolves,Man City
+03/03/2021,Burnley,Leicester
+03/03/2021,Sheffield Utd,Aston Villa
+03/03/2021,Crystal Palace,Man Utd
+03/03/2021,Leicester,Burnley
+03/03/2021,Aston Villa,Sheffield Utd
+03/03/2021,Man Utd,Crystal Palace
+04/03/2021,Fulham,Spurs
+04/03/2021,West Brom,Everton
+04/03/2021,Liverpool,Chelsea
+04/03/2021,Spurs,Fulham
+04/03/2021,Everton,West Brom
+04/03/2021,Chelsea,Liverpool
+06/03/2021,Burnley,Arsenal
+06/03/2021,Sheffield Utd,Southampton
+06/03/2021,Aston Villa,Wolves
+06/03/2021,Brighton,Leicester
+06/03/2021,Arsenal,Burnley
+06/03/2021,Southampton,Sheffield Utd
+06/03/2021,Wolves,Aston Villa
+06/03/2021,Leicester,Brighton
+07/03/2021,West Brom,Newcastle
+07/03/2021,Liverpool,Fulham
+07/03/2021,Man City,Man Utd
+07/03/2021,Spurs,Crystal Palace
+07/03/2021,Newcastle,West Brom
+07/03/2021,Fulham,Liverpool
+07/03/2021,Man Utd,Man City
+07/03/2021,Crystal Palace,Spurs
+08/03/2021,Chelsea,Everton
+08/03/2021,West Ham,Leeds
+08/03/2021,Everton,Chelsea
+08/03/2021,Leeds,West Ham
+10/03/2021,Man City,Southampton
+10/03/2021,Southampton,Man City
+12/03/2021,Newcastle,Aston Villa
+12/03/2021,Aston Villa,Newcastle
+13/03/2021,Leeds,Chelsea
+13/03/2021,Crystal Palace,West Brom
+13/03/2021,Everton,Burnley
+13/03/2021,Fulham,Man City
+13/03/2021,Chelsea,Leeds
+13/03/2021,West Brom,Crystal Palace
+13/03/2021,Burnley,Everton
+13/03/2021,Man City,Fulham
+14/03/2021,Southampton,Brighton
+14/03/2021,Leicester,Sheffield Utd
+14/03/2021,Arsenal,Spurs
+14/03/2021,Man Utd,West Ham
+14/03/2021,Brighton,Southampton
+14/03/2021,Sheffield Utd,Leicester
+14/03/2021,Spurs,Arsenal
+14/03/2021,West Ham,Man Utd
+15/03/2021,Wolves,Liverpool
+15/03/2021,Liverpool,Wolves
+19/03/2021,Fulham,Leeds
+19/03/2021,Leeds,Fulham
+20/03/2021,Brighton,Newcastle
+20/03/2021,Newcastle,Brighton
+21/03/2021,West Ham,Arsenal
+21/03/2021,Aston Villa,Spurs
+21/03/2021,Arsenal,West Ham
+21/03/2021,Spurs,Aston Villa
+03/04/2021,Chelsea,West Brom
+03/04/2021,Leeds,Sheffield Utd
+03/04/2021,Leicester,Man City
+03/04/2021,Arsenal,Liverpool
+03/04/2021,West Brom,Chelsea
+03/04/2021,Sheffield Utd,Leeds
+03/04/2021,Man City,Leicester
+03/04/2021,Liverpool,Arsenal
+04/04/2021,Southampton,Burnley
+04/04/2021,Newcastle,Spurs
+04/04/2021,Aston Villa,Fulham
+04/04/2021,Man Utd,Brighton
+04/04/2021,Burnley,Southampton
+04/04/2021,Spurs,Newcastle
+04/04/2021,Fulham,Aston Villa
+04/04/2021,Brighton,Man Utd
+05/04/2021,Everton,Crystal Palace
+05/04/2021,Wolves,West Ham
+05/04/2021,Crystal Palace,Everton
+05/04/2021,West Ham,Wolves
+09/04/2021,Fulham,Wolves
+09/04/2021,Wolves,Fulham
+10/04/2021,Man City,Leeds
+10/04/2021,Liverpool,Aston Villa
+10/04/2021,Crystal Palace,Chelsea
+10/04/2021,Leeds,Man City
+10/04/2021,Aston Villa,Liverpool
+10/04/2021,Chelsea,Crystal Palace
+11/04/2021,Burnley,Newcastle
+11/04/2021,West Ham,Leicester
+11/04/2021,Spurs,Man Utd
+11/04/2021,Sheffield Utd,Arsenal
+11/04/2021,Newcastle,Burnley
+11/04/2021,Leicester,West Ham
+11/04/2021,Man Utd,Spurs
+11/04/2021,Arsenal,Sheffield Utd
+12/04/2021,West Brom,Southampton
+12/04/2021,Brighton,Everton
+12/04/2021,Southampton,West Brom
+12/04/2021,Everton,Brighton
+16/04/2021,Everton,Spurs
+16/04/2021,Spurs,Everton
+17/04/2021,Newcastle,West Ham
+17/04/2021,Wolves,Sheffield Utd
+17/04/2021,West Ham,Newcastle
+17/04/2021,Sheffield Utd,Wolves
+18/04/2021,Arsenal,Fulham
+18/04/2021,Man Utd,Burnley
+18/04/2021,Fulham,Arsenal
+18/04/2021,Burnley,Man Utd
+19/04/2021,Leeds,Liverpool
+19/04/2021,Liverpool,Leeds
+20/04/2021,Chelsea,Brighton
+20/04/2021,Brighton,Chelsea
+21/04/2021,Spurs,Southampton
+21/04/2021,Aston Villa,Man City
+21/04/2021,Southampton,Spurs
+21/04/2021,Man City,Aston Villa
+22/04/2021,Leicester,West Brom
+22/04/2021,West Brom,Leicester
+23/04/2021,Arsenal,Everton
+23/04/2021,Everton,Arsenal
+24/04/2021,Liverpool,Newcastle
+24/04/2021,West Ham,Chelsea
+24/04/2021,Sheffield Utd,Brighton
+24/04/2021,Newcastle,Liverpool
+24/04/2021,Chelsea,West Ham
+24/04/2021,Brighton,Sheffield Utd
+25/04/2021,Wolves,Burnley
+25/04/2021,Leeds,Man Utd
+25/04/2021,Aston Villa,West Brom
+25/04/2021,Burnley,Wolves
+25/04/2021,Man Utd,Leeds
+25/04/2021,West Brom,Aston Villa
+26/04/2021,Leicester,Crystal Palace
+26/04/2021,Crystal Palace,Leicester
+30/04/2021,Southampton,Leicester
+30/04/2021,Leicester,Southampton
+01/05/2021,Crystal Palace,Man City
+01/05/2021,Brighton,Leeds
+01/05/2021,Chelsea,Fulham
+01/05/2021,Everton,Aston Villa
+01/05/2021,Man City,Crystal Palace
+01/05/2021,Leeds,Brighton
+01/05/2021,Fulham,Chelsea
+01/05/2021,Aston Villa,Everton
+02/05/2021,Newcastle,Arsenal
+02/05/2021,Spurs,Sheffield Utd
+02/05/2021,Arsenal,Newcastle
+02/05/2021,Sheffield Utd,Spurs
+03/05/2021,West Brom,Wolves
+03/05/2021,Burnley,West Ham
+03/05/2021,Wolves,West Brom
+03/05/2021,West Ham,Burnley
+07/05/2021,Leicester,Newcastle
+07/05/2021,Newcastle,Leicester
+08/05/2021,Leeds,Spurs
+08/05/2021,Sheffield Utd,Crystal Palace
+08/05/2021,Man City,Chelsea
+08/05/2021,Liverpool,Southampton
+08/05/2021,Spurs,Leeds
+08/05/2021,Crystal Palace,Sheffield Utd
+08/05/2021,Chelsea,Man City
+08/05/2021,Southampton,Liverpool
+09/05/2021,Wolves,Brighton
+09/05/2021,Aston Villa,Man Utd
+09/05/2021,West Ham,Everton
+09/05/2021,Arsenal,West Brom
+09/05/2021,Brighton,Wolves
+09/05/2021,Man Utd,Aston Villa
+09/05/2021,Everton,West Ham
+09/05/2021,West Brom,Arsenal
+10/05/2021,Fulham,Burnley
+10/05/2021,Burnley,Fulham
+11/05/2021,Man Utd,Leicester
+11/05/2021,Southampton,Crystal Palace
+11/05/2021,Leicester,Man Utd
+11/05/2021,Crystal Palace,Southampton
+12/05/2021,Chelsea,Arsenal
+12/05/2021,Arsenal,Chelsea
+13/05/2021,Aston Villa,Everton
+13/05/2021,Man Utd,Liverpool
+13/05/2021,Everton,Aston Villa
+13/05/2021,Liverpool,Man Utd
+14/05/2021,Newcastle,Man City
+14/05/2021,Man City,Newcastle
+15/05/2021,Burnley,Leeds
+15/05/2021,Southampton,Fulham
+15/05/2021,Brighton,West Ham
+15/05/2021,Leeds,Burnley
+15/05/2021,Fulham,Southampton
+15/05/2021,West Ham,Brighton
+16/05/2021,Crystal Palace,Aston Villa
+16/05/2021,Spurs,Wolves
+16/05/2021,West Brom,Liverpool
+16/05/2021,Everton,Sheffield Utd
+16/05/2021,Aston Villa,Crystal Palace
+16/05/2021,Wolves,Spurs
+16/05/2021,Liverpool,West Brom
+16/05/2021,Sheffield Utd,Everton
+18/05/2021,Man Utd,Fulham
+18/05/2021,Southampton,Leeds
+18/05/2021,Brighton,Man City
+18/05/2021,Chelsea,Leicester
+18/05/2021,Fulham,Man Utd
+18/05/2021,Leeds,Southampton
+18/05/2021,Man City,Brighton
+18/05/2021,Leicester,Chelsea
+19/05/2021,Everton,Wolves
+19/05/2021,Newcastle,Sheffield Utd
+19/05/2021,Spurs,Aston Villa
+19/05/2021,Crystal Palace,Arsenal
+19/05/2021,Burnley,Liverpool
+19/05/2021,West Brom,West Ham
+19/05/2021,Wolves,Everton
+19/05/2021,Sheffield Utd,Newcastle
+19/05/2021,Aston Villa,Spurs
+19/05/2021,Arsenal,Crystal Palace
+19/05/2021,Liverpool,Burnley
+19/05/2021,West Ham,West Brom
+23/05/2021,Arsenal,Brighton
+23/05/2021,Aston Villa,Chelsea
+23/05/2021,Fulham,Newcastle
+23/05/2021,Leeds,West Brom
+23/05/2021,Leicester,Spurs
+23/05/2021,Liverpool,Crystal Palace
+23/05/2021,Man City,Everton
+23/05/2021,Sheffield Utd,Burnley
+23/05/2021,West Ham,Southampton
+23/05/2021,Wolves,Man Utd
+23/05/2021,Brighton,Arsenal
+23/05/2021,Chelsea,Aston Villa
+23/05/2021,Newcastle,Fulham
+23/05/2021,West Brom,Leeds
+23/05/2021,Spurs,Leicester
+23/05/2021,Crystal Palace,Liverpool
+23/05/2021,Everton,Man City
+23/05/2021,Burnley,Sheffield Utd
+23/05/2021,Southampton,West Ham
+23/05/2021,Man Utd,Wolves
+13/08/2021,Brentford,Arsenal
+13/08/2021,Arsenal,Brentford
+14/08/2021,Man Utd,Leeds
+14/08/2021,Burnley,Brighton
+14/08/2021,Chelsea,Crystal Palace
+14/08/2021,Everton,Southampton
+14/08/2021,Leicester,Wolves
+14/08/2021,Watford,Aston Villa
+14/08/2021,Norwich,Liverpool
+14/08/2021,Leeds,Man Utd
+14/08/2021,Brighton,Burnley
+14/08/2021,Crystal Palace,Chelsea
+14/08/2021,Southampton,Everton
+14/08/2021,Wolves,Leicester
+14/08/2021,Aston Villa,Watford
+14/08/2021,Liverpool,Norwich
+15/08/2021,Newcastle,West Ham
+15/08/2021,Spurs,Man City
+15/08/2021,West Ham,Newcastle
+15/08/2021,Man City,Spurs
+21/08/2021,Liverpool,Burnley
+21/08/2021,Aston Villa,Newcastle
+21/08/2021,Crystal Palace,Brentford
+21/08/2021,Leeds,Everton
+21/08/2021,Man City,Norwich
+21/08/2021,Brighton,Watford
+21/08/2021,Burnley,Liverpool
+21/08/2021,Newcastle,Aston Villa
+21/08/2021,Brentford,Crystal Palace
+21/08/2021,Everton,Leeds
+21/08/2021,Norwich,Man City
+21/08/2021,Watford,Brighton
+22/08/2021,Southampton,Man Utd
+22/08/2021,Wolves,Spurs
+22/08/2021,Arsenal,Chelsea
+22/08/2021,Man Utd,Southampton
+22/08/2021,Spurs,Wolves
+22/08/2021,Chelsea,Arsenal
+23/08/2021,West Ham,Leicester
+23/08/2021,Leicester,West Ham
+28/08/2021,Man City,Arsenal
+28/08/2021,Aston Villa,Brentford
+28/08/2021,Brighton,Everton
+28/08/2021,Newcastle,Southampton
+28/08/2021,Norwich,Leicester
+28/08/2021,West Ham,Crystal Palace
+28/08/2021,Liverpool,Chelsea
+28/08/2021,Arsenal,Man City
+28/08/2021,Brentford,Aston Villa
+28/08/2021,Everton,Brighton
+28/08/2021,Southampton,Newcastle
+28/08/2021,Leicester,Norwich
+28/08/2021,Crystal Palace,West Ham
+28/08/2021,Chelsea,Liverpool
+29/08/2021,Burnley,Leeds
+29/08/2021,Spurs,Watford
+29/08/2021,Wolves,Man Utd
+29/08/2021,Leeds,Burnley
+29/08/2021,Watford,Spurs
+29/08/2021,Man Utd,Wolves
+11/09/2021,Crystal Palace,Spurs
+11/09/2021,Arsenal,Norwich
+11/09/2021,Brentford,Brighton
+11/09/2021,Leicester,Man City
+11/09/2021,Man Utd,Newcastle
+11/09/2021,Southampton,West Ham
+11/09/2021,Watford,Wolves
+11/09/2021,Chelsea,Aston Villa
+11/09/2021,Spurs,Crystal Palace
+11/09/2021,Norwich,Arsenal
+11/09/2021,Brighton,Brentford
+11/09/2021,Man City,Leicester
+11/09/2021,Newcastle,Man Utd
+11/09/2021,West Ham,Southampton
+11/09/2021,Wolves,Watford
+11/09/2021,Aston Villa,Chelsea
+12/09/2021,Leeds,Liverpool
+12/09/2021,Liverpool,Leeds
+13/09/2021,Everton,Burnley
+13/09/2021,Burnley,Everton
+17/09/2021,Newcastle,Leeds
+17/09/2021,Leeds,Newcastle
+18/09/2021,Wolves,Brentford
+18/09/2021,Burnley,Arsenal
+18/09/2021,Liverpool,Crystal Palace
+18/09/2021,Man City,Southampton
+18/09/2021,Norwich,Watford
+18/09/2021,Aston Villa,Everton
+18/09/2021,Brentford,Wolves
+18/09/2021,Arsenal,Burnley
+18/09/2021,Crystal Palace,Liverpool
+18/09/2021,Southampton,Man City
+18/09/2021,Watford,Norwich
+18/09/2021,Everton,Aston Villa
+19/09/2021,Brighton,Leicester
+19/09/2021,West Ham,Man Utd
+19/09/2021,Spurs,Chelsea
+19/09/2021,Leicester,Brighton
+19/09/2021,Man Utd,West Ham
+19/09/2021,Chelsea,Spurs
+25/09/2021,Chelsea,Man City
+25/09/2021,Man Utd,Aston Villa
+25/09/2021,Everton,Norwich
+25/09/2021,Leeds,West Ham
+25/09/2021,Leicester,Burnley
+25/09/2021,Watford,Newcastle
+25/09/2021,Brentford,Liverpool
+25/09/2021,Man City,Chelsea
+25/09/2021,Aston Villa,Man Utd
+25/09/2021,Norwich,Everton
+25/09/2021,West Ham,Leeds
+25/09/2021,Burnley,Leicester
+25/09/2021,Newcastle,Watford
+25/09/2021,Liverpool,Brentford
+26/09/2021,Southampton,Wolves
+26/09/2021,Arsenal,Spurs
+26/09/2021,Wolves,Southampton
+26/09/2021,Spurs,Arsenal
+27/09/2021,Crystal Palace,Brighton
+27/09/2021,Brighton,Crystal Palace
+02/10/2021,Man Utd,Everton
+02/10/2021,Burnley,Norwich
+02/10/2021,Chelsea,Southampton
+02/10/2021,Leeds,Watford
+02/10/2021,Wolves,Newcastle
+02/10/2021,Brighton,Arsenal
+02/10/2021,Everton,Man Utd
+02/10/2021,Norwich,Burnley
+02/10/2021,Southampton,Chelsea
+02/10/2021,Watford,Leeds
+02/10/2021,Newcastle,Wolves
+02/10/2021,Arsenal,Brighton
+03/10/2021,Crystal Palace,Leicester
+03/10/2021,Spurs,Aston Villa
+03/10/2021,West Ham,Brentford
+03/10/2021,Liverpool,Man City
+03/10/2021,Leicester,Crystal Palace
+03/10/2021,Aston Villa,Spurs
+03/10/2021,Brentford,West Ham
+03/10/2021,Man City,Liverpool
+16/10/2021,Watford,Liverpool
+16/10/2021,Aston Villa,Wolves
+16/10/2021,Leicester,Man Utd
+16/10/2021,Man City,Burnley
+16/10/2021,Norwich,Brighton
+16/10/2021,Southampton,Leeds
+16/10/2021,Brentford,Chelsea
+16/10/2021,Liverpool,Watford
+16/10/2021,Wolves,Aston Villa
+16/10/2021,Man Utd,Leicester
+16/10/2021,Burnley,Man City
+16/10/2021,Brighton,Norwich
+16/10/2021,Leeds,Southampton
+16/10/2021,Chelsea,Brentford
+17/10/2021,Everton,West Ham
+17/10/2021,Newcastle,Spurs
+17/10/2021,West Ham,Everton
+17/10/2021,Spurs,Newcastle
+18/10/2021,Arsenal,Crystal Palace
+18/10/2021,Crystal Palace,Arsenal
+22/10/2021,Arsenal,Aston Villa
+22/10/2021,Aston Villa,Arsenal
+23/10/2021,Chelsea,Norwich
+23/10/2021,Crystal Palace,Newcastle
+23/10/2021,Everton,Watford
+23/10/2021,Leeds,Wolves
+23/10/2021,Southampton,Burnley
+23/10/2021,Brighton,Man City
+23/10/2021,Norwich,Chelsea
+23/10/2021,Newcastle,Crystal Palace
+23/10/2021,Watford,Everton
+23/10/2021,Wolves,Leeds
+23/10/2021,Burnley,Southampton
+23/10/2021,Man City,Brighton
+24/10/2021,Brentford,Leicester
+24/10/2021,West Ham,Spurs
+24/10/2021,Man Utd,Liverpool
+24/10/2021,Leicester,Brentford
+24/10/2021,Spurs,West Ham
+24/10/2021,Liverpool,Man Utd
+30/10/2021,Leicester,Arsenal
+30/10/2021,Burnley,Brentford
+30/10/2021,Liverpool,Brighton
+30/10/2021,Man City,Crystal Palace
+30/10/2021,Newcastle,Chelsea
+30/10/2021,Watford,Southampton
+30/10/2021,Spurs,Man Utd
+30/10/2021,Arsenal,Leicester
+30/10/2021,Brentford,Burnley
+30/10/2021,Brighton,Liverpool
+30/10/2021,Crystal Palace,Man City
+30/10/2021,Chelsea,Newcastle
+30/10/2021,Southampton,Watford
+30/10/2021,Man Utd,Spurs
+31/10/2021,Norwich,Leeds
+31/10/2021,Aston Villa,West Ham
+31/10/2021,Leeds,Norwich
+31/10/2021,West Ham,Aston Villa
+01/11/2021,Wolves,Everton
+01/11/2021,Everton,Wolves
+05/11/2021,Southampton,Aston Villa
+05/11/2021,Aston Villa,Southampton
+06/11/2021,Man Utd,Man City
+06/11/2021,Brentford,Norwich
+06/11/2021,Chelsea,Burnley
+06/11/2021,Crystal Palace,Wolves
+06/11/2021,Brighton,Newcastle
+06/11/2021,Man City,Man Utd
+06/11/2021,Norwich,Brentford
+06/11/2021,Burnley,Chelsea
+06/11/2021,Wolves,Crystal Palace
+06/11/2021,Newcastle,Brighton
+07/11/2021,Arsenal,Watford
+07/11/2021,Everton,Spurs
+07/11/2021,Leeds,Leicester
+07/11/2021,West Ham,Liverpool
+07/11/2021,Watford,Arsenal
+07/11/2021,Spurs,Everton
+07/11/2021,Leicester,Leeds
+07/11/2021,Liverpool,West Ham
+20/11/2021,Leicester,Chelsea
+20/11/2021,Aston Villa,Brighton
+20/11/2021,Burnley,Crystal Palace
+20/11/2021,Newcastle,Brentford
+20/11/2021,Norwich,Southampton
+20/11/2021,Watford,Man Utd
+20/11/2021,Wolves,West Ham
+20/11/2021,Liverpool,Arsenal
+20/11/2021,Chelsea,Leicester
+20/11/2021,Brighton,Aston Villa
+20/11/2021,Crystal Palace,Burnley
+20/11/2021,Brentford,Newcastle
+20/11/2021,Southampton,Norwich
+20/11/2021,Man Utd,Watford
+20/11/2021,West Ham,Wolves
+20/11/2021,Arsenal,Liverpool
+21/11/2021,Man City,Everton
+21/11/2021,Spurs,Leeds
+21/11/2021,Everton,Man City
+21/11/2021,Leeds,Spurs
+27/11/2021,Arsenal,Newcastle
+27/11/2021,Crystal Palace,Aston Villa
+27/11/2021,Liverpool,Southampton
+27/11/2021,Norwich,Wolves
+27/11/2021,Brighton,Leeds
+27/11/2021,Newcastle,Arsenal
+27/11/2021,Aston Villa,Crystal Palace
+27/11/2021,Southampton,Liverpool
+27/11/2021,Wolves,Norwich
+27/11/2021,Leeds,Brighton
+28/11/2021,Brentford,Everton
+28/11/2021,Leicester,Watford
+28/11/2021,Man City,West Ham
+28/11/2021,Chelsea,Man Utd
+28/11/2021,Everton,Brentford
+28/11/2021,Watford,Leicester
+28/11/2021,West Ham,Man City
+28/11/2021,Man Utd,Chelsea
+30/11/2021,Newcastle,Norwich
+30/11/2021,Leeds,Crystal Palace
+30/11/2021,Norwich,Newcastle
+30/11/2021,Crystal Palace,Leeds
+01/12/2021,Southampton,Leicester
+01/12/2021,Watford,Chelsea
+01/12/2021,West Ham,Brighton
+01/12/2021,Wolves,Burnley
+01/12/2021,Aston Villa,Man City
+01/12/2021,Everton,Liverpool
+01/12/2021,Leicester,Southampton
+01/12/2021,Chelsea,Watford
+01/12/2021,Brighton,West Ham
+01/12/2021,Burnley,Wolves
+01/12/2021,Man City,Aston Villa
+01/12/2021,Liverpool,Everton
+02/12/2021,Spurs,Brentford
+02/12/2021,Man Utd,Arsenal
+02/12/2021,Brentford,Spurs
+02/12/2021,Arsenal,Man Utd
+04/12/2021,West Ham,Chelsea
+04/12/2021,Newcastle,Burnley
+04/12/2021,Southampton,Brighton
+04/12/2021,Wolves,Liverpool
+04/12/2021,Watford,Man City
+04/12/2021,Chelsea,West Ham
+04/12/2021,Burnley,Newcastle
+04/12/2021,Brighton,Southampton
+04/12/2021,Liverpool,Wolves
+04/12/2021,Man City,Watford
+05/12/2021,Leeds,Brentford
+05/12/2021,Man Utd,Crystal Palace
+05/12/2021,Spurs,Norwich
+05/12/2021,Aston Villa,Leicester
+05/12/2021,Brentford,Leeds
+05/12/2021,Crystal Palace,Man Utd
+05/12/2021,Norwich,Spurs
+05/12/2021,Leicester,Aston Villa
+06/12/2021,Everton,Arsenal
+06/12/2021,Arsenal,Everton
+10/12/2021,Brentford,Watford
+10/12/2021,Watford,Brentford
+11/12/2021,Man City,Wolves
+11/12/2021,Arsenal,Southampton
+11/12/2021,Chelsea,Leeds
+11/12/2021,Liverpool,Aston Villa
+11/12/2021,Norwich,Man Utd
+11/12/2021,Wolves,Man City
+11/12/2021,Southampton,Arsenal
+11/12/2021,Leeds,Chelsea
+11/12/2021,Aston Villa,Liverpool
+11/12/2021,Man Utd,Norwich
+12/12/2021,Burnley,West Ham
+12/12/2021,Leicester,Newcastle
+12/12/2021,Crystal Palace,Everton
+12/12/2021,West Ham,Burnley
+12/12/2021,Newcastle,Leicester
+12/12/2021,Everton,Crystal Palace
+14/12/2021,Norwich,Aston Villa
+14/12/2021,Man City,Leeds
+14/12/2021,Aston Villa,Norwich
+14/12/2021,Leeds,Man City
+15/12/2021,Brighton,Wolves
+15/12/2021,Crystal Palace,Southampton
+15/12/2021,Arsenal,West Ham
+15/12/2021,Wolves,Brighton
+15/12/2021,Southampton,Crystal Palace
+15/12/2021,West Ham,Arsenal
+16/12/2021,Chelsea,Everton
+16/12/2021,Liverpool,Newcastle
+16/12/2021,Everton,Chelsea
+16/12/2021,Newcastle,Liverpool
+18/12/2021,Leeds,Arsenal
+18/12/2021,Arsenal,Leeds
+19/12/2021,Newcastle,Man City
+19/12/2021,Wolves,Chelsea
+19/12/2021,Spurs,Liverpool
+19/12/2021,Man City,Newcastle
+19/12/2021,Chelsea,Wolves
+19/12/2021,Liverpool,Spurs
+26/12/2021,Man City,Leicester
+26/12/2021,Norwich,Arsenal
+26/12/2021,Spurs,Crystal Palace
+26/12/2021,West Ham,Southampton
+26/12/2021,Aston Villa,Chelsea
+26/12/2021,Brighton,Brentford
+26/12/2021,Leicester,Man City
+26/12/2021,Arsenal,Norwich
+26/12/2021,Crystal Palace,Spurs
+26/12/2021,Southampton,West Ham
+26/12/2021,Chelsea,Aston Villa
+26/12/2021,Brentford,Brighton
+27/12/2021,Newcastle,Man Utd
+27/12/2021,Man Utd,Newcastle
+28/12/2021,Crystal Palace,Norwich
+28/12/2021,Southampton,Spurs
+28/12/2021,Watford,West Ham
+28/12/2021,Leicester,Liverpool
+28/12/2021,Norwich,Crystal Palace
+28/12/2021,Spurs,Southampton
+28/12/2021,West Ham,Watford
+28/12/2021,Liverpool,Leicester
+29/12/2021,Chelsea,Brighton
+29/12/2021,Brentford,Man City
+29/12/2021,Brighton,Chelsea
+29/12/2021,Man City,Brentford
+30/12/2021,Man Utd,Burnley
+30/12/2021,Burnley,Man Utd
+01/01/2022,Arsenal,Man City
+01/01/2022,Watford,Spurs
+01/01/2022,Crystal Palace,West Ham
+01/01/2022,Man City,Arsenal
+01/01/2022,Spurs,Watford
+01/01/2022,West Ham,Crystal Palace
+02/01/2022,Brentford,Aston Villa
+02/01/2022,Everton,Brighton
+02/01/2022,Leeds,Burnley
+02/01/2022,Chelsea,Liverpool
+02/01/2022,Aston Villa,Brentford
+02/01/2022,Brighton,Everton
+02/01/2022,Burnley,Leeds
+02/01/2022,Liverpool,Chelsea
+03/01/2022,Man Utd,Wolves
+03/01/2022,Wolves,Man Utd
+11/01/2022,Southampton,Brentford
+11/01/2022,Brentford,Southampton
+12/01/2022,West Ham,Norwich
+12/01/2022,Norwich,West Ham
+14/01/2022,Brighton,Crystal Palace
+14/01/2022,Crystal Palace,Brighton
+15/01/2022,Man City,Chelsea
+15/01/2022,Newcastle,Watford
+15/01/2022,Norwich,Everton
+15/01/2022,Wolves,Southampton
+15/01/2022,Aston Villa,Man Utd
+15/01/2022,Chelsea,Man City
+15/01/2022,Watford,Newcastle
+15/01/2022,Everton,Norwich
+15/01/2022,Southampton,Wolves
+15/01/2022,Man Utd,Aston Villa
+16/01/2022,Liverpool,Brentford
+16/01/2022,West Ham,Leeds
+16/01/2022,Brentford,Liverpool
+16/01/2022,Leeds,West Ham
+18/01/2022,Brighton,Chelsea
+18/01/2022,Chelsea,Brighton
+19/01/2022,Leicester,Spurs
+19/01/2022,Brentford,Man Utd
+19/01/2022,Spurs,Leicester
+19/01/2022,Man Utd,Brentford
+21/01/2022,Watford,Norwich
+21/01/2022,Norwich,Watford
+22/01/2022,Everton,Aston Villa
+22/01/2022,Brentford,Wolves
+22/01/2022,Leeds,Newcastle
+22/01/2022,Man Utd,West Ham
+22/01/2022,Southampton,Man City
+22/01/2022,Aston Villa,Everton
+22/01/2022,Wolves,Brentford
+22/01/2022,Newcastle,Leeds
+22/01/2022,West Ham,Man Utd
+22/01/2022,Man City,Southampton
+23/01/2022,Arsenal,Burnley
+23/01/2022,Crystal Palace,Liverpool
+23/01/2022,Leicester,Brighton
+23/01/2022,Chelsea,Spurs
+23/01/2022,Burnley,Arsenal
+23/01/2022,Liverpool,Crystal Palace
+23/01/2022,Brighton,Leicester
+23/01/2022,Spurs,Chelsea
+05/02/2022,Burnley,Watford
+05/02/2022,Watford,Burnley
+08/02/2022,Newcastle,Everton
+08/02/2022,West Ham,Watford
+08/02/2022,Burnley,Man Utd
+08/02/2022,Everton,Newcastle
+08/02/2022,Watford,West Ham
+08/02/2022,Man Utd,Burnley
+09/02/2022,Man City,Brentford
+09/02/2022,Norwich,Crystal Palace
+09/02/2022,Spurs,Southampton
+09/02/2022,Aston Villa,Leeds
+09/02/2022,Brentford,Man City
+09/02/2022,Crystal Palace,Norwich
+09/02/2022,Southampton,Spurs
+09/02/2022,Leeds,Aston Villa
+10/02/2022,Liverpool,Leicester
+10/02/2022,Wolves,Arsenal
+10/02/2022,Leicester,Liverpool
+10/02/2022,Arsenal,Wolves
+12/02/2022,Man Utd,Southampton
+12/02/2022,Brentford,Crystal Palace
+12/02/2022,Everton,Leeds
+12/02/2022,Watford,Brighton
+12/02/2022,Norwich,Man City
+12/02/2022,Southampton,Man Utd
+12/02/2022,Crystal Palace,Brentford
+12/02/2022,Leeds,Everton
+12/02/2022,Brighton,Watford
+12/02/2022,Man City,Norwich
+13/02/2022,Burnley,Liverpool
+13/02/2022,Newcastle,Aston Villa
+13/02/2022,Spurs,Wolves
+13/02/2022,Leicester,West Ham
+13/02/2022,Liverpool,Burnley
+13/02/2022,Aston Villa,Newcastle
+13/02/2022,Wolves,Spurs
+13/02/2022,West Ham,Leicester
+15/02/2022,Man Utd,Brighton
+15/02/2022,Brighton,Man Utd
+19/02/2022,West Ham,Newcastle
+19/02/2022,Arsenal,Brentford
+19/02/2022,Aston Villa,Watford
+19/02/2022,Brighton,Burnley
+19/02/2022,Crystal Palace,Chelsea
+19/02/2022,Liverpool,Norwich
+19/02/2022,Southampton,Everton
+19/02/2022,Man City,Spurs
+19/02/2022,Newcastle,West Ham
+19/02/2022,Brentford,Arsenal
+19/02/2022,Watford,Aston Villa
+19/02/2022,Burnley,Brighton
+19/02/2022,Chelsea,Crystal Palace
+19/02/2022,Norwich,Liverpool
+19/02/2022,Everton,Southampton
+19/02/2022,Spurs,Man City
+20/02/2022,Leeds,Man Utd
+20/02/2022,Wolves,Leicester
+20/02/2022,Man Utd,Leeds
+20/02/2022,Leicester,Wolves
+23/02/2022,Burnley,Spurs
+23/02/2022,Watford,Crystal Palace
+23/02/2022,Liverpool,Leeds
+23/02/2022,Spurs,Burnley
+23/02/2022,Crystal Palace,Watford
+23/02/2022,Leeds,Liverpool
+24/02/2022,Arsenal,Wolves
+24/02/2022,Wolves,Arsenal
+25/02/2022,Southampton,Norwich
+25/02/2022,Norwich,Southampton
+26/02/2022,Leeds,Spurs
+26/02/2022,Brentford,Newcastle
+26/02/2022,Crystal Palace,Burnley
+26/02/2022,Man Utd,Watford
+26/02/2022,Brighton,Aston Villa
+26/02/2022,Everton,Man City
+26/02/2022,Spurs,Leeds
+26/02/2022,Newcastle,Brentford
+26/02/2022,Burnley,Crystal Palace
+26/02/2022,Watford,Man Utd
+26/02/2022,Aston Villa,Brighton
+26/02/2022,Man City,Everton
+27/02/2022,West Ham,Wolves
+27/02/2022,Wolves,West Ham
+01/03/2022,Burnley,Leicester
+01/03/2022,Leicester,Burnley
+05/03/2022,Leicester,Leeds
+05/03/2022,Aston Villa,Southampton
+05/03/2022,Burnley,Chelsea
+05/03/2022,Newcastle,Brighton
+05/03/2022,Norwich,Brentford
+05/03/2022,Wolves,Crystal Palace
+05/03/2022,Liverpool,West Ham
+05/03/2022,Leeds,Leicester
+05/03/2022,Southampton,Aston Villa
+05/03/2022,Chelsea,Burnley
+05/03/2022,Brighton,Newcastle
+05/03/2022,Brentford,Norwich
+05/03/2022,Crystal Palace,Wolves
+05/03/2022,West Ham,Liverpool
+06/03/2022,Watford,Arsenal
+06/03/2022,Man City,Man Utd
+06/03/2022,Arsenal,Watford
+06/03/2022,Man Utd,Man City
+07/03/2022,Spurs,Everton
+07/03/2022,Everton,Spurs
+10/03/2022,Norwich,Chelsea
+10/03/2022,Southampton,Newcastle
+10/03/2022,Wolves,Watford
+10/03/2022,Leeds,Aston Villa
+10/03/2022,Chelsea,Norwich
+10/03/2022,Newcastle,Southampton
+10/03/2022,Watford,Wolves
+10/03/2022,Aston Villa,Leeds
+12/03/2022,Brighton,Liverpool
+12/03/2022,Brentford,Burnley
+12/03/2022,Man Utd,Spurs
+12/03/2022,Liverpool,Brighton
+12/03/2022,Burnley,Brentford
+12/03/2022,Spurs,Man Utd
+13/03/2022,Chelsea,Newcastle
+13/03/2022,Everton,Wolves
+13/03/2022,Leeds,Norwich
+13/03/2022,Southampton,Watford
+13/03/2022,West Ham,Aston Villa
+13/03/2022,Arsenal,Leicester
+13/03/2022,Newcastle,Chelsea
+13/03/2022,Wolves,Everton
+13/03/2022,Norwich,Leeds
+13/03/2022,Watford,Southampton
+13/03/2022,Aston Villa,West Ham
+13/03/2022,Leicester,Arsenal
+14/03/2022,Crystal Palace,Man City
+14/03/2022,Man City,Crystal Palace
+16/03/2022,Brighton,Spurs
+16/03/2022,Arsenal,Liverpool
+16/03/2022,Spurs,Brighton
+16/03/2022,Liverpool,Arsenal
+17/03/2022,Everton,Newcastle
+17/03/2022,Newcastle,Everton
+18/03/2022,Wolves,Leeds
+18/03/2022,Leeds,Wolves
+19/03/2022,Aston Villa,Arsenal
+19/03/2022,Arsenal,Aston Villa
+20/03/2022,Leicester,Brentford
+20/03/2022,Spurs,West Ham
+20/03/2022,Brentford,Leicester
+20/03/2022,West Ham,Spurs
+02/04/2022,Liverpool,Watford
+02/04/2022,Brighton,Norwich
+02/04/2022,Burnley,Man City
+02/04/2022,Chelsea,Brentford
+02/04/2022,Leeds,Southampton
+02/04/2022,Wolves,Aston Villa
+02/04/2022,Man Utd,Leicester
+02/04/2022,Watford,Liverpool
+02/04/2022,Norwich,Brighton
+02/04/2022,Man City,Burnley
+02/04/2022,Brentford,Chelsea
+02/04/2022,Southampton,Leeds
+02/04/2022,Aston Villa,Wolves
+02/04/2022,Leicester,Man Utd
+03/04/2022,West Ham,Everton
+03/04/2022,Spurs,Newcastle
+03/04/2022,Everton,West Ham
+03/04/2022,Newcastle,Spurs
+04/04/2022,Crystal Palace,Arsenal
+04/04/2022,Arsenal,Crystal Palace
+06/04/2022,Burnley,Everton
+06/04/2022,Everton,Burnley
+08/04/2022,Newcastle,Wolves
+08/04/2022,Wolves,Newcastle
+09/04/2022,Everton,Man Utd
+09/04/2022,Arsenal,Brighton
+09/04/2022,Southampton,Chelsea
+09/04/2022,Watford,Leeds
+09/04/2022,Aston Villa,Spurs
+09/04/2022,Man Utd,Everton
+09/04/2022,Brighton,Arsenal
+09/04/2022,Chelsea,Southampton
+09/04/2022,Leeds,Watford
+09/04/2022,Spurs,Aston Villa
+10/04/2022,Brentford,West Ham
+10/04/2022,Leicester,Crystal Palace
+10/04/2022,Norwich,Burnley
+10/04/2022,Man City,Liverpool
+10/04/2022,West Ham,Brentford
+10/04/2022,Crystal Palace,Leicester
+10/04/2022,Burnley,Norwich
+10/04/2022,Liverpool,Man City
+16/04/2022,Spurs,Brighton
+16/04/2022,Man Utd,Norwich
+16/04/2022,Southampton,Arsenal
+16/04/2022,Watford,Brentford
+16/04/2022,Brighton,Spurs
+16/04/2022,Norwich,Man Utd
+16/04/2022,Arsenal,Southampton
+16/04/2022,Brentford,Watford
+17/04/2022,Newcastle,Leicester
+17/04/2022,West Ham,Burnley
+17/04/2022,Leicester,Newcastle
+17/04/2022,Burnley,West Ham
+19/04/2022,Liverpool,Man Utd
+19/04/2022,Man Utd,Liverpool
+20/04/2022,Chelsea,Arsenal
+20/04/2022,Everton,Leicester
+20/04/2022,Newcastle,Crystal Palace
+20/04/2022,Man City,Brighton
+20/04/2022,Arsenal,Chelsea
+20/04/2022,Leicester,Everton
+20/04/2022,Crystal Palace,Newcastle
+20/04/2022,Brighton,Man City
+21/04/2022,Burnley,Southampton
+21/04/2022,Southampton,Burnley
+23/04/2022,Arsenal,Man Utd
+23/04/2022,Leicester,Aston Villa
+23/04/2022,Man City,Watford
+23/04/2022,Norwich,Newcastle
+23/04/2022,Brentford,Spurs
+23/04/2022,Man Utd,Arsenal
+23/04/2022,Aston Villa,Leicester
+23/04/2022,Watford,Man City
+23/04/2022,Newcastle,Norwich
+23/04/2022,Spurs,Brentford
+24/04/2022,Brighton,Southampton
+24/04/2022,Burnley,Wolves
+24/04/2022,Chelsea,West Ham
+24/04/2022,Liverpool,Everton
+24/04/2022,Southampton,Brighton
+24/04/2022,Wolves,Burnley
+24/04/2022,West Ham,Chelsea
+24/04/2022,Everton,Liverpool
+25/04/2022,Crystal Palace,Leeds
+25/04/2022,Leeds,Crystal Palace
+28/04/2022,Man Utd,Chelsea
+28/04/2022,Chelsea,Man Utd
+30/04/2022,Newcastle,Liverpool
+30/04/2022,Aston Villa,Norwich
+30/04/2022,Southampton,Crystal Palace
+30/04/2022,Watford,Burnley
+30/04/2022,Wolves,Brighton
+30/04/2022,Leeds,Man City
+30/04/2022,Liverpool,Newcastle
+30/04/2022,Norwich,Aston Villa
+30/04/2022,Crystal Palace,Southampton
+30/04/2022,Burnley,Watford
+30/04/2022,Brighton,Wolves
+30/04/2022,Man City,Leeds
+01/05/2022,Everton,Chelsea
+01/05/2022,Spurs,Leicester
+01/05/2022,West Ham,Arsenal
+01/05/2022,Chelsea,Everton
+01/05/2022,Leicester,Spurs
+01/05/2022,Arsenal,West Ham
+02/05/2022,Man Utd,Brentford
+02/05/2022,Brentford,Man Utd
+07/05/2022,Brentford,Southampton
+07/05/2022,Burnley,Aston Villa
+07/05/2022,Chelsea,Wolves
+07/05/2022,Crystal Palace,Watford
+07/05/2022,Brighton,Man Utd
+07/05/2022,Liverpool,Spurs
+07/05/2022,Southampton,Brentford
+07/05/2022,Aston Villa,Burnley
+07/05/2022,Wolves,Chelsea
+07/05/2022,Watford,Crystal Palace
+07/05/2022,Man Utd,Brighton
+07/05/2022,Spurs,Liverpool
+08/05/2022,Arsenal,Leeds
+08/05/2022,Leicester,Everton
+08/05/2022,Norwich,West Ham
+08/05/2022,Man City,Newcastle
+08/05/2022,Leeds,Arsenal
+08/05/2022,Everton,Leicester
+08/05/2022,West Ham,Norwich
+08/05/2022,Newcastle,Man City
+10/05/2022,Aston Villa,Liverpool
+10/05/2022,Liverpool,Aston Villa
+11/05/2022,Leeds,Chelsea
+11/05/2022,Leicester,Norwich
+11/05/2022,Watford,Everton
+11/05/2022,Wolves,Man City
+11/05/2022,Chelsea,Leeds
+11/05/2022,Norwich,Leicester
+11/05/2022,Everton,Watford
+11/05/2022,Man City,Wolves
+12/05/2022,Spurs,Arsenal
+12/05/2022,Arsenal,Spurs
+15/05/2022,Spurs,Burnley
+15/05/2022,Aston Villa,Crystal Palace
+15/05/2022,Leeds,Brighton
+15/05/2022,Watford,Leicester
+15/05/2022,West Ham,Man City
+15/05/2022,Wolves,Norwich
+15/05/2022,Everton,Brentford
+15/05/2022,Burnley,Spurs
+15/05/2022,Crystal Palace,Aston Villa
+15/05/2022,Brighton,Leeds
+15/05/2022,Leicester,Watford
+15/05/2022,Man City,West Ham
+15/05/2022,Norwich,Wolves
+15/05/2022,Brentford,Everton
+16/05/2022,Newcastle,Arsenal
+16/05/2022,Arsenal,Newcastle
+17/05/2022,Southampton,Liverpool
+17/05/2022,Liverpool,Southampton
+19/05/2022,Everton,Crystal Palace
+19/05/2022,Aston Villa,Burnley
+19/05/2022,Chelsea,Leicester
+19/05/2022,Crystal Palace,Everton
+19/05/2022,Burnley,Aston Villa
+19/05/2022,Leicester,Chelsea
+22/05/2022,Arsenal,Everton
+22/05/2022,Brentford,Leeds
+22/05/2022,Brighton,West Ham
+22/05/2022,Burnley,Newcastle
+22/05/2022,Chelsea,Watford
+22/05/2022,Crystal Palace,Man Utd
+22/05/2022,Leicester,Southampton
+22/05/2022,Liverpool,Wolves
+22/05/2022,Man City,Aston Villa
+22/05/2022,Norwich,Spurs
+22/05/2022,Everton,Arsenal
+22/05/2022,Leeds,Brentford
+22/05/2022,West Ham,Brighton
+22/05/2022,Newcastle,Burnley
+22/05/2022,Watford,Chelsea
+22/05/2022,Man Utd,Crystal Palace
+22/05/2022,Southampton,Leicester
+22/05/2022,Wolves,Liverpool
+22/05/2022,Aston Villa,Man City
+22/05/2022,Spurs,Norwich
+05/08/2022,Crystal Palace,Arsenal
+05/08/2022,Arsenal,Crystal Palace
+06/08/2022,Fulham,Liverpool
+06/08/2022,Bournemouth,Aston Villa
+06/08/2022,Leeds,Wolves
+06/08/2022,Newcastle,Nott'm Forest
+06/08/2022,Spurs,Southampton
+06/08/2022,Everton,Chelsea
+06/08/2022,Liverpool,Fulham
+06/08/2022,Aston Villa,Bournemouth
+06/08/2022,Wolves,Leeds
+06/08/2022,Nott'm Forest,Newcastle
+06/08/2022,Southampton,Spurs
+06/08/2022,Chelsea,Everton
+07/08/2022,Leicester,Brentford
+07/08/2022,Man Utd,Brighton
+07/08/2022,West Ham,Man City
+07/08/2022,Brentford,Leicester
+07/08/2022,Brighton,Man Utd
+07/08/2022,Man City,West Ham
+13/08/2022,Aston Villa,Everton
+13/08/2022,Arsenal,Leicester
+13/08/2022,Brighton,Newcastle
+13/08/2022,Man City,Bournemouth
+13/08/2022,Southampton,Leeds
+13/08/2022,Wolves,Fulham
+13/08/2022,Brentford,Man Utd
+13/08/2022,Everton,Aston Villa
+13/08/2022,Leicester,Arsenal
+13/08/2022,Newcastle,Brighton
+13/08/2022,Bournemouth,Man City
+13/08/2022,Leeds,Southampton
+13/08/2022,Fulham,Wolves
+13/08/2022,Man Utd,Brentford
+14/08/2022,Nott'm Forest,West Ham
+14/08/2022,Chelsea,Spurs
+14/08/2022,West Ham,Nott'm Forest
+14/08/2022,Spurs,Chelsea
+15/08/2022,Liverpool,Crystal Palace
+15/08/2022,Crystal Palace,Liverpool
+20/08/2022,Spurs,Wolves
+20/08/2022,Crystal Palace,Aston Villa
+20/08/2022,Everton,Nott'm Forest
+20/08/2022,Fulham,Brentford
+20/08/2022,Leicester,Southampton
+20/08/2022,Bournemouth,Arsenal
+20/08/2022,Wolves,Spurs
+20/08/2022,Aston Villa,Crystal Palace
+20/08/2022,Nott'm Forest,Everton
+20/08/2022,Brentford,Fulham
+20/08/2022,Southampton,Leicester
+20/08/2022,Arsenal,Bournemouth
+21/08/2022,Leeds,Chelsea
+21/08/2022,West Ham,Brighton
+21/08/2022,Newcastle,Man City
+21/08/2022,Chelsea,Leeds
+21/08/2022,Brighton,West Ham
+21/08/2022,Man City,Newcastle
+22/08/2022,Man Utd,Liverpool
+22/08/2022,Liverpool,Man Utd
+27/08/2022,Southampton,Man Utd
+27/08/2022,Brentford,Everton
+27/08/2022,Brighton,Leeds
+27/08/2022,Chelsea,Leicester
+27/08/2022,Liverpool,Bournemouth
+27/08/2022,Man City,Crystal Palace
+27/08/2022,Arsenal,Fulham
+27/08/2022,Man Utd,Southampton
+27/08/2022,Everton,Brentford
+27/08/2022,Leeds,Brighton
+27/08/2022,Leicester,Chelsea
+27/08/2022,Bournemouth,Liverpool
+27/08/2022,Crystal Palace,Man City
+27/08/2022,Fulham,Arsenal
+28/08/2022,Aston Villa,West Ham
+28/08/2022,Wolves,Newcastle
+28/08/2022,Nott'm Forest,Spurs
+28/08/2022,West Ham,Aston Villa
+28/08/2022,Newcastle,Wolves
+28/08/2022,Spurs,Nott'm Forest
+30/08/2022,Crystal Palace,Brentford
+30/08/2022,Fulham,Brighton
+30/08/2022,Southampton,Chelsea
+30/08/2022,Leeds,Everton
+30/08/2022,Brentford,Crystal Palace
+30/08/2022,Brighton,Fulham
+30/08/2022,Chelsea,Southampton
+30/08/2022,Everton,Leeds
+31/08/2022,Arsenal,Aston Villa
+31/08/2022,Bournemouth,Wolves
+31/08/2022,Man City,Nott'm Forest
+31/08/2022,West Ham,Spurs
+31/08/2022,Liverpool,Newcastle
+31/08/2022,Aston Villa,Arsenal
+31/08/2022,Wolves,Bournemouth
+31/08/2022,Nott'm Forest,Man City
+31/08/2022,Spurs,West Ham
+31/08/2022,Newcastle,Liverpool
+01/09/2022,Leicester,Man Utd
+01/09/2022,Man Utd,Leicester
+03/09/2022,Everton,Liverpool
+03/09/2022,Brentford,Leeds
+03/09/2022,Chelsea,West Ham
+03/09/2022,Newcastle,Crystal Palace
+03/09/2022,Nott'm Forest,Bournemouth
+03/09/2022,Spurs,Fulham
+03/09/2022,Wolves,Southampton
+03/09/2022,Aston Villa,Man City
+03/09/2022,Liverpool,Everton
+03/09/2022,Leeds,Brentford
+03/09/2022,West Ham,Chelsea
+03/09/2022,Crystal Palace,Newcastle
+03/09/2022,Bournemouth,Nott'm Forest
+03/09/2022,Fulham,Spurs
+03/09/2022,Southampton,Wolves
+03/09/2022,Man City,Aston Villa
+04/09/2022,Brighton,Leicester
+04/09/2022,Man Utd,Arsenal
+04/09/2022,Leicester,Brighton
+04/09/2022,Arsenal,Man Utd
+16/09/2022,Aston Villa,Southampton
+16/09/2022,Nott'm Forest,Fulham
+16/09/2022,Southampton,Aston Villa
+16/09/2022,Fulham,Nott'm Forest
+17/09/2022,Wolves,Man City
+17/09/2022,Newcastle,Bournemouth
+17/09/2022,Spurs,Leicester
+17/09/2022,Man City,Wolves
+17/09/2022,Bournemouth,Newcastle
+17/09/2022,Leicester,Spurs
+18/09/2022,Brentford,Arsenal
+18/09/2022,Everton,West Ham
+18/09/2022,Arsenal,Brentford
+18/09/2022,West Ham,Everton
+01/10/2022,Arsenal,Spurs
+01/10/2022,Bournemouth,Brentford
+01/10/2022,Crystal Palace,Chelsea
+01/10/2022,Fulham,Newcastle
+01/10/2022,Liverpool,Brighton
+01/10/2022,Southampton,Everton
+01/10/2022,West Ham,Wolves
+01/10/2022,Spurs,Arsenal
+01/10/2022,Brentford,Bournemouth
+01/10/2022,Chelsea,Crystal Palace
+01/10/2022,Newcastle,Fulham
+01/10/2022,Brighton,Liverpool
+01/10/2022,Everton,Southampton
+01/10/2022,Wolves,West Ham
+02/10/2022,Man City,Man Utd
+02/10/2022,Leeds,Aston Villa
+02/10/2022,Man Utd,Man City
+02/10/2022,Aston Villa,Leeds
+03/10/2022,Leicester,Nott'm Forest
+03/10/2022,Nott'm Forest,Leicester
+08/10/2022,Bournemouth,Leicester
+08/10/2022,Chelsea,Wolves
+08/10/2022,Man City,Southampton
+08/10/2022,Newcastle,Brentford
+08/10/2022,Brighton,Spurs
+08/10/2022,Leicester,Bournemouth
+08/10/2022,Wolves,Chelsea
+08/10/2022,Southampton,Man City
+08/10/2022,Brentford,Newcastle
+08/10/2022,Spurs,Brighton
+09/10/2022,Crystal Palace,Leeds
+09/10/2022,West Ham,Fulham
+09/10/2022,Arsenal,Liverpool
+09/10/2022,Everton,Man Utd
+09/10/2022,Leeds,Crystal Palace
+09/10/2022,Fulham,West Ham
+09/10/2022,Liverpool,Arsenal
+09/10/2022,Man Utd,Everton
+10/10/2022,Nott'm Forest,Aston Villa
+10/10/2022,Aston Villa,Nott'm Forest
+14/10/2022,Brentford,Brighton
+14/10/2022,Brighton,Brentford
+15/10/2022,Leicester,Crystal Palace
+15/10/2022,Fulham,Bournemouth
+15/10/2022,Wolves,Nott'm Forest
+15/10/2022,Spurs,Everton
+15/10/2022,Crystal Palace,Leicester
+15/10/2022,Bournemouth,Fulham
+15/10/2022,Nott'm Forest,Wolves
+15/10/2022,Everton,Spurs
+16/10/2022,Aston Villa,Chelsea
+16/10/2022,Leeds,Arsenal
+16/10/2022,Man Utd,Newcastle
+16/10/2022,Southampton,West Ham
+16/10/2022,Liverpool,Man City
+16/10/2022,Chelsea,Aston Villa
+16/10/2022,Arsenal,Leeds
+16/10/2022,Newcastle,Man Utd
+16/10/2022,West Ham,Southampton
+16/10/2022,Man City,Liverpool
+18/10/2022,Brighton,Nott'm Forest
+18/10/2022,Crystal Palace,Wolves
+18/10/2022,Nott'm Forest,Brighton
+18/10/2022,Wolves,Crystal Palace
+19/10/2022,Bournemouth,Southampton
+19/10/2022,Brentford,Chelsea
+19/10/2022,Liverpool,West Ham
+19/10/2022,Newcastle,Everton
+19/10/2022,Man Utd,Spurs
+19/10/2022,Southampton,Bournemouth
+19/10/2022,Chelsea,Brentford
+19/10/2022,West Ham,Liverpool
+19/10/2022,Everton,Newcastle
+19/10/2022,Spurs,Man Utd
+20/10/2022,Fulham,Aston Villa
+20/10/2022,Leicester,Leeds
+20/10/2022,Aston Villa,Fulham
+20/10/2022,Leeds,Leicester
+22/10/2022,Nott'm Forest,Liverpool
+22/10/2022,Everton,Crystal Palace
+22/10/2022,Man City,Brighton
+22/10/2022,Chelsea,Man Utd
+22/10/2022,Liverpool,Nott'm Forest
+22/10/2022,Crystal Palace,Everton
+22/10/2022,Brighton,Man City
+22/10/2022,Man Utd,Chelsea
+23/10/2022,Aston Villa,Brentford
+23/10/2022,Leeds,Fulham
+23/10/2022,Southampton,Arsenal
+23/10/2022,Wolves,Leicester
+23/10/2022,Spurs,Newcastle
+23/10/2022,Brentford,Aston Villa
+23/10/2022,Fulham,Leeds
+23/10/2022,Arsenal,Southampton
+23/10/2022,Leicester,Wolves
+23/10/2022,Newcastle,Spurs
+24/10/2022,West Ham,Bournemouth
+24/10/2022,Bournemouth,West Ham
+29/10/2022,Leicester,Man City
+29/10/2022,Bournemouth,Spurs
+29/10/2022,Brentford,Wolves
+29/10/2022,Brighton,Chelsea
+29/10/2022,Crystal Palace,Southampton
+29/10/2022,Newcastle,Aston Villa
+29/10/2022,Fulham,Everton
+29/10/2022,Liverpool,Leeds
+29/10/2022,Man City,Leicester
+29/10/2022,Spurs,Bournemouth
+29/10/2022,Wolves,Brentford
+29/10/2022,Chelsea,Brighton
+29/10/2022,Southampton,Crystal Palace
+29/10/2022,Aston Villa,Newcastle
+29/10/2022,Everton,Fulham
+29/10/2022,Leeds,Liverpool
+30/10/2022,Arsenal,Nott'm Forest
+30/10/2022,Man Utd,West Ham
+30/10/2022,Nott'm Forest,Arsenal
+30/10/2022,West Ham,Man Utd
+05/11/2022,Leeds,Bournemouth
+05/11/2022,Man City,Fulham
+05/11/2022,Nott'm Forest,Brentford
+05/11/2022,Wolves,Brighton
+05/11/2022,Everton,Leicester
+05/11/2022,Bournemouth,Leeds
+05/11/2022,Fulham,Man City
+05/11/2022,Brentford,Nott'm Forest
+05/11/2022,Brighton,Wolves
+05/11/2022,Leicester,Everton
+06/11/2022,Chelsea,Arsenal
+06/11/2022,Aston Villa,Man Utd
+06/11/2022,Southampton,Newcastle
+06/11/2022,West Ham,Crystal Palace
+06/11/2022,Spurs,Liverpool
+06/11/2022,Arsenal,Chelsea
+06/11/2022,Man Utd,Aston Villa
+06/11/2022,Newcastle,Southampton
+06/11/2022,Crystal Palace,West Ham
+06/11/2022,Liverpool,Spurs
+12/11/2022,Man City,Brentford
+12/11/2022,Bournemouth,Everton
+12/11/2022,Liverpool,Southampton
+12/11/2022,Nott'm Forest,Crystal Palace
+12/11/2022,Spurs,Leeds
+12/11/2022,West Ham,Leicester
+12/11/2022,Newcastle,Chelsea
+12/11/2022,Wolves,Arsenal
+12/11/2022,Brentford,Man City
+12/11/2022,Everton,Bournemouth
+12/11/2022,Southampton,Liverpool
+12/11/2022,Crystal Palace,Nott'm Forest
+12/11/2022,Leeds,Spurs
+12/11/2022,Leicester,West Ham
+12/11/2022,Chelsea,Newcastle
+12/11/2022,Arsenal,Wolves
+13/11/2022,Brighton,Aston Villa
+13/11/2022,Fulham,Man Utd
+13/11/2022,Aston Villa,Brighton
+13/11/2022,Man Utd,Fulham
+26/12/2022,Brentford,Spurs
+26/12/2022,Crystal Palace,Fulham
+26/12/2022,Everton,Wolves
+26/12/2022,Leicester,Newcastle
+26/12/2022,Southampton,Brighton
+26/12/2022,Aston Villa,Liverpool
+26/12/2022,Arsenal,West Ham
+26/12/2022,Spurs,Brentford
+26/12/2022,Fulham,Crystal Palace
+26/12/2022,Wolves,Everton
+26/12/2022,Newcastle,Leicester
+26/12/2022,Brighton,Southampton
+26/12/2022,Liverpool,Aston Villa
+26/12/2022,West Ham,Arsenal
+27/12/2022,Chelsea,Bournemouth
+27/12/2022,Man Utd,Nott'm Forest
+27/12/2022,Bournemouth,Chelsea
+27/12/2022,Nott'm Forest,Man Utd
+28/12/2022,Leeds,Man City
+28/12/2022,Man City,Leeds
+30/12/2022,West Ham,Brentford
+30/12/2022,Liverpool,Leicester
+30/12/2022,Brentford,West Ham
+30/12/2022,Leicester,Liverpool
+31/12/2022,Wolves,Man Utd
+31/12/2022,Bournemouth,Crystal Palace
+31/12/2022,Fulham,Southampton
+31/12/2022,Man City,Everton
+31/12/2022,Newcastle,Leeds
+31/12/2022,Brighton,Arsenal
+31/12/2022,Man Utd,Wolves
+31/12/2022,Crystal Palace,Bournemouth
+31/12/2022,Southampton,Fulham
+31/12/2022,Everton,Man City
+31/12/2022,Leeds,Newcastle
+31/12/2022,Arsenal,Brighton
+01/01/2023,Spurs,Aston Villa
+01/01/2023,Nott'm Forest,Chelsea
+01/01/2023,Aston Villa,Spurs
+01/01/2023,Chelsea,Nott'm Forest
+02/01/2023,Brentford,Liverpool
+02/01/2023,Liverpool,Brentford
+03/01/2023,Arsenal,Newcastle
+03/01/2023,Everton,Brighton
+03/01/2023,Leicester,Fulham
+03/01/2023,Man Utd,Bournemouth
+03/01/2023,Newcastle,Arsenal
+03/01/2023,Brighton,Everton
+03/01/2023,Fulham,Leicester
+03/01/2023,Bournemouth,Man Utd
+04/01/2023,Southampton,Nott'm Forest
+04/01/2023,Leeds,West Ham
+04/01/2023,Aston Villa,Wolves
+04/01/2023,Crystal Palace,Spurs
+04/01/2023,Nott'm Forest,Southampton
+04/01/2023,West Ham,Leeds
+04/01/2023,Wolves,Aston Villa
+04/01/2023,Spurs,Crystal Palace
+05/01/2023,Chelsea,Man City
+05/01/2023,Man City,Chelsea
+12/01/2023,Fulham,Chelsea
+12/01/2023,Chelsea,Fulham
+13/01/2023,Aston Villa,Leeds
+13/01/2023,Leeds,Aston Villa
+14/01/2023,Man Utd,Man City
+14/01/2023,Brighton,Liverpool
+14/01/2023,Everton,Southampton
+14/01/2023,Nott'm Forest,Leicester
+14/01/2023,Wolves,West Ham
+14/01/2023,Brentford,Bournemouth
+14/01/2023,Man City,Man Utd
+14/01/2023,Liverpool,Brighton
+14/01/2023,Southampton,Everton
+14/01/2023,Leicester,Nott'm Forest
+14/01/2023,West Ham,Wolves
+14/01/2023,Bournemouth,Brentford
+15/01/2023,Chelsea,Crystal Palace
+15/01/2023,Newcastle,Fulham
+15/01/2023,Spurs,Arsenal
+15/01/2023,Crystal Palace,Chelsea
+15/01/2023,Fulham,Newcastle
+15/01/2023,Arsenal,Spurs
+18/01/2023,Crystal Palace,Man Utd
+18/01/2023,Man Utd,Crystal Palace
+19/01/2023,Man City,Spurs
+19/01/2023,Spurs,Man City
+21/01/2023,Liverpool,Chelsea
+21/01/2023,Bournemouth,Nott'm Forest
+21/01/2023,Leicester,Brighton
+21/01/2023,Southampton,Aston Villa
+21/01/2023,West Ham,Everton
+21/01/2023,Crystal Palace,Newcastle
+21/01/2023,Chelsea,Liverpool
+21/01/2023,Nott'm Forest,Bournemouth
+21/01/2023,Brighton,Leicester
+21/01/2023,Aston Villa,Southampton
+21/01/2023,Everton,West Ham
+21/01/2023,Newcastle,Crystal Palace
+22/01/2023,Leeds,Brentford
+22/01/2023,Man City,Wolves
+22/01/2023,Arsenal,Man Utd
+22/01/2023,Brentford,Leeds
+22/01/2023,Wolves,Man City
+22/01/2023,Man Utd,Arsenal
+23/01/2023,Fulham,Spurs
+23/01/2023,Spurs,Fulham
+03/02/2023,Chelsea,Fulham
+03/02/2023,Fulham,Chelsea
+04/02/2023,Everton,Arsenal
+04/02/2023,Aston Villa,Leicester
+04/02/2023,Brentford,Southampton
+04/02/2023,Brighton,Bournemouth
+04/02/2023,Man Utd,Crystal Palace
+04/02/2023,Wolves,Liverpool
+04/02/2023,Newcastle,West Ham
+04/02/2023,Arsenal,Everton
+04/02/2023,Leicester,Aston Villa
+04/02/2023,Southampton,Brentford
+04/02/2023,Bournemouth,Brighton
+04/02/2023,Crystal Palace,Man Utd
+04/02/2023,Liverpool,Wolves
+04/02/2023,West Ham,Newcastle
+05/02/2023,Nott'm Forest,Leeds
+05/02/2023,Spurs,Man City
+05/02/2023,Leeds,Nott'm Forest
+05/02/2023,Man City,Spurs
+08/02/2023,Man Utd,Leeds
+08/02/2023,Leeds,Man Utd
+11/02/2023,West Ham,Chelsea
+11/02/2023,Arsenal,Brentford
+11/02/2023,Crystal Palace,Brighton
+11/02/2023,Fulham,Nott'm Forest
+11/02/2023,Leicester,Spurs
+11/02/2023,Southampton,Wolves
+11/02/2023,Bournemouth,Newcastle
+11/02/2023,Chelsea,West Ham
+11/02/2023,Brentford,Arsenal
+11/02/2023,Brighton,Crystal Palace
+11/02/2023,Nott'm Forest,Fulham
+11/02/2023,Spurs,Leicester
+11/02/2023,Wolves,Southampton
+11/02/2023,Newcastle,Bournemouth
+12/02/2023,Leeds,Man Utd
+12/02/2023,Man City,Aston Villa
+12/02/2023,Man Utd,Leeds
+12/02/2023,Aston Villa,Man City
+13/02/2023,Liverpool,Everton
+13/02/2023,Everton,Liverpool
+15/02/2023,Arsenal,Man City
+15/02/2023,Man City,Arsenal
+18/02/2023,Aston Villa,Arsenal
+18/02/2023,Brentford,Crystal Palace
+18/02/2023,Brighton,Fulham
+18/02/2023,Chelsea,Southampton
+18/02/2023,Everton,Leeds
+18/02/2023,Nott'm Forest,Man City
+18/02/2023,Wolves,Bournemouth
+18/02/2023,Newcastle,Liverpool
+18/02/2023,Arsenal,Aston Villa
+18/02/2023,Crystal Palace,Brentford
+18/02/2023,Fulham,Brighton
+18/02/2023,Southampton,Chelsea
+18/02/2023,Leeds,Everton
+18/02/2023,Man City,Nott'm Forest
+18/02/2023,Bournemouth,Wolves
+18/02/2023,Liverpool,Newcastle
+19/02/2023,Man Utd,Leicester
+19/02/2023,Spurs,West Ham
+19/02/2023,Leicester,Man Utd
+19/02/2023,West Ham,Spurs
+24/02/2023,Fulham,Wolves
+24/02/2023,Wolves,Fulham
+25/02/2023,Everton,Aston Villa
+25/02/2023,Leeds,Southampton
+25/02/2023,Leicester,Arsenal
+25/02/2023,West Ham,Nott'm Forest
+25/02/2023,Bournemouth,Man City
+25/02/2023,Crystal Palace,Liverpool
+25/02/2023,Aston Villa,Everton
+25/02/2023,Southampton,Leeds
+25/02/2023,Arsenal,Leicester
+25/02/2023,Nott'm Forest,West Ham
+25/02/2023,Man City,Bournemouth
+25/02/2023,Liverpool,Crystal Palace
+26/02/2023,Spurs,Chelsea
+26/02/2023,Chelsea,Spurs
+01/03/2023,Arsenal,Everton
+01/03/2023,Liverpool,Wolves
+01/03/2023,Everton,Arsenal
+01/03/2023,Wolves,Liverpool
+04/03/2023,Man City,Newcastle
+04/03/2023,Arsenal,Bournemouth
+04/03/2023,Aston Villa,Crystal Palace
+04/03/2023,Brighton,West Ham
+04/03/2023,Chelsea,Leeds
+04/03/2023,Wolves,Spurs
+04/03/2023,Southampton,Leicester
+04/03/2023,Newcastle,Man City
+04/03/2023,Bournemouth,Arsenal
+04/03/2023,Crystal Palace,Aston Villa
+04/03/2023,West Ham,Brighton
+04/03/2023,Leeds,Chelsea
+04/03/2023,Spurs,Wolves
+04/03/2023,Leicester,Southampton
+05/03/2023,Nott'm Forest,Everton
+05/03/2023,Liverpool,Man Utd
+05/03/2023,Everton,Nott'm Forest
+05/03/2023,Man Utd,Liverpool
+06/03/2023,Brentford,Fulham
+06/03/2023,Fulham,Brentford
+11/03/2023,Bournemouth,Liverpool
+11/03/2023,Everton,Brentford
+11/03/2023,Leeds,Brighton
+11/03/2023,Leicester,Chelsea
+11/03/2023,Spurs,Nott'm Forest
+11/03/2023,Crystal Palace,Man City
+11/03/2023,Liverpool,Bournemouth
+11/03/2023,Brentford,Everton
+11/03/2023,Brighton,Leeds
+11/03/2023,Chelsea,Leicester
+11/03/2023,Nott'm Forest,Spurs
+11/03/2023,Man City,Crystal Palace
+12/03/2023,Fulham,Arsenal
+12/03/2023,Man Utd,Southampton
+12/03/2023,West Ham,Aston Villa
+12/03/2023,Newcastle,Wolves
+12/03/2023,Arsenal,Fulham
+12/03/2023,Southampton,Man Utd
+12/03/2023,Aston Villa,West Ham
+12/03/2023,Wolves,Newcastle
+15/03/2023,Brighton,Crystal Palace
+15/03/2023,Southampton,Brentford
+15/03/2023,Crystal Palace,Brighton
+15/03/2023,Brentford,Southampton
+17/03/2023,Nott'm Forest,Newcastle
+17/03/2023,Newcastle,Nott'm Forest
+18/03/2023,Aston Villa,Bournemouth
+18/03/2023,Brentford,Leicester
+18/03/2023,Southampton,Spurs
+18/03/2023,Wolves,Leeds
+18/03/2023,Chelsea,Everton
+18/03/2023,Bournemouth,Aston Villa
+18/03/2023,Leicester,Brentford
+18/03/2023,Spurs,Southampton
+18/03/2023,Leeds,Wolves
+18/03/2023,Everton,Chelsea
+19/03/2023,Arsenal,Crystal Palace
+19/03/2023,Crystal Palace,Arsenal
+01/04/2023,Man City,Liverpool
+01/04/2023,Arsenal,Leeds
+01/04/2023,Bournemouth,Fulham
+01/04/2023,Brighton,Brentford
+01/04/2023,Crystal Palace,Leicester
+01/04/2023,Nott'm Forest,Wolves
+01/04/2023,Chelsea,Aston Villa
+01/04/2023,Liverpool,Man City
+01/04/2023,Leeds,Arsenal
+01/04/2023,Fulham,Bournemouth
+01/04/2023,Brentford,Brighton
+01/04/2023,Leicester,Crystal Palace
+01/04/2023,Wolves,Nott'm Forest
+01/04/2023,Aston Villa,Chelsea
+02/04/2023,West Ham,Southampton
+02/04/2023,Newcastle,Man Utd
+02/04/2023,Southampton,West Ham
+02/04/2023,Man Utd,Newcastle
+03/04/2023,Everton,Spurs
+03/04/2023,Spurs,Everton
+04/04/2023,Bournemouth,Brighton
+04/04/2023,Leeds,Nott'm Forest
+04/04/2023,Leicester,Aston Villa
+04/04/2023,Chelsea,Liverpool
+04/04/2023,Brighton,Bournemouth
+04/04/2023,Nott'm Forest,Leeds
+04/04/2023,Aston Villa,Leicester
+04/04/2023,Liverpool,Chelsea
+05/04/2023,Man Utd,Brentford
+05/04/2023,West Ham,Newcastle
+05/04/2023,Brentford,Man Utd
+05/04/2023,Newcastle,West Ham
+08/04/2023,Man Utd,Everton
+08/04/2023,Aston Villa,Nott'm Forest
+08/04/2023,Brentford,Newcastle
+08/04/2023,Fulham,West Ham
+08/04/2023,Leicester,Bournemouth
+08/04/2023,Spurs,Brighton
+08/04/2023,Wolves,Chelsea
+08/04/2023,Southampton,Man City
+08/04/2023,Everton,Man Utd
+08/04/2023,Nott'm Forest,Aston Villa
+08/04/2023,Newcastle,Brentford
+08/04/2023,West Ham,Fulham
+08/04/2023,Bournemouth,Leicester
+08/04/2023,Brighton,Spurs
+08/04/2023,Chelsea,Wolves
+08/04/2023,Man City,Southampton
+09/04/2023,Leeds,Crystal Palace
+09/04/2023,Liverpool,Arsenal
+09/04/2023,Crystal Palace,Leeds
+09/04/2023,Arsenal,Liverpool
+15/04/2023,Aston Villa,Newcastle
+15/04/2023,Chelsea,Brighton
+15/04/2023,Everton,Fulham
+15/04/2023,Southampton,Crystal Palace
+15/04/2023,Wolves,Brentford
+15/04/2023,Spurs,Bournemouth
+15/04/2023,Man City,Leicester
+15/04/2023,Newcastle,Aston Villa
+15/04/2023,Brighton,Chelsea
+15/04/2023,Fulham,Everton
+15/04/2023,Crystal Palace,Southampton
+15/04/2023,Brentford,Wolves
+15/04/2023,Bournemouth,Spurs
+15/04/2023,Leicester,Man City
+16/04/2023,West Ham,Arsenal
+16/04/2023,Nott'm Forest,Man Utd
+16/04/2023,Arsenal,West Ham
+16/04/2023,Man Utd,Nott'm Forest
+17/04/2023,Leeds,Liverpool
+17/04/2023,Liverpool,Leeds
+21/04/2023,Arsenal,Southampton
+21/04/2023,Southampton,Arsenal
+22/04/2023,Fulham,Leeds
+22/04/2023,Brentford,Aston Villa
+22/04/2023,Crystal Palace,Everton
+22/04/2023,Leicester,Wolves
+22/04/2023,Liverpool,Nott'm Forest
+22/04/2023,Leeds,Fulham
+22/04/2023,Aston Villa,Brentford
+22/04/2023,Everton,Crystal Palace
+22/04/2023,Wolves,Leicester
+22/04/2023,Nott'm Forest,Liverpool
+23/04/2023,Bournemouth,West Ham
+23/04/2023,Newcastle,Spurs
+23/04/2023,West Ham,Bournemouth
+23/04/2023,Spurs,Newcastle
+25/04/2023,Wolves,Crystal Palace
+25/04/2023,Aston Villa,Fulham
+25/04/2023,Leeds,Leicester
+25/04/2023,Crystal Palace,Wolves
+25/04/2023,Fulham,Aston Villa
+25/04/2023,Leicester,Leeds
+26/04/2023,Nott'm Forest,Brighton
+26/04/2023,Chelsea,Brentford
+26/04/2023,West Ham,Liverpool
+26/04/2023,Man City,Arsenal
+26/04/2023,Brighton,Nott'm Forest
+26/04/2023,Brentford,Chelsea
+26/04/2023,Liverpool,West Ham
+26/04/2023,Arsenal,Man City
+27/04/2023,Everton,Newcastle
+27/04/2023,Southampton,Bournemouth
+27/04/2023,Spurs,Man Utd
+27/04/2023,Newcastle,Everton
+27/04/2023,Bournemouth,Southampton
+27/04/2023,Man Utd,Spurs
+29/04/2023,Crystal Palace,West Ham
+29/04/2023,Brentford,Nott'm Forest
+29/04/2023,Brighton,Wolves
+29/04/2023,West Ham,Crystal Palace
+29/04/2023,Nott'm Forest,Brentford
+29/04/2023,Wolves,Brighton
+30/04/2023,Bournemouth,Leeds
+30/04/2023,Fulham,Man City
+30/04/2023,Man Utd,Aston Villa
+30/04/2023,Newcastle,Southampton
+30/04/2023,Liverpool,Spurs
+30/04/2023,Leeds,Bournemouth
+30/04/2023,Man City,Fulham
+30/04/2023,Aston Villa,Man Utd
+30/04/2023,Southampton,Newcastle
+30/04/2023,Spurs,Liverpool
+01/05/2023,Leicester,Everton
+01/05/2023,Everton,Leicester
+02/05/2023,Arsenal,Chelsea
+02/05/2023,Chelsea,Arsenal
+03/05/2023,Liverpool,Fulham
+03/05/2023,Man City,West Ham
+03/05/2023,Fulham,Liverpool
+03/05/2023,West Ham,Man City
+04/05/2023,Brighton,Man Utd
+04/05/2023,Man Utd,Brighton
+06/05/2023,Bournemouth,Chelsea
+06/05/2023,Man City,Leeds
+06/05/2023,Spurs,Crystal Palace
+06/05/2023,Wolves,Aston Villa
+06/05/2023,Liverpool,Brentford
+06/05/2023,Chelsea,Bournemouth
+06/05/2023,Leeds,Man City
+06/05/2023,Crystal Palace,Spurs
+06/05/2023,Aston Villa,Wolves
+06/05/2023,Brentford,Liverpool
+07/05/2023,Newcastle,Arsenal
+07/05/2023,West Ham,Man Utd
+07/05/2023,Arsenal,Newcastle
+07/05/2023,Man Utd,West Ham
+08/05/2023,Fulham,Leicester
+08/05/2023,Brighton,Everton
+08/05/2023,Nott'm Forest,Southampton
+08/05/2023,Leicester,Fulham
+08/05/2023,Everton,Brighton
+08/05/2023,Southampton,Nott'm Forest
+13/05/2023,Leeds,Newcastle
+13/05/2023,Aston Villa,Spurs
+13/05/2023,Chelsea,Nott'm Forest
+13/05/2023,Crystal Palace,Bournemouth
+13/05/2023,Man Utd,Wolves
+13/05/2023,Southampton,Fulham
+13/05/2023,Newcastle,Leeds
+13/05/2023,Spurs,Aston Villa
+13/05/2023,Nott'm Forest,Chelsea
+13/05/2023,Bournemouth,Crystal Palace
+13/05/2023,Wolves,Man Utd
+13/05/2023,Fulham,Southampton
+14/05/2023,Brentford,West Ham
+14/05/2023,Everton,Man City
+14/05/2023,Arsenal,Brighton
+14/05/2023,West Ham,Brentford
+14/05/2023,Man City,Everton
+14/05/2023,Brighton,Arsenal
+15/05/2023,Leicester,Liverpool
+15/05/2023,Liverpool,Leicester
+18/05/2023,Newcastle,Brighton
+18/05/2023,Brighton,Newcastle
+20/05/2023,Spurs,Brentford
+20/05/2023,Bournemouth,Man Utd
+20/05/2023,Fulham,Crystal Palace
+20/05/2023,Liverpool,Aston Villa
+20/05/2023,Wolves,Everton
+20/05/2023,Nott'm Forest,Arsenal
+20/05/2023,Brentford,Spurs
+20/05/2023,Man Utd,Bournemouth
+20/05/2023,Crystal Palace,Fulham
+20/05/2023,Aston Villa,Liverpool
+20/05/2023,Everton,Wolves
+20/05/2023,Arsenal,Nott'm Forest
+21/05/2023,West Ham,Leeds
+21/05/2023,Brighton,Southampton
+21/05/2023,Man City,Chelsea
+21/05/2023,Leeds,West Ham
+21/05/2023,Southampton,Brighton
+21/05/2023,Chelsea,Man City
+22/05/2023,Newcastle,Leicester
+22/05/2023,Leicester,Newcastle
+24/05/2023,Brighton,Man City
+24/05/2023,Man City,Brighton
+25/05/2023,Man Utd,Chelsea
+25/05/2023,Chelsea,Man Utd
+28/05/2023,Arsenal,Wolves
+28/05/2023,Aston Villa,Brighton
+28/05/2023,Brentford,Man City
+28/05/2023,Chelsea,Newcastle
+28/05/2023,Crystal Palace,Nott'm Forest
+28/05/2023,Everton,Bournemouth
+28/05/2023,Leeds,Spurs
+28/05/2023,Leicester,West Ham
+28/05/2023,Man Utd,Fulham
+28/05/2023,Southampton,Liverpool
+28/05/2023,Wolves,Arsenal
+28/05/2023,Brighton,Aston Villa
+28/05/2023,Man City,Brentford
+28/05/2023,Newcastle,Chelsea
+28/05/2023,Nott'm Forest,Crystal Palace
+28/05/2023,Bournemouth,Everton
+28/05/2023,Spurs,Leeds
+28/05/2023,West Ham,Leicester
+28/05/2023,Fulham,Man Utd
+28/05/2023,Liverpool,Southampton

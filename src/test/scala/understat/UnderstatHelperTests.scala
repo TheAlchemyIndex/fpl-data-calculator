@@ -4,7 +4,6 @@ import com.github.mrpowers.spark.daria.sql.SparkSessionExt.SparkSessionMethods
 import helpers.TestHelper
 import org.apache.spark.sql.DataFrame
 import org.apache.spark.sql.types.{DoubleType, IntegerType, LongType, StringType}
-import understat.UnderstatHelper.dropColumns
 
 class UnderstatHelperTests extends TestHelper {
 
@@ -56,13 +55,4 @@ class UnderstatHelperTests extends TestHelper {
       (GENERIC_COL, StringType, true)
     )
   )
-
-  test("dropColumns - It should return a DataFrame excluding columns that were to be dropped") {
-    val droppedColumnsDf: DataFrame = dropColumns(TEST_UNDERSTAT_DF)
-    val remainingColumns: Seq[String] = droppedColumnsDf.columns.toSeq
-
-    assert(EXPECTED_UNDERSTAT_DF_DROPPED_COLUMNS.schema === droppedColumnsDf.schema)
-    assert(EXPECTED_UNDERSTAT_DF_DROPPED_COLUMNS.collect().sameElements(droppedColumnsDf.collect()))
-    assert(DROPPED_COLUMNS.intersect(remainingColumns).isEmpty)
-  }
 }

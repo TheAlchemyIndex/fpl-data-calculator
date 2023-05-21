@@ -4,7 +4,7 @@ import com.github.mrpowers.spark.daria.sql.SparkSessionExt.SparkSessionMethods
 import helpers.TestHelper
 import org.apache.spark.sql.DataFrame
 import org.apache.spark.sql.types.StringType
-import util.DataFrameHelper.{fromSnakeCaseToCamelCase, renameColumns}
+import util.DataFrameHelper.{snakeCaseToCamelCaseColumns, renameColumnsToCamelCase}
 
 class DataFrameHelperTests extends TestHelper {
 
@@ -56,24 +56,14 @@ class DataFrameHelperTests extends TestHelper {
     )
   )
 
-  test("fromSnakeCaseToCamelCase - It should take an Array of snake case column names and return an Array" +
-    "of camel case column names") {
-    assert(EXPECTED_CAMEL_CASE_COLS.sameElements(fromSnakeCaseToCamelCase(SNAKE_CASE_COLS)))
-  }
-
-  test("fromSnakeCaseToCamelCase - It should take an Array of camel case column names and return an Array" +
-    "of the same column names") {
-    assert(EXPECTED_CAMEL_CASE_COLS.sameElements(fromSnakeCaseToCamelCase(CAMEL_CASE_COLS)))
-  }
-
   test("renameColumns - It should return a DataFrame with snake case column headers converted to camelCase") {
-    val camelCaseDf: DataFrame = renameColumns(TEST_SNAKE_CASE_DF)
+    val camelCaseDf: DataFrame = renameColumnsToCamelCase(TEST_SNAKE_CASE_DF)
     assert(EXPECTED_CAMEL_CASE_DF.schema === camelCaseDf.schema)
     assert(EXPECTED_CAMEL_CASE_DF.collect().sameElements(camelCaseDf.collect()))
   }
 
   test("renameColumns - It should return a DataFrame with camel case column headers unchanged") {
-    val camelCaseDf: DataFrame = renameColumns(TEST_CAMEL_CASE_DF)
+    val camelCaseDf: DataFrame = renameColumnsToCamelCase(TEST_CAMEL_CASE_DF)
     assert(EXPECTED_CAMEL_CASE_DF.schema === camelCaseDf.schema)
     assert(EXPECTED_CAMEL_CASE_DF.collect().sameElements(camelCaseDf.collect()))
   }
