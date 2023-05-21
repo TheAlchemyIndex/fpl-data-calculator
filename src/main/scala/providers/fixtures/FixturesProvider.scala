@@ -10,7 +10,7 @@ class FixturesProvider(fixturesDf: DataFrame) extends Provider {
 
   def getData: DataFrame = {
     val camelCaseDf: DataFrame = renameColumnsToCamelCase(fixturesDf)
-    val timestampToDateDf: DataFrame = timestampToDate(camelCaseDf, CommonColumns.DATE, GameweekColumns.KICKOFF_TIME)
+    val timestampToDateDf: DataFrame = timestampToDate(camelCaseDf, CommonColumns.DATE, FixturesColumns.KICKOFF_TIME)
     dropColumns(timestampToDateDf)
   }
 

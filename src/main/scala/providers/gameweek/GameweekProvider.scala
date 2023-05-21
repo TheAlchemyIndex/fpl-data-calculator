@@ -21,10 +21,12 @@ class GameweekProvider(gameweekDf: DataFrame) extends Provider {
       GameweekColumns.OWN_GOALS,
       GameweekColumns.KICKOFF_TIME,
       GameweekColumns.RED_CARDS,
+      GameweekColumns.TEAM_A_SCORE,
       GameweekColumns.ELEMENT,
       GameweekColumns.BPS,
       GameweekColumns.WAS_HOME,
       GameweekColumns.PENALTIES_MISSED,
-      GameweekColumns.FIXTURE)
+      GameweekColumns.FIXTURE,
+      GameweekColumns.TEAM_H_SCORE)
   }
 }

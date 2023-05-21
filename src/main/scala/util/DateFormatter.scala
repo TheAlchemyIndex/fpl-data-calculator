@@ -15,7 +15,7 @@ object DateFormatter {
   }
 
   def getYear(df: DataFrame, targetColumn: String): DataFrame = {
-    df.withColumn(GameweekColumns.YEAR, month(col(targetColumn)))
+    df.withColumn(GameweekColumns.YEAR, year(col(targetColumn)))
   }
 
   def dateToMonthYear(df: DataFrame, targetColumn: String): DataFrame = {

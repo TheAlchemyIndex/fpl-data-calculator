@@ -13,12 +13,12 @@ class UnifiedPlayerDataProvider(gameweekDf: DataFrame, understatDf: DataFrame) e
   def getData: DataFrame = {
     val joinedDf: DataFrame = joinDataLeftOuter(this.gameweekDf, this.understatDf, Seq(CommonColumns.NAME, CommonColumns.DATE))
     val rollingAvgDf: DataFrame = applyRollingAvg(joinedDf, 5)
-    val filteredColumnsDf: DataFrame = dropColumns(rollingAvgDf).orderBy(CommonColumns.DATE)
-    val avgAgainstOpponentsDf: DataFrame = calculateAvgAgainstOpponent(filteredColumnsDf, GameweekColumns.TOTAL_POINTS)
+    val filteredColumnsDf: DataFrame = dropColumns(rollingAvgDf)
+    val avgAgainstOpponentsDf: DataFrame = calculateAvgAgainstOpponent(filteredColumnsDf, GameweekColumns.TOTAL_POINTS).orderBy(CommonColumns.DATE)
     dropNullRows(avgAgainstOpponentsDf, Seq(CalculatedColumns.BONUS_AVG))
   }
 
-  private def applyRollingAvg(df: DataFrame, numOfRows: Int): DataFrame = {
+  private def applyRollingAvg(df: DataFrame, numOfRows: Int) = {
     val bonusAvgDf: DataFrame = calculateRollingAvg(df, CommonColumns.NAME, GameweekColumns.BONUS, numOfRows)
     val cleanSheetsAvgDf: DataFrame = calculateRollingAvg(bonusAvgDf, CommonColumns.NAME, GameweekColumns.CLEAN_SHEETS, numOfRows)
     val goalsConcededAvgDf: DataFrame = calculateRollingAvg(cleanSheetsAvgDf, CommonColumns.NAME, GameweekColumns.GOALS_CONCEDED, numOfRows)
