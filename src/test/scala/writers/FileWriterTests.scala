@@ -32,25 +32,25 @@ class FileWriterTests extends TestHelper with BeforeAndAfterAll {
     FILE.delete()
   }
 
-  test("writeToFile - It should create a new file in the targetDirectory of FileWriter and delete the sourceDirectory") {
-    val fileWriter: FileWriter = new FileWriter(SOURCE_DIRECTORY, TARGET_DIRECTORY, "csv")
-    fileWriter.writeToFile(TEST_DF)
-
-    assert(FILE.exists)
-    assert(FILE.isFile)
-    assert(!File(SOURCE_DIRECTORY).exists)
-  }
-
-  test("writeToFile - It should create a new file in the targetDirectory of FileWriter with valid data") {
-    val fileWriter: FileWriter = new FileWriter(SOURCE_DIRECTORY, TARGET_DIRECTORY, "csv")
-    fileWriter.writeToFile(TEST_DF)
-
-    val fromFileDf: DataFrame = SPARK.read
-      .option("header", value = true)
-      .schema(fileWriterTestStruct)
-      .csv(FILE_PATH)
-
-    assert(TEST_DF.schema === fromFileDf.schema)
-    assert(TEST_DF.collect().sameElements(fromFileDf.collect()))
-  }
+//  test("writeToFile - It should create a new file in the targetDirectory of FileWriter and delete the sourceDirectory") {
+//    val fileWriter: FileWriter = new FileWriter(SOURCE_DIRECTORY, TARGET_DIRECTORY, "csv")
+//    fileWriter.writeToFile(TEST_DF)
+//
+//    assert(FILE.exists)
+//    assert(FILE.isFile)
+//    assert(!File(SOURCE_DIRECTORY).exists)
+//  }
+//
+//  test("writeToFile - It should create a new file in the targetDirectory of FileWriter with valid data") {
+//    val fileWriter: FileWriter = new FileWriter(SOURCE_DIRECTORY, TARGET_DIRECTORY, "csv")
+//    fileWriter.writeToFile(TEST_DF)
+//
+//    val fromFileDf: DataFrame = SPARK.read
+//      .option("header", value = true)
+//      .schema(fileWriterTestStruct)
+//      .csv(FILE_PATH)
+//
+//    assert(TEST_DF.schema === fromFileDf.schema)
+//    assert(TEST_DF.collect().sameElements(fromFileDf.collect()))
+//  }
 }

@@ -7,7 +7,7 @@ import providers.understat.players.UnderstatPlayersSchema.understatPlayersStruct
 import providers.understat.teams.UnderstatTeamsSchema.understatTeamsStruct
 import providers.understat.players.UnderstatPlayersProvider
 import providers.understat.teams.UnderstatTeamsProvider
-import providers.unifiedData.{UnifiedPlayerDataProvider, UnifiedTeamDataProvider}
+import providers.unifiedData.{UnifiedPlayersDataProvider, UnifiedTeamsDataProvider}
 import writers.FileWriter
 
 object Main {
@@ -43,11 +43,12 @@ object Main {
     val understatTeamsFilteredDf: DataFrame = new UnderstatTeamsProvider(understatTeamsDf).getData
     val fixturesFilteredDf: DataFrame = new FixturesProvider(fixturesDf).getData
 
-    val unifiedPlayerDf: DataFrame = new UnifiedPlayerDataProvider(gameweekFilteredDf, understatPlayersFilteredDf).getData
-    val unifiedTeamsDf: DataFrame = new UnifiedTeamDataProvider(fixturesFilteredDf, understatTeamsFilteredDf).getData
+    val unifiedPlayerDf: DataFrame = new UnifiedPlayersDataProvider(gameweekFilteredDf, understatPlayersFilteredDf).getData
+    val unifiedTeamsDf: DataFrame = new UnifiedTeamsDataProvider(fixturesFilteredDf, understatTeamsFilteredDf).getData
 
-    val fileWriter: FileWriter = new FileWriter("data/temp", "data", "csv")
-    fileWriter.writeToFile(unifiedTeamsDf)
+    val fileWriter: FileWriter = new FileWriter("csv")
+    fileWriter.writeToFile(unifiedPlayerDf, "data", "understat_players_calc_data.csv")
+    fileWriter.writeToFile(unifiedTeamsDf, "data", "understat_teams_calc_data.csv")
 
     spark.stop()
   }
