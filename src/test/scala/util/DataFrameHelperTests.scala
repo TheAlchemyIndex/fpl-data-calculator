@@ -11,14 +11,11 @@ class DataFrameHelperTests extends TestHelper {
   final val COL1_SNAKE_CASE = "col_num1"
   final val COL2_SNAKE_CASE = "col_num2"
   final val COL3_SNAKE_CASE = "col_num3"
-
   final val COL1_CAMEL_CASE = "colNum1"
   final val COL2_CAMEL_CASE = "colNum2"
   final val COL3_CAMEL_CASE = "colNum3"
-
   final val WAS_HOME_COL: String = "wasHome"
   final val HOME_FIXTURE_COL: String = "homeFixture"
-
   val EXPECTED_CAMEL_CASE_COLS: Array[String] = Array("colNum1", "colNum2", "colNum3")
 
   val TEST_SNAKE_CASE_DF: DataFrame = SPARK.createDF(
