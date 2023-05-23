@@ -1,11 +1,11 @@
-package gameweek
+package util
 
 import com.github.mrpowers.spark.daria.sql.SparkSessionExt.SparkSessionMethods
 import helpers.TestHelper
 import org.apache.spark.sql.DataFrame
+import org.apache.spark.sql.types.{DateType, IntegerType, StringType, TimestampType}
 
 import java.sql.{Date, Timestamp}
-import org.apache.spark.sql.types.{DateType, IntegerType, StringType, TimestampType}
 
 
 class DateFormatterTests extends TestHelper {

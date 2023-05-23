@@ -2,6 +2,7 @@ package constants
 
 object TemporaryRenamedColumns {
 
+  final var TEAM = "team"
   final var HOME_TEAM_TEMP = "homeTeam_"
   final var AWAY_TEAM_TEMP = "awayTeam_"
   final var TEAM_H_DIFFICULTY_TEMP = "teamHDifficulty_"
