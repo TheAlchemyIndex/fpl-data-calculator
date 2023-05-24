@@ -2,6 +2,7 @@ package providers.unifiedData
 
 import constants.{CommonColumns, FixturesColumns, TemporaryRenamedColumns, UnderstatTeamsColumns, UnifiedTeamsColumns}
 import org.apache.spark.sql.DataFrame
+import org.apache.spark.sql.functions.{col, when}
 import providers.Provider
 import util.AverageCalculator.calculateRollingAvg
 import util.DataFrameHelper.{dropNullRows, joinDataLeftOuter}
@@ -23,8 +24,9 @@ class UnifiedTeamsDataProvider(fixturesDf: DataFrame, understatTeamsDf: DataFram
       .drop(UnderstatTeamsColumns.H_A)
 
     val team2RenamedXGColumnsDf: DataFrame = renameTeam2Columns(joinedTeam2Df)
+    val bothTeamsScoredDf: DataFrame = bothTeamsScoredColumn(team2RenamedXGColumnsDf)
 
-    val rollingAvgDf: DataFrame = applyRollingAvg(team2RenamedXGColumnsDf, 5)
+    val rollingAvgDf: DataFrame = applyRollingAvg(bothTeamsScoredDf, 5)
     val droppedColumnsDf: DataFrame = dropColumns(rollingAvgDf)
     dropNullRows(droppedColumnsDf, Seq(UnifiedTeamsColumns.TEAM_1_XPX_G_AVG, UnifiedTeamsColumns.TEAM_2_XPX_G_AVG))
   }
@@ -90,6 +92,12 @@ class UnifiedTeamsDataProvider(fixturesDf: DataFrame, understatTeamsDf: DataFram
       .withColumnRenamed(UnderstatTeamsColumns.NPX_G_D, UnifiedTeamsColumns.TEAM_2_NPX_G_D)
       .withColumnRenamed(UnderstatTeamsColumns.NPX_G_A, UnifiedTeamsColumns.TEAM_2_NPX_G_A)
       .withColumnRenamed(UnderstatTeamsColumns.X_G_A, UnifiedTeamsColumns.TEAM_2_X_G_A)
+  }
+
+  private def bothTeamsScoredColumn(df: DataFrame): DataFrame = {
+    df.withColumn(UnifiedTeamsColumns.BOTH_SCORED,
+      when((col(UnifiedTeamsColumns.TEAM_1_SCORE) > 0) && (col(UnifiedTeamsColumns.TEAM_2_SCORE) > 0), 1)
+        .otherwise(0))
   }
 
   private def applyRollingAvg(df: DataFrame, numOfRows: Int): DataFrame = {
