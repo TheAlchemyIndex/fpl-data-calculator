@@ -22,4 +22,5 @@ object UnderstatTeamsColumns {
   final var SCORED = "scored"
   final var LOSES = "loses"
   final var DRAWS = "draws"
+  final var SEASON = "season"
 }

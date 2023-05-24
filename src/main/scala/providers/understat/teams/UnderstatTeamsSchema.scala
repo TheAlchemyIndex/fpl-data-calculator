@@ -27,7 +27,8 @@ object UnderstatTeamsSchema {
       StructField("deep_allowed", DataTypes.IntegerType, true, Metadata.empty),
       StructField("scored", DataTypes.IntegerType, true, Metadata.empty),
       StructField("loses", DataTypes.IntegerType, true, Metadata.empty),
-      StructField("draws", DataTypes.IntegerType, true, Metadata.empty)
+      StructField("draws", DataTypes.IntegerType, true, Metadata.empty),
+      StructField("season", DataTypes.StringType, true, Metadata.empty)
     )
   )
 }

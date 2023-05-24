@@ -18,6 +18,7 @@ class UnifiedTeamsDataProvider(fixturesDf: DataFrame, understatTeamsDf: DataFram
 
     val team1RenamedXGColumnsDf: DataFrame = renameTeam1Columns(joinedTeam1Df)
       .withColumnRenamed(FixturesColumns.AWAY_TEAM, TemporaryRenamedColumns.TEAM)
+      .drop(UnderstatTeamsColumns.SEASON)
 
     val joinedTeam2Df: DataFrame = joinDataLeftOuter(team1RenamedXGColumnsDf, this.understatTeamsDf, Seq(CommonColumns.DATE, UnderstatTeamsColumns.TEAM))
       .withColumnRenamed(TemporaryRenamedColumns.TEAM, UnifiedTeamsColumns.TEAM_2)
