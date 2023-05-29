@@ -21,5 +21,7 @@ object UnifiedTeamsColumns {
   final var AWAY_TEAM = "awayTeam"
   final var TEAM_1_XPX_G_AVG = "team1NpxGAvg"
   final var TEAM_2_XPX_G_AVG = "team2NpxGAvg"
+  final var TEAM_1_SCORE_AVG_OPPONENT = "team1ScoreAvgAgainstOpponent"
+  final var TEAM_2_SCORE_AVG_OPPONENT = "team2ScoreAvgAgainstOpponent"
   final var BOTH_SCORED = "bothScored"
 }
