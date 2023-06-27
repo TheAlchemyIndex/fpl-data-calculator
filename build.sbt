@@ -16,6 +16,7 @@ libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-core" % spark_version,
   "org.apache.spark" %% "spark-sql" % spark_version,
 
+  "com.typesafe" % "config" % "1.4.2",
   "com.typesafe.scala-logging" %% "scala-logging" % scala_logging_version,
 
   "com.github.mrpowers" %% "spark-daria" % spark_daria_version,
