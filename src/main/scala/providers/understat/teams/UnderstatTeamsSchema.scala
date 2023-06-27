@@ -4,6 +4,13 @@ import org.apache.spark.sql.types.{DataTypes, Metadata, StructField, StructType}
 
 object UnderstatTeamsSchema {
 
+  val ppdaStruct = new StructType(
+    Array[StructField](
+    StructField("att", DataTypes.IntegerType, true, Metadata.empty),
+    StructField("def", DataTypes.IntegerType, true, Metadata.empty)
+    )
+  )
+
   val understatTeamsStruct = new StructType(
     Array[StructField](
       StructField("date", DataTypes.TimestampType, true, Metadata.empty),

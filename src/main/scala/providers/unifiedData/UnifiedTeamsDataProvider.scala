@@ -14,23 +14,30 @@ class UnifiedTeamsDataProvider(fixturesDf: DataFrame, understatTeamsDf: DataFram
       .withColumnRenamed(FixturesColumns.HOME_TEAM, TemporaryRenamedColumns.TEAM)
     val joinedTeam1Df: DataFrame = joinDataLeftOuter(homeAwayReversedFixturesDf, this.understatTeamsDf, Seq(CommonColumns.DATE, UnderstatTeamsColumns.TEAM))
       .withColumnRenamed(TemporaryRenamedColumns.TEAM, UnifiedTeamsColumns.TEAM_1)
-      .drop(UnderstatTeamsColumns.H_A)
 
     val team1RenamedXGColumnsDf: DataFrame = renameTeam1Columns(joinedTeam1Df)
       .withColumnRenamed(FixturesColumns.AWAY_TEAM, TemporaryRenamedColumns.TEAM)
       .drop(UnderstatTeamsColumns.SEASON)
 
-    val joinedTeam2Df: DataFrame = joinDataLeftOuter(team1RenamedXGColumnsDf, this.understatTeamsDf, Seq(CommonColumns.DATE, UnderstatTeamsColumns.TEAM))
+    val tempUnderstat = this.understatTeamsDf
+      .drop("ppdaAllowedAtt")
+      .drop("ppdaAllowedDef")
+      .drop("ppdaAtt")
+      .drop("ppdaDef")
+      .drop("team1Type")
+      .drop("team2Type")
+
+    val joinedTeam2Df: DataFrame = joinDataLeftOuter(team1RenamedXGColumnsDf, tempUnderstat, Seq(CommonColumns.DATE, UnderstatTeamsColumns.TEAM))
       .withColumnRenamed(TemporaryRenamedColumns.TEAM, UnifiedTeamsColumns.TEAM_2)
-      .drop(UnderstatTeamsColumns.H_A)
 
     val team2RenamedXGColumnsDf: DataFrame = renameTeam2Columns(joinedTeam2Df)
     val bothTeamsScoredDf: DataFrame = bothTeamsScoredColumn(team2RenamedXGColumnsDf)
+    val cleanSheetDf: DataFrame = cleanSheetColumns(bothTeamsScoredDf)
 
-    val rollingAvgDf: DataFrame = applyRollingAvg(bothTeamsScoredDf, 5)
-    val rollingAvgAgainstOpponentDf: DataFrame = applyRollingAvgAgainstOpponent(rollingAvgDf, 5)
-    val droppedColumnsDf: DataFrame = dropColumns(rollingAvgAgainstOpponentDf)
-    dropNullRows(droppedColumnsDf, Seq(UnifiedTeamsColumns.TEAM_1_XPX_G_AVG, UnifiedTeamsColumns.TEAM_2_XPX_G_AVG, UnifiedTeamsColumns.TEAM_1_SCORE_AVG_OPPONENT))
+    val rollingAvgDf: DataFrame = applyRollingAvg(cleanSheetDf, 5)
+//    val rollingAvgAgainstOpponentDf: DataFrame = applyRollingAvgAgainstOpponent(rollingAvgDf, 4)
+    val droppedColumnsDf: DataFrame = dropColumns(rollingAvgDf)
+    dropNullRows(droppedColumnsDf, Seq(UnifiedTeamsColumns.TEAM_1_XPX_G_AVG, UnifiedTeamsColumns.TEAM_2_XPX_G_AVG))
   }
 
   private def reverseHomeAwayColumns(df: DataFrame): DataFrame = {
@@ -102,6 +109,16 @@ class UnifiedTeamsDataProvider(fixturesDf: DataFrame, understatTeamsDf: DataFram
         .otherwise(0))
   }
 
+  private def cleanSheetColumns(df: DataFrame): DataFrame = {
+    val team1Df = df.withColumn(UnifiedTeamsColumns.TEAM_1_CLEAN_SHEET, when(col(UnifiedTeamsColumns.TEAM_2_SCORE) === 0, 1)
+      when(col(UnifiedTeamsColumns.TEAM_2_SCORE) > 0, 0))
+
+    val team2Df = team1Df.withColumn(UnifiedTeamsColumns.TEAM_2_CLEAN_SHEET, when(col(UnifiedTeamsColumns.TEAM_1_SCORE) === 0, 1)
+      when(col(UnifiedTeamsColumns.TEAM_1_SCORE) > 0, 0))
+
+    team2Df
+  }
+
   private def applyRollingAvg(df: DataFrame, numOfRows: Int): DataFrame = {
     val goalsScoredAvgTeam1Df: DataFrame = calculateRollingAvg(df, UnifiedTeamsColumns.TEAM_1, UnifiedTeamsColumns.TEAM_1_SCORE, numOfRows)
     val xpxGAvgTeam1Df: DataFrame = calculateRollingAvg(goalsScoredAvgTeam1Df, UnifiedTeamsColumns.TEAM_1, UnifiedTeamsColumns.TEAM_1_NPX_G, numOfRows)
@@ -109,14 +126,16 @@ class UnifiedTeamsDataProvider(fixturesDf: DataFrame, understatTeamsDf: DataFram
     val npxGDvgTeam1Df: DataFrame = calculateRollingAvg(xGAvgTeam1Df, UnifiedTeamsColumns.TEAM_1, UnifiedTeamsColumns.TEAM_1_NPX_G_D, numOfRows)
     val npxGAAvgTeam1Df: DataFrame = calculateRollingAvg(npxGDvgTeam1Df, UnifiedTeamsColumns.TEAM_1, UnifiedTeamsColumns.TEAM_1_NPX_G_A, numOfRows)
     val xGAAvgTeam1Df: DataFrame = calculateRollingAvg(npxGAAvgTeam1Df, UnifiedTeamsColumns.TEAM_1, UnifiedTeamsColumns.TEAM_1_X_G_A, numOfRows)
+    val cleanSheetAvgTeam1Df: DataFrame = calculateRollingAvg(xGAAvgTeam1Df, UnifiedTeamsColumns.TEAM_1, UnifiedTeamsColumns.TEAM_1_CLEAN_SHEET, numOfRows)
 
-    val goalsScoredAvgTeam2Df: DataFrame = calculateRollingAvg(xGAAvgTeam1Df, UnifiedTeamsColumns.TEAM_2, UnifiedTeamsColumns.TEAM_2_SCORE, numOfRows)
+    val goalsScoredAvgTeam2Df: DataFrame = calculateRollingAvg(cleanSheetAvgTeam1Df, UnifiedTeamsColumns.TEAM_2, UnifiedTeamsColumns.TEAM_2_SCORE, numOfRows)
     val xpxGAvgTeam2Df: DataFrame = calculateRollingAvg(goalsScoredAvgTeam2Df, UnifiedTeamsColumns.TEAM_2, UnifiedTeamsColumns.TEAM_2_NPX_G, numOfRows)
     val xGAvgTeam2Df: DataFrame = calculateRollingAvg(xpxGAvgTeam2Df, UnifiedTeamsColumns.TEAM_2, UnifiedTeamsColumns.TEAM_2_X_G, numOfRows)
     val npxGDvgTeam2Df: DataFrame = calculateRollingAvg(xGAvgTeam2Df, UnifiedTeamsColumns.TEAM_2, UnifiedTeamsColumns.TEAM_2_NPX_G_D, numOfRows)
     val npxGAAvgTeam2Df: DataFrame = calculateRollingAvg(npxGDvgTeam2Df, UnifiedTeamsColumns.TEAM_2, UnifiedTeamsColumns.TEAM_2_NPX_G_A, numOfRows)
     val xGAAvgTeam2Df: DataFrame = calculateRollingAvg(npxGAAvgTeam2Df, UnifiedTeamsColumns.TEAM_2, UnifiedTeamsColumns.TEAM_2_X_G_A, numOfRows)
-    xGAAvgTeam2Df
+    val cleanSheetAvgTeam2Df: DataFrame = calculateRollingAvg(xGAAvgTeam2Df, UnifiedTeamsColumns.TEAM_2, UnifiedTeamsColumns.TEAM_2_CLEAN_SHEET, numOfRows)
+    cleanSheetAvgTeam2Df
   }
 
   private def applyRollingAvgAgainstOpponent(df: DataFrame, numOfRows: Int): DataFrame = {
@@ -126,14 +145,16 @@ class UnifiedTeamsDataProvider(fixturesDf: DataFrame, understatTeamsDf: DataFram
     val npxGDvgTeam1Df: DataFrame = calculateRollingAvg(xGAvgTeam1Df, UnifiedTeamsColumns.TEAM_1, UnifiedTeamsColumns.TEAM_2, UnifiedTeamsColumns.TEAM_1_NPX_G_D, numOfRows)
     val npxGAAvgTeam1Df: DataFrame = calculateRollingAvg(npxGDvgTeam1Df, UnifiedTeamsColumns.TEAM_1, UnifiedTeamsColumns.TEAM_2, UnifiedTeamsColumns.TEAM_1_NPX_G_A, numOfRows)
     val xGAAvgTeam1Df: DataFrame = calculateRollingAvg(npxGAAvgTeam1Df, UnifiedTeamsColumns.TEAM_1, UnifiedTeamsColumns.TEAM_2, UnifiedTeamsColumns.TEAM_1_X_G_A, numOfRows)
+    val cleanSheetAvgTeam1Df: DataFrame = calculateRollingAvg(xGAAvgTeam1Df, UnifiedTeamsColumns.TEAM_1, UnifiedTeamsColumns.TEAM_2, UnifiedTeamsColumns.TEAM_1_CLEAN_SHEET, numOfRows)
 
-    val goalsScoredAvgTeam2Df: DataFrame = calculateRollingAvg(xGAAvgTeam1Df, UnifiedTeamsColumns.TEAM_2, UnifiedTeamsColumns.TEAM_1, UnifiedTeamsColumns.TEAM_2_SCORE, numOfRows)
+    val goalsScoredAvgTeam2Df: DataFrame = calculateRollingAvg(cleanSheetAvgTeam1Df, UnifiedTeamsColumns.TEAM_2, UnifiedTeamsColumns.TEAM_1, UnifiedTeamsColumns.TEAM_2_SCORE, numOfRows)
     val xpxGAvgTeam2Df: DataFrame = calculateRollingAvg(goalsScoredAvgTeam2Df, UnifiedTeamsColumns.TEAM_2, UnifiedTeamsColumns.TEAM_1, UnifiedTeamsColumns.TEAM_2_NPX_G, numOfRows)
     val xGAvgTeam2Df: DataFrame = calculateRollingAvg(xpxGAvgTeam2Df, UnifiedTeamsColumns.TEAM_2, UnifiedTeamsColumns.TEAM_1, UnifiedTeamsColumns.TEAM_2_X_G, numOfRows)
     val npxGDvgTeam2Df: DataFrame = calculateRollingAvg(xGAvgTeam2Df, UnifiedTeamsColumns.TEAM_2, UnifiedTeamsColumns.TEAM_1, UnifiedTeamsColumns.TEAM_2_NPX_G_D, numOfRows)
     val npxGAAvgTeam2Df: DataFrame = calculateRollingAvg(npxGDvgTeam2Df, UnifiedTeamsColumns.TEAM_2, UnifiedTeamsColumns.TEAM_1, UnifiedTeamsColumns.TEAM_2_NPX_G_A, numOfRows)
     val xGAAvgTeam2Df: DataFrame = calculateRollingAvg(npxGAAvgTeam2Df, UnifiedTeamsColumns.TEAM_2, UnifiedTeamsColumns.TEAM_1, UnifiedTeamsColumns.TEAM_2_X_G_A, numOfRows)
-    xGAAvgTeam2Df
+    val cleanSheetAvgTeam2Df: DataFrame = calculateRollingAvg(xGAAvgTeam2Df, UnifiedTeamsColumns.TEAM_1, UnifiedTeamsColumns.TEAM_2, UnifiedTeamsColumns.TEAM_2_CLEAN_SHEET, numOfRows)
+    cleanSheetAvgTeam2Df
   }
 
   private def dropColumns(df: DataFrame): DataFrame = {
@@ -144,11 +165,13 @@ class UnifiedTeamsDataProvider(fixturesDf: DataFrame, understatTeamsDf: DataFram
       UnifiedTeamsColumns.TEAM_1_NPX_G_D,
       UnifiedTeamsColumns.TEAM_1_NPX_G_A,
       UnifiedTeamsColumns.TEAM_1_X_G_A,
+      UnifiedTeamsColumns.TEAM_1_CLEAN_SHEET,
       UnifiedTeamsColumns.TEAM_2_NPX_G,
       UnifiedTeamsColumns.TEAM_2_X_G,
       UnifiedTeamsColumns.TEAM_2_NPX_G_D,
       UnifiedTeamsColumns.TEAM_2_NPX_G_A,
-      UnifiedTeamsColumns.TEAM_2_X_G_A
+      UnifiedTeamsColumns.TEAM_2_X_G_A,
+      UnifiedTeamsColumns.TEAM_2_CLEAN_SHEET
     )
   }
 }

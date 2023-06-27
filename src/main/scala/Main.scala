@@ -31,23 +31,23 @@ object Main {
     val understatTeamsDf: DataFrame = spark.read
       .option("header", value = true)
       .schema(understatTeamsStruct)
-      .csv("data/Understat Teams - 2019-23 seasons.csv")
+      .csv("data/Understat Teams - 2018-23 seasons.csv")
 
     val fixturesDf: DataFrame = spark.read
       .option("header", value = true)
       .schema(fixturesStruct)
-      .csv("data/Fixtures - 2019-23 seasons.csv")
+      .csv("data/Fixtures - 2018-23 seasons.csv")
 
-    val gameweekFilteredDf: DataFrame = new GameweekProvider(gameweekDf).getData
-    val understatPlayersFilteredDf: DataFrame = new UnderstatPlayersProvider(understatPlayersDf).getData
+//    val gameweekFilteredDf: DataFrame = new GameweekProvider(gameweekDf).getData
+//    val understatPlayersFilteredDf: DataFrame = new UnderstatPlayersProvider(understatPlayersDf).getData
     val understatTeamsFilteredDf: DataFrame = new UnderstatTeamsProvider(understatTeamsDf).getData
     val fixturesFilteredDf: DataFrame = new FixturesProvider(fixturesDf).getData
 
-    val unifiedPlayerDf: DataFrame = new UnifiedPlayersDataProvider(gameweekFilteredDf, understatPlayersFilteredDf).getData
+//    val unifiedPlayerDf: DataFrame = new UnifiedPlayersDataProvider(gameweekFilteredDf, understatPlayersFilteredDf).getData
     val unifiedTeamsDf: DataFrame = new UnifiedTeamsDataProvider(fixturesFilteredDf, understatTeamsFilteredDf).getData
 
     val fileWriter: FileWriter = new FileWriter("csv")
-    fileWriter.writeToFile(unifiedPlayerDf, "data", "understat_players_calc_data.csv")
+//    fileWriter.writeToFile(unifiedPlayerDf, "data", "understat_players_calc_data.csv")
     fileWriter.writeToFile(unifiedTeamsDf, "data", "understat_teams_calc_data.csv")
 
     spark.stop()

@@ -24,4 +24,6 @@ object UnifiedTeamsColumns {
   final var TEAM_1_SCORE_AVG_OPPONENT = "team1ScoreAvgAgainstOpponent"
   final var TEAM_2_SCORE_AVG_OPPONENT = "team2ScoreAvgAgainstOpponent"
   final var BOTH_SCORED = "bothScored"
+  final var TEAM_1_CLEAN_SHEET = "team1CleanSheet"
+  final var TEAM_2_CLEAN_SHEET = "team2CleanSheet"
 }
