@@ -1,7 +1,7 @@
 package providers.impl.gameweek
 
 import org.apache.spark.sql.DataFrame
-import org.apache.spark.sql.functions.{col, month, to_date, when}
+import org.apache.spark.sql.functions.{col, month, to_date, when, year}
 import providers.Provider
 import util.constants.{CommonColumns, GameweekColumns}
 
@@ -11,7 +11,7 @@ class GameweekProvider(gameweekDf: DataFrame) extends Provider {
     val dateFormattedDf: DataFrame = booleanColumnToBinary(gameweekDf, GameweekColumns.HOME_FIXTURE, GameweekColumns.WAS_HOME)
       .withColumn(CommonColumns.DATE, to_date(col(GameweekColumns.KICKOFF_TIME), "yyyy-MM-dd"))
       .withColumn(GameweekColumns.MONTH, month(col(CommonColumns.DATE)))
-      .withColumn(GameweekColumns.YEAR, month(col(CommonColumns.DATE)))
+      .withColumn(GameweekColumns.YEAR, year(col(CommonColumns.DATE)))
 
     dropColumns(dateFormattedDf)
   }
