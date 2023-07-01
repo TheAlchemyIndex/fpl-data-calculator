@@ -1,45 +1,40 @@
-package unifiedData
+package providers.util
 
 import com.github.mrpowers.spark.daria.sql.SparkSessionExt.SparkSessionMethods
 import helpers.TestHelper
 import org.apache.spark.sql.DataFrame
-import org.apache.spark.sql.types.{DateType, DoubleType, IntegerType, LongType, StringType}
+import org.apache.spark.sql.types._
 import providers.util.AverageCalculator.calculateRollingAvg
 
 import java.sql.Date
 
-class AverageCalculatorTests extends TestHelper {
-
-  final val UNFORMATTED_DATE_COL = "unformattedDate"
-  final val DATE_FORMAT = "dd/MM/yyyy"
+class AverageCalculatorTest extends TestHelper {
 
   final val NAME_COL = "name"
   final val DATE_COL = "date"
-  final val OPPONENT_TEAM_COL = "opponentTeam"
-  final val INTEGER_COL = "integerColumn"
-  final val DOUBLE_COL = "doubleColumn"
-  final val LONG_COL = "longColumn"
-  final val INTEGER_AVG_COL = "integerColumnAvg"
-  final val DOUBLE_AVG_COL = "doubleColumnAvg"
-  final val LONG_AVG_COL = "longColumnAvg"
-  final val INTEGER_COL_AGAINST_OPPONENT_AVG = "integerColumnAgainstOpponentAvg"
+  final val INTEGER_COL = "integer_column"
+  final val DOUBLE_COL = "double_column"
+  final val LONG_COL = "long_column"
+  final val INTEGER_AVG_COL = "integer_column_avg"
+  final val DOUBLE_AVG_COL = "double_column_avg"
+  final val LONG_AVG_COL = "long_column_avg"
   final val NUM_OF_ROWS = 5
 
   val TEST_INTEGER_DF: DataFrame = SPARK.createDF(
     List(
       ("name1", Date.valueOf("2019-08-10"), 1),
-      ("name1", Date.valueOf("2019-08-11"), 2),
-      ("name1", Date.valueOf("2019-08-12"), 3),
-      ("name1", Date.valueOf("2019-08-13"), 5),
-      ("name1", Date.valueOf("2019-08-14"), 6),
-      ("name1", Date.valueOf("2019-08-15"), 7),
-      ("name1", Date.valueOf("2019-08-16"), 8),
       ("name2", Date.valueOf("2019-08-10"), 2),
+      ("name1", Date.valueOf("2019-08-11"), 2),
       ("name2", Date.valueOf("2019-08-11"), 3),
+      ("name1", Date.valueOf("2019-08-12"), 3),
       ("name2", Date.valueOf("2019-08-12"), 4),
+      ("name1", Date.valueOf("2019-08-13"), 5),
       ("name2", Date.valueOf("2019-08-13"), 6),
+      ("name1", Date.valueOf("2019-08-14"), 6),
       ("name2", Date.valueOf("2019-08-14"), 7),
+      ("name1", Date.valueOf("2019-08-15"), 7),
       ("name2", Date.valueOf("2019-08-15"), 8),
+      ("name1", Date.valueOf("2019-08-16"), 8),
       ("name2", Date.valueOf("2019-08-16"), 9)
     ), List(
       (NAME_COL, StringType, true),
@@ -163,53 +158,6 @@ class AverageCalculatorTests extends TestHelper {
       (DATE_COL, DateType, true),
       (LONG_COL, LongType, true),
       (LONG_AVG_COL, DoubleType, true)
-    )
-  )
-
-  val TEST_OPPONENT_TEAM_DF: DataFrame = SPARK.createDF(
-    List(
-      ("name1", "team1", 1),
-      ("name1", "team1", 2),
-      ("name1", "team2", 3),
-      ("name1", "team2", 5),
-      ("name1", "team3", 6),
-      ("name1", "team3", 7),
-      ("name1", "team4", 8),
-      ("name2", "team1", 2),
-      ("name2", "team1", 3),
-      ("name2", "team2", 4),
-      ("name2", "team2", 6),
-      ("name2", "team3", 7),
-      ("name2", "team3", 8),
-      ("name2", "team4", 9)
-    ), List(
-      (NAME_COL, StringType, true),
-      (OPPONENT_TEAM_COL, StringType, true),
-      (INTEGER_COL, IntegerType, true)
-    )
-  )
-
-  val EXPECTED_OPPONENT_TEAM_AVG_DF: DataFrame = SPARK.createDF(
-    List(
-      ("name1", "team1", 1, 1.5),
-      ("name1", "team1", 2, 1.5),
-      ("name1", "team2", 3, 4.0),
-      ("name1", "team2", 5, 4.0),
-      ("name1", "team3", 6, 6.5),
-      ("name1", "team3", 7, 6.5),
-      ("name1", "team4", 8, 8.0),
-      ("name2", "team1", 2, 2.5),
-      ("name2", "team1", 3, 2.5),
-      ("name2", "team2", 4, 5.0),
-      ("name2", "team2", 6, 5.0),
-      ("name2", "team3", 7, 7.5),
-      ("name2", "team3", 8, 7.5),
-      ("name2", "team4", 9, 9.0)
-    ), List(
-      (NAME_COL, StringType, true),
-      (OPPONENT_TEAM_COL, StringType, true),
-      (INTEGER_COL, IntegerType, true),
-      (INTEGER_COL_AGAINST_OPPONENT_AVG, DoubleType, true)
     )
   )
 
