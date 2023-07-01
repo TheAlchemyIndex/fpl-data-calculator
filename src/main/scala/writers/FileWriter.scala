@@ -7,27 +7,27 @@ import org.apache.spark.sql.DataFrame
 import java.io.File
 import java.nio.file.{Files, StandardCopyOption}
 
-class FileWriter(fileType: String) {
+class FileWriter(fileType: String, baseFilePath: String) {
 
   val LOGGER: Logger = Logger(LoggerFactory.getLogger(getClass.getName))
-  val SOURCE_LOCATION: String = "data/temp"
+  val TEMP_FILE_LOCATION: String = "data/temp"
 
-  def writeToFile(df: DataFrame, targetLocation: String, newFileName: String): Unit = {
+  def writeToFile(df: DataFrame, newFileName: String): Unit = {
     df
       .coalesce(1)
       .write
       .option("header", "true")
       .option("delimiter", ",")
-      .option("path", SOURCE_LOCATION)
+      .option("path", TEMP_FILE_LOCATION)
       .format(fileType)
       .save()
 
-    moveAndDeleteFiles(SOURCE_LOCATION, targetLocation, newFileName)
+    moveAndDeleteFiles(TEMP_FILE_LOCATION, newFileName)
   }
 
-  private def moveAndDeleteFiles(sourceLocation: String, targetLocation: String, newFileName: String): Unit = {
+  private def moveAndDeleteFiles(sourceLocation: String, newFileName: String): Unit = {
     val sourceDirectory: File = new File(sourceLocation)
-    val targetDirectory: File = new File(targetLocation)
+    val targetDirectory: File = new File(this.baseFilePath)
     val sourceFileType: Option[File] = sourceDirectory.listFiles().find(_.getName.endsWith("." + fileType))
 
     sourceFileType match {

@@ -1,8 +1,8 @@
 package providers.impl.understat.players
 
-import constants.UnderstatPlayersColumns
 import org.apache.spark.sql.DataFrame
 import providers.Provider
+import util.constants.UnderstatPlayersColumns
 
 class UnderstatPlayersProvider(understatDf: DataFrame) extends Provider {
 

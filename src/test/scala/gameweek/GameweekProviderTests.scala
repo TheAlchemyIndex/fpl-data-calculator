@@ -5,7 +5,6 @@ import helpers.schemas.gameweek.GameweekProviderTestSchema.gameweekProviderTestS
 import helpers.schemas.gameweek.GameweekTestSchema.gameweekTestStruct
 import org.apache.spark.sql.DataFrame
 import org.apache.spark.sql.functions.{col, to_date}
-import providers.impl.fixtures.gameweek.GameweekProvider
 
 class GameweekProviderTests extends TestHelper {
 

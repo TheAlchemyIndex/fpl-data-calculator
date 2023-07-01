@@ -1,10 +1,9 @@
 package providers.impl.gameweek
 
-import constants.{CommonColumns, GameweekColumns}
 import org.apache.spark.sql.DataFrame
-import org.apache.spark.sql.functions.{col, month, to_date}
+import org.apache.spark.sql.functions.{col, month, to_date, when}
 import providers.Provider
-import providers.util.DataFrameHelper.booleanColumnToBinary
+import util.constants.{CommonColumns, GameweekColumns}
 
 class GameweekProvider(gameweekDf: DataFrame) extends Provider {
 
@@ -29,5 +28,10 @@ class GameweekProvider(gameweekDf: DataFrame) extends Provider {
       GameweekColumns.PENALTIES_MISSED,
       GameweekColumns.FIXTURE,
       GameweekColumns.TEAM_H_SCORE)
+  }
+
+  private def booleanColumnToBinary(df: DataFrame, newColumn: String, targetColumn: String): DataFrame = {
+    df.withColumn(newColumn, when(col(targetColumn) === true, 1)
+      when(col(targetColumn) === false, 0))
   }
 }

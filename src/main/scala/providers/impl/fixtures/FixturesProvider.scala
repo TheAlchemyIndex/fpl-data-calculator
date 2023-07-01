@@ -1,9 +1,9 @@
 package providers.impl.fixtures
 
-import constants.{CommonColumns, FixturesColumns}
 import org.apache.spark.sql.DataFrame
 import org.apache.spark.sql.functions.{col, to_date}
 import providers.Provider
+import util.constants.{CommonColumns, FixturesColumns}
 
 class FixturesProvider(fixturesDf: DataFrame) extends Provider {
 

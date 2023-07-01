@@ -4,7 +4,7 @@ import com.github.mrpowers.spark.daria.sql.SparkSessionExt.SparkSessionMethods
 import helpers.TestHelper
 import org.apache.spark.sql.DataFrame
 import org.apache.spark.sql.types.{DateType, DoubleType, IntegerType, LongType, StringType}
-import util.AverageCalculator.calculateRollingAvg
+import providers.util.AverageCalculator.calculateRollingAvg
 
 import java.sql.Date
 

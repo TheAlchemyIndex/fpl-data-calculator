@@ -1,17 +1,17 @@
 package providers.impl.understat.teams
 
-import constants.{CommonColumns, UnderstatTeamsColumns}
 import org.apache.spark.sql.{Column, DataFrame}
 import org.apache.spark.sql.functions.{col, to_date, udf, when}
 import providers.Provider
+import util.constants.{CommonColumns, TemporaryRenamedColumns, UnderstatTeamsColumns}
 
 class UnderstatTeamsProvider(understatTeamsDf: DataFrame) extends Provider {
 
   def getData: DataFrame = {
     val dateFormattedDf: DataFrame = understatTeamsDf
       .withColumn(CommonColumns.DATE, to_date(col(UnderstatTeamsColumns.DATE), "yyyy-MM-dd"))
-      .withColumn("team2Type", when(col(UnderstatTeamsColumns.H_A) === "h", "a").otherwise("h"))
-      .withColumnRenamed(UnderstatTeamsColumns.H_A, "team1Type")
+      .withColumn(UnderstatTeamsColumns.TEAM_2_TYPE, when(col(UnderstatTeamsColumns.H_A) === "h", "a").otherwise("h"))
+      .withColumnRenamed(UnderstatTeamsColumns.H_A, UnderstatTeamsColumns.TEAM_1_TYPE)
 
     val ppdaFormattedDf: DataFrame = extractPpda(dateFormattedDf)
     dropColumns(ppdaFormattedDf)
@@ -19,14 +19,14 @@ class UnderstatTeamsProvider(understatTeamsDf: DataFrame) extends Provider {
 
   private def extractPpda(df: DataFrame): DataFrame = {
     df
-      .withColumn("ppda_allowed_att_def", ppdaPatternMatcher(col(UnderstatTeamsColumns.PPDA_ALLOWED)))
-      .withColumn("ppda_att_def", ppdaPatternMatcher(col(UnderstatTeamsColumns.PPDA)))
-      .withColumn("ppdaAllowedAtt", col("ppda_allowed_att_def").getField("_1"))
-      .withColumn("ppdaAllowedDef", col("ppda_allowed_att_def").getField("_2"))
-      .withColumn("ppdaAtt", col("ppda_att_def").getField("_1"))
-      .withColumn("ppdaDef", col("ppda_att_def").getField("_2"))
-      .drop("ppda_allowed_att_def")
-      .drop("ppda_att_def")
+      .withColumn(TemporaryRenamedColumns.PPDA_ALLOWED_ATT_DEF, ppdaPatternMatcher(col(UnderstatTeamsColumns.PPDA_ALLOWED)))
+      .withColumn(TemporaryRenamedColumns.PPDA_ATT_DEF, ppdaPatternMatcher(col(UnderstatTeamsColumns.PPDA)))
+      .withColumn(UnderstatTeamsColumns.PPDA_ALLOWED_ATT, col(TemporaryRenamedColumns.PPDA_ALLOWED_ATT_DEF).getField("_1"))
+      .withColumn(UnderstatTeamsColumns.PPDA_ALLOWED_DEF, col(TemporaryRenamedColumns.PPDA_ALLOWED_ATT_DEF).getField("_2"))
+      .withColumn(UnderstatTeamsColumns.PPDA_ATT, col(TemporaryRenamedColumns.PPDA_ATT_DEF).getField("_1"))
+      .withColumn(UnderstatTeamsColumns.PPDA_DEF, col(TemporaryRenamedColumns.PPDA_ATT_DEF).getField("_2"))
+      .drop(TemporaryRenamedColumns.PPDA_ALLOWED_ATT_DEF)
+      .drop(TemporaryRenamedColumns.PPDA_ATT_DEF)
   }
 
   private def ppdaPatternMatcher(data: Column): Column = {
