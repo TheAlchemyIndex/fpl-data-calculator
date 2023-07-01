@@ -7,7 +7,7 @@ import org.apache.spark.sql.DataFrame
 import org.apache.spark.sql.functions.{col, to_date}
 import providers.impl.gameweek.GameweekProvider
 
-class GameweekProviderTests extends TestHelper {
+class GameweekProviderTest extends TestHelper {
 
   final val DATE_COL: String = "date"
   final val DATE_FORMAT = "dd/MM/yyyy"
