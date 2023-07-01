@@ -6,7 +6,7 @@ import helpers.schemas.gameweek.GameweekProviderTestSchema.gameweekProviderTestS
 import helpers.schemas.understat.UnderstatTestSchema.understatTestStruct
 import org.apache.spark.sql.DataFrame
 import org.apache.spark.sql.functions.{col, to_date}
-import providers.unifiedData.UnifiedPlayersDataProvider
+import providers.impl.unifiedData.UnifiedPlayersDataProvider
 
 class UnifiedPlayersDataProviderTests extends TestHelper {
 

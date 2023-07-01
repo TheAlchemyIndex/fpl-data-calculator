@@ -4,7 +4,7 @@ import com.github.mrpowers.spark.daria.sql.SparkSessionExt.SparkSessionMethods
 import helpers.TestHelper
 import org.apache.spark.sql.DataFrame
 import org.apache.spark.sql.types.{DoubleType, IntegerType, LongType, StringType}
-import providers.understat.players.UnderstatPlayersProvider
+import providers.impl.understat.players.UnderstatPlayersProvider
 
 class UnderstatPlayersProviderTests extends TestHelper {
 

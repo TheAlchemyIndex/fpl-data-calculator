@@ -1,14 +1,14 @@
 import com.typesafe.config.{Config, ConfigFactory}
 import org.apache.spark.sql.{DataFrame, SparkSession}
-import providers.fixtures.FixturesProvider
-import providers.fixtures.FixturesSchema.fixturesStruct
-import providers.gameweek.GameweekProvider
-import providers.gameweek.GameweekSchema.gameweekStruct
-import providers.understat.players.UnderstatPlayersSchema.understatPlayersStruct
-import providers.understat.teams.UnderstatTeamsSchema.understatTeamsStruct
-import providers.understat.players.UnderstatPlayersProvider
-import providers.understat.teams.UnderstatTeamsProvider
-import providers.unifiedData.{UnifiedPlayersDataProvider, UnifiedTeamsDataProvider}
+import providers.impl.fixtures.FixturesProvider
+import providers.impl.fixtures.FixturesSchema.fixturesStruct
+import providers.impl.gameweek.GameweekSchema.gameweekStruct
+import providers.impl.gameweek.GameweekProvider
+import providers.impl.understat.players.UnderstatPlayersProvider
+import providers.impl.understat.players.UnderstatPlayersSchema.understatPlayersStruct
+import providers.impl.understat.teams.UnderstatTeamsProvider
+import providers.impl.understat.teams.UnderstatTeamsSchema.understatTeamsStruct
+import providers.impl.unifiedData.{UnifiedPlayersDataProvider, UnifiedTeamsDataProvider}
 import writers.FileWriter
 
 object Main {
@@ -50,13 +50,13 @@ object Main {
     val understatPlayersFilteredDf: DataFrame = new UnderstatPlayersProvider(understatPlayersDf).getData
     val understatTeamsFilteredDf: DataFrame = new UnderstatTeamsProvider(understatTeamsDf).getData
     val fixturesFilteredDf: DataFrame = new FixturesProvider(fixturesDf).getData
-
-    val unifiedPlayerDf: DataFrame = new UnifiedPlayersDataProvider(gameweekFilteredDf, understatPlayersFilteredDf).getData
-    val unifiedTeamsDf: DataFrame = new UnifiedTeamsDataProvider(fixturesFilteredDf, understatTeamsFilteredDf).getData
-
-    val fileWriter: FileWriter = new FileWriter("csv")
-    fileWriter.writeToFile(unifiedPlayerDf, "data", "understat_players_calc_data.csv")
-    fileWriter.writeToFile(unifiedTeamsDf, "data", "understat_teams_calc_data.csv")
+//
+//    val unifiedPlayerDf: DataFrame = new UnifiedPlayersDataProvider(gameweekFilteredDf, understatPlayersFilteredDf).getData
+//    val unifiedTeamsDf: DataFrame = new UnifiedTeamsDataProvider(fixturesFilteredDf, understatTeamsFilteredDf).getData
+//
+//    val fileWriter: FileWriter = new FileWriter("csv")
+//    fileWriter.writeToFile(unifiedPlayerDf, "data", "understat_players_calc_data.csv")
+//    fileWriter.writeToFile(unifiedTeamsDf, "data", "understat_teams_calc_data.csv")
 
     spark.stop()
   }

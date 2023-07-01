@@ -4,7 +4,7 @@ import com.github.mrpowers.spark.daria.sql.SparkSessionExt.SparkSessionMethods
 import helpers.TestHelper
 import org.apache.spark.sql.DataFrame
 import org.apache.spark.sql.types.{BooleanType, IntegerType, StringType}
-import util.DataFrameHelper.{booleanColumnToBinary, dropNullRows, joinDataLeftOuter, renameColumnsToCamelCase}
+import providers.util.DataFrameHelper.{booleanColumnToBinary, dropNullRows, joinDataLeftOuter, renameColumnsToCamelCase}
 
 class DataFrameHelperTests extends TestHelper {
 
