@@ -2,7 +2,7 @@ package unifiedData
 
 import helpers.TestHelper
 import helpers.schemas.unifiedData.UnifiedDataTestSchema.unifiedDataTestStruct
-import providers.impl.GameweekProviderTestSchema.gameweekProviderTestStruct
+import providers.impl.gameweek.GameweekProviderTestSchema.gameweekProviderTestStruct
 import helpers.schemas.understat.UnderstatTestSchema.understatTestStruct
 import org.apache.spark.sql.DataFrame
 import org.apache.spark.sql.functions.{col, to_date}

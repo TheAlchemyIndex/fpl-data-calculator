@@ -1,13 +1,13 @@
 import com.typesafe.config.{Config, ConfigFactory}
 import org.apache.spark.sql.{DataFrame, SparkSession}
 import providers.impl.fixtures.FixturesProvider
-import providers.impl.fixtures.FixturesSchema.fixturesStruct
-import providers.impl.gameweek.GameweekSchema.gameweekStruct
+import providers.util.schemas.FixturesSchema.fixturesStruct
+import providers.util.schemas.GameweekSchema.gameweekStruct
 import providers.impl.gameweek.GameweekProvider
 import providers.impl.understat.players.UnderstatPlayersProvider
-import providers.impl.understat.players.UnderstatPlayersSchema.understatPlayersStruct
+import providers.util.schemas.UnderstatPlayersSchema.understatPlayersStruct
 import providers.impl.understat.teams.UnderstatTeamsProvider
-import providers.impl.understat.teams.UnderstatTeamsSchema.understatTeamsStruct
+import providers.util.schemas.UnderstatTeamsSchema.understatTeamsStruct
 import providers.impl.unifiedData.{UnifiedPlayersDataProvider, UnifiedTeamsDataProvider}
 import util.constants.FileNames
 import writers.FileWriter

@@ -5,11 +5,11 @@ import providers.Provider
 import providers.util.AverageCalculator.calculateRollingAvg
 import util.constants.{CalculatedColumns, CommonColumns, GameweekColumns, UnderstatPlayersColumns}
 
-class UnifiedPlayersDataProvider(gameweekDf: DataFrame, understatDf: DataFrame) extends Provider {
+class UnifiedPlayersDataProvider(gameweekDf: DataFrame, understatPlayersDf: DataFrame) extends Provider {
 
   def getData: DataFrame = {
     val joinedDf: DataFrame = this.gameweekDf
-      .join(this.understatDf, Seq(CommonColumns.NAME, CommonColumns.DATE), "left_outer")
+      .join(this.understatPlayersDf, Seq(CommonColumns.NAME, CommonColumns.DATE), "left_outer")
       .na.fill(0)
 
     val rollingAvgDf: DataFrame = applyRollingAvg(joinedDf, 5)
