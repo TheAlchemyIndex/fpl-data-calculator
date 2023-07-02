@@ -9,7 +9,7 @@ import providers.impl.gameweek.GameweekTestSchema.gameweekTestStruct
 class GameweekProviderTest extends TestHelper {
 
   final val DATE_COL: String = "date"
-  final val DATE_FORMAT = "dd/MM/yyyy"
+  final val DATE_FORMAT = "yyyy/dd/MM"
   final val DROPPED_COLUMNS: Seq[String] = Seq("transfers_balance", "own_goals", "kickoff_time", "red_cards", "team_a_score",
     "element", "bps", "was_home", "penalties_missed", "fixture", "team_h_score")
 

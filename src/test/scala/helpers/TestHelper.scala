@@ -6,7 +6,7 @@ import org.scalatest.funsuite.AnyFunSuite
 class TestHelper extends AnyFunSuite {
 
   val SPARK: SparkSession = SparkSession.builder()
-    .appName("FPL Data Calculator - Test")
+    .appName("FPL and Understat Data Processor - Test")
     .master("local[*]")
     .getOrCreate()
 }

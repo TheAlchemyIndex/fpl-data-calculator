@@ -1,10 +1,10 @@
-package providers.util.schemas
+package providers.impl.understat.teams
 
 import org.apache.spark.sql.types.{DataTypes, Metadata, StructField, StructType}
 
-object UnderstatTeamsSchema {
+object UnderstatTeamsTestSchema {
 
-  val understatTeamsStruct = new StructType(
+  val understatTeamsTestStruct = new StructType(
     Array[StructField](
       StructField("date", DataTypes.TimestampType, true, Metadata.empty),
       StructField("wins", DataTypes.IntegerType, true, Metadata.empty),

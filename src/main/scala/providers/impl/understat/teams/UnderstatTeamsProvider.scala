@@ -10,7 +10,8 @@ class UnderstatTeamsProvider(understatTeamsDf: DataFrame) extends Provider {
   def getData: DataFrame = {
     val dateFormattedDf: DataFrame = understatTeamsDf
       .withColumn(CommonColumns.DATE, to_date(col(UnderstatTeamsColumns.DATE), "yyyy-MM-dd"))
-      .withColumn(UnderstatTeamsColumns.TEAM_2_TYPE, when(col(UnderstatTeamsColumns.H_A) === "h", "a").otherwise("h"))
+      .withColumn(UnderstatTeamsColumns.TEAM_2_TYPE, when(col(UnderstatTeamsColumns.H_A) === "h", "a")
+        .when(col(UnderstatTeamsColumns.H_A) === "a", "h"))
       .withColumnRenamed(UnderstatTeamsColumns.H_A, UnderstatTeamsColumns.TEAM_1_TYPE)
 
     val ppdaFormattedDf: DataFrame = extractPpda(dateFormattedDf)

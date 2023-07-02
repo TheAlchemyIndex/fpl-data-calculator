@@ -9,7 +9,7 @@ import providers.impl.understat.players.UnderstatPlayersTestSchema.understatPlay
 class UnderstatPlayersProviderTest extends TestHelper {
 
   final val DATE_COL: String = "date"
-  final val DATE_FORMAT = "dd/MM/yyyy"
+  final val DATE_FORMAT = "yyyy/dd/MM"
   final val DROPPED_COLUMNS: Seq[String] = Seq("x_g_chain", "h_goals", "a_team", "roster_id", "assists", "season",
     "a_goals", "time", "position", "id", "h_team", "goals")
 
@@ -26,11 +26,11 @@ class UnderstatPlayersProviderTest extends TestHelper {
     .withColumn(DATE_COL, to_date(col(DATE_COL), DATE_FORMAT))
 
   test("getData - It should return a DataFrame excluding columns that were to be dropped") {
-    val understatFilteredDf: DataFrame = new UnderstatPlayersProvider(TEST_UNDERSTAT_PLAYERS_DF).getData
-    val remainingColumns: Seq[String] = understatFilteredDf.columns.toSeq
+    val understatPlayersProviderDf: DataFrame = new UnderstatPlayersProvider(TEST_UNDERSTAT_PLAYERS_DF).getData
+    val remainingColumns: Seq[String] = understatPlayersProviderDf.columns.toSeq
 
-    assert(EXPECTED_UNDERSTAT_PLAYERS_PROVIDER_DF.schema === understatFilteredDf.schema)
-    assert(EXPECTED_UNDERSTAT_PLAYERS_PROVIDER_DF.collect().sameElements(understatFilteredDf.collect()))
+    assert(EXPECTED_UNDERSTAT_PLAYERS_PROVIDER_DF.schema === understatPlayersProviderDf.schema)
+    assert(EXPECTED_UNDERSTAT_PLAYERS_PROVIDER_DF.collect().sameElements(understatPlayersProviderDf.collect()))
     assert(DROPPED_COLUMNS.intersect(remainingColumns).isEmpty)
   }
 }
