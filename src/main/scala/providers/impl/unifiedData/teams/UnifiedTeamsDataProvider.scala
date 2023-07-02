@@ -1,10 +1,10 @@
-package providers.impl.unifiedData
+package providers.impl.unifiedData.teams
 
 import org.apache.spark.sql.DataFrame
 import providers.Provider
-import providers.impl.unifiedData.UnifiedTeamsHelper._
+import UnifiedTeamsHelper._
 import providers.util.AverageCalculator.calculateRollingAvg
-import util.constants.{CommonColumns, FixturesColumns, TemporaryRenamedColumns, UnderstatTeamsColumns, UnifiedTeamsColumns}
+import util.constants._
 
 class UnifiedTeamsDataProvider(fixturesDf: DataFrame, understatTeamsDf: DataFrame) extends Provider {
 

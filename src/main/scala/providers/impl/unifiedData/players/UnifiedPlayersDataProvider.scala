@@ -1,4 +1,4 @@
-package providers.impl.unifiedData
+package providers.impl.unifiedData.players
 
 import org.apache.spark.sql.DataFrame
 import providers.Provider
@@ -7,12 +7,13 @@ import util.constants.{CalculatedColumns, CommonColumns, GameweekColumns, Unders
 
 class UnifiedPlayersDataProvider(gameweekDf: DataFrame, understatPlayersDf: DataFrame) extends Provider {
 
+  var NUM_OF_ROWS_AVG: Int = 5
+
   def getData: DataFrame = {
     val joinedDf: DataFrame = this.gameweekDf
       .join(this.understatPlayersDf, Seq(CommonColumns.NAME, CommonColumns.DATE), "left_outer")
-      .na.fill(0)
 
-    val rollingAvgDf: DataFrame = applyRollingAvg(joinedDf, 5)
+    val rollingAvgDf: DataFrame = applyRollingAvg(joinedDf, NUM_OF_ROWS_AVG)
 
     dropColumns(rollingAvgDf)
       .orderBy(CommonColumns.DATE)

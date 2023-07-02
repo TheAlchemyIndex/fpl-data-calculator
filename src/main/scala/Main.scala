@@ -8,7 +8,8 @@ import providers.impl.understat.players.UnderstatPlayersProvider
 import providers.util.schemas.UnderstatPlayersSchema.understatPlayersStruct
 import providers.impl.understat.teams.UnderstatTeamsProvider
 import providers.util.schemas.UnderstatTeamsSchema.understatTeamsStruct
-import providers.impl.unifiedData.{UnifiedPlayersDataProvider, UnifiedTeamsDataProvider}
+import providers.impl.unifiedData.players.UnifiedPlayersDataProvider
+import providers.impl.unifiedData.teams.UnifiedTeamsDataProvider
 import util.constants.FileNames
 import writers.FileWriter
 

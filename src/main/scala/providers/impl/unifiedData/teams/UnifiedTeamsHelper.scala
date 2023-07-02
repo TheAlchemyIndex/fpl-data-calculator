@@ -1,8 +1,8 @@
-package providers.impl.unifiedData
+package providers.impl.unifiedData.teams
 
 import org.apache.spark.sql.DataFrame
 import org.apache.spark.sql.functions.{col, when}
-import util.constants.{CommonColumns, FixturesColumns, TemporaryRenamedColumns, UnderstatTeamsColumns, UnifiedTeamsColumns}
+import util.constants._
 
 object UnifiedTeamsHelper {
 
