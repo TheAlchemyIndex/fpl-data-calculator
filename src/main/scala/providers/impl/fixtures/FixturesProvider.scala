@@ -19,7 +19,6 @@ class FixturesProvider(fixturesDf: DataFrame) extends Provider {
       FixturesColumns.PROVISIONAL_START_TIME,
       FixturesColumns.KICKOFF_TIME,
       FixturesColumns.MINUTES,
-      FixturesColumns.KICKOFF_TIME,
       FixturesColumns.FINISHED,
       FixturesColumns.STARTED,
       FixturesColumns.FINISHED_PROVISIONAL,

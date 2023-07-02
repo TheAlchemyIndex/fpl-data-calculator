@@ -1,10 +1,10 @@
-package providers.util.schemas
+package providers.impl.fixtures
 
 import org.apache.spark.sql.types.{DataTypes, Metadata, StructField, StructType}
 
-object FixturesSchema {
+object FixturesTestSchema {
 
-  val fixturesStruct = new StructType(
+  val fixturesTestStruct = new StructType(
     Array[StructField](
       StructField("code", DataTypes.LongType, true, Metadata.empty),
       StructField("provisional_start_time", DataTypes.BooleanType, true, Metadata.empty),
