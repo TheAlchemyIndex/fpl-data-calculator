@@ -1,4 +1,4 @@
-package helpers.schemas.fileWriter
+package writers
 
 import org.apache.spark.sql.types.{DataTypes, Metadata, StructField, StructType}
 

@@ -8,8 +8,6 @@ import providers.impl.gameweek.GameweekTestSchema.gameweekTestStruct
 
 class GameweekProviderTest extends TestHelper {
 
-  final val DATE_COL: String = "date"
-  final val DATE_FORMAT = "yyyy/dd/MM"
   final val DROPPED_COLUMNS: Seq[String] = Seq("transfers_balance", "own_goals", "kickoff_time", "red_cards", "team_a_score",
     "element", "bps", "was_home", "penalties_missed", "fixture", "team_h_score")
 
@@ -24,8 +22,7 @@ class GameweekProviderTest extends TestHelper {
     .csv("src/test/resources/gameweek/gameweek_provider_data.csv")
     .withColumn("date", to_date(col("date"), "dd/MM/yyyy"))
 
-
-  test("getData - It should return a DataFrame containing a new homeFixture column with 1 or 0 values, " +
+  test("getData - It should return a gameweek DataFrame containing a new homeFixture column with 1 or 0 values, " +
     "new date, month and year columns with date, month and year values and exclude columns that were to be dropped") {
     val gameweekProviderDf: DataFrame = new GameweekProvider(TEST_GAMEWEEK_DF).getData
     val gameweekProviderColumns: Seq[String] = gameweekProviderDf.columns.toSeq

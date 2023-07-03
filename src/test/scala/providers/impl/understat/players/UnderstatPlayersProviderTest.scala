@@ -25,8 +25,8 @@ class UnderstatPlayersProviderTest extends TestHelper {
     .csv("src/test/resources/understat/understat_players_provider_data.csv")
     .withColumn(DATE_COL, to_date(col(DATE_COL), DATE_FORMAT))
 
-  test("getData - It should return a DataFrame with a date formatted column and exclude columns that were to " +
-    "be dropped") {
+  test("getData - It should return a players understat DataFrame with a date formatted column and exclude " +
+    "columns that were to be dropped") {
     val understatPlayersProviderDf: DataFrame = new UnderstatPlayersProvider(TEST_UNDERSTAT_PLAYERS_DF).getData
     val remainingColumns: Seq[String] = understatPlayersProviderDf.columns.toSeq
 

@@ -30,9 +30,10 @@ class UnifiedTeamsDataProviderTest extends TestHelper {
     .csv("src/test/resources/unifiedData/unified_teams_data_provider_data.csv")
     .withColumn(DATE_COL, to_date(col(DATE_COL), DATE_FORMAT))
 
-  test("getData - It should take 2 DataFrames, join them, add bothScored and cleanSheet columns, calculate " +
-    "rolling averages, drop columns and drop null rows") {
-    val unifiedTeamsDataProviderDf = new UnifiedTeamsDataProvider(TEST_FIXTURES_PROVIDER_DF, TEST_UNDERSTAT_TEAMS_PROVIDER_DF).getData
+  test("getData - It should take a fixtures and teams understat dataframe, join them, add bothScored and " +
+    "cleanSheet columns, calculate rolling averages, drop columns and drop null rows") {
+    val unifiedTeamsDataProviderDf = new UnifiedTeamsDataProvider(TEST_FIXTURES_PROVIDER_DF,
+      TEST_UNDERSTAT_TEAMS_PROVIDER_DF).getData
 
     assert(EXPECTED_UNIFIED_TEAMS_DATA_PROVIDER_DF.collect().sameElements(unifiedTeamsDataProviderDf.collect()))
   }

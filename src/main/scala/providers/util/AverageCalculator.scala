@@ -7,8 +7,10 @@ import util.constants.CommonColumns
 
 object AverageCalculator {
 
+  var DECIMAL_PLACES: Int = 5;
+
   def calculateRollingAvg(df: DataFrame, partitionCol: String, targetCol: String, numOfRows: Int): DataFrame = {
     val window = Window.partitionBy(partitionCol).orderBy(CommonColumns.DATE).rowsBetween(-numOfRows, -1)
-    df.withColumn(s"${targetCol}_avg", round(avg(targetCol).over(window), 5))
+    df.withColumn(s"${targetCol}_avg", round(avg(targetCol).over(window), DECIMAL_PLACES))
   }
 }
