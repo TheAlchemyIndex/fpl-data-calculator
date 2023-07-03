@@ -8,13 +8,15 @@ import util.constants._
 
 class UnifiedTeamsDataProvider(fixturesDf: DataFrame, understatTeamsDf: DataFrame) extends Provider {
 
+  var NUM_OF_ROWS_AVG: Int = 5
+
   def getData: DataFrame = {
     val team1Df: DataFrame = formatTeam1Df()
     val team2Df: DataFrame = formatTeam2Df(team1Df)
 
     val bothTeamsScoredDf: DataFrame = bothTeamsScoredColumn(team2Df)
     val cleanSheetDf: DataFrame = cleanSheetColumns(bothTeamsScoredDf)
-    val rollingAvgDf: DataFrame = applyRollingAvg(cleanSheetDf, 5)
+    val rollingAvgDf: DataFrame = applyRollingAvg(cleanSheetDf, NUM_OF_ROWS_AVG)
 
     dropColumns(rollingAvgDf)
       .na.drop(Seq(UnifiedTeamsColumns.TEAM_1_XPX_G_AVG, UnifiedTeamsColumns.TEAM_2_XPX_G_AVG))
@@ -27,7 +29,6 @@ class UnifiedTeamsDataProvider(fixturesDf: DataFrame, understatTeamsDf: DataFram
     val joinedTeam1Df: DataFrame = homeAwayReversedFixturesDf
       .join(this.understatTeamsDf, Seq(CommonColumns.DATE, UnderstatTeamsColumns.TEAM), "left_outer")
       .withColumnRenamed(TemporaryRenamedColumns.TEAM, UnifiedTeamsColumns.TEAM_1_NAME)
-      .na.fill(0)
 
     renameTeam1Columns(joinedTeam1Df)
       .withColumnRenamed(FixturesColumns.AWAY_TEAM, TemporaryRenamedColumns.TEAM)

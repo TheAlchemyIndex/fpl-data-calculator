@@ -6,7 +6,7 @@ object UnderstatTeamsProviderTestSchema {
 
   val understatTeamsProviderTestStruct = new StructType(
     Array[StructField](
-      StructField("date", DataTypes.DateType, true, Metadata.empty),
+      StructField("date", DataTypes.StringType, true, Metadata.empty),
       StructField("x_g", DataTypes.DoubleType, true, Metadata.empty),
       StructField("x_g_a", DataTypes.DoubleType, true, Metadata.empty),
       StructField("team1_type", DataTypes.StringType, true, Metadata.empty),

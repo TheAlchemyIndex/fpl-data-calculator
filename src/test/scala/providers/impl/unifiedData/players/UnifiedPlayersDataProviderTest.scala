@@ -15,13 +15,13 @@ class UnifiedPlayersDataProviderTest extends TestHelper {
   final val TEST_GAMEWEEK_PROVIDER_DF: DataFrame = SPARK.read
     .option("header", value = true)
     .schema(gameweekProviderTestStruct)
-    .csv("src/test/resources/gameweek/gameweek_provider_data.csv")
+    .csv("src/test/resources/unifiedData/gameweek_provider_data.csv")
     .withColumn(DATE_COL, to_date(col(DATE_COL), "dd/MM/yyyy"))
 
   val TEST_UNDERSTAT_PLAYERS_PROVIDER_DF: DataFrame = SPARK.read
     .option("header", value = true)
     .schema(understatPlayersProviderTestStruct)
-    .csv("src/test/resources/understat/understat_players_provider_data.csv")
+    .csv("src/test/resources/unifiedData/understat_players_provider_data.csv")
     .withColumn(DATE_COL, to_date(col(DATE_COL), "dd/MM/yyyy"))
 
   val EXPECTED_UNIFIED_PLAYERS_DATA_PROVIDER_DF: DataFrame = SPARK.read
