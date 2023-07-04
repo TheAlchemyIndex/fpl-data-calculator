@@ -56,4 +56,3 @@ TheAlchemyIndex - [LinkedIn](https://www.linkedin.com/in/vaughana)
 ## Acknowledgments
 
 * [Best-README-Template - othneildrew](https://github.com/othneildrew/Best-README-Template)
-* 
