@@ -1,5 +1,7 @@
 import com.typesafe.config.{Config, ConfigFactory}
+import com.typesafe.scalalogging.Logger
 import org.apache.spark.sql.{DataFrame, SparkSession}
+import org.slf4j.LoggerFactory
 import providers.impl.fixtures.FixturesProvider
 import providers.util.schemas.FixturesSchema.fixturesStruct
 import providers.util.schemas.GameweekSchema.gameweekStruct
@@ -14,6 +16,8 @@ import util.constants.FileNames
 import writers.FileWriter
 
 object Main {
+
+  val LOGGER: Logger = Logger(LoggerFactory.getLogger(getClass.getName))
 
   def main(args: Array[String]): Unit = {
     val conf: Config = ConfigFactory.load("fpl_understat_processor.conf")
@@ -50,12 +54,22 @@ object Main {
       .csv(fixturesFilePath)
 
     val gameweekFilteredDf: DataFrame = new GameweekProvider(gameweekDf).getData
+    LOGGER.info(s"Gameweek data loaded.")
+
     val understatPlayersFilteredDf: DataFrame = new UnderstatPlayersProvider(understatPlayersDf).getData
+    LOGGER.info(s"Understat players data loaded.")
+
     val understatTeamsFilteredDf: DataFrame = new UnderstatTeamsProvider(understatTeamsDf).getData
+    LOGGER.info(s"Understat teams data loaded.")
+
     val fixturesFilteredDf: DataFrame = new FixturesProvider(fixturesDf).getData
+    LOGGER.info(s"Fixtures data loaded.")
 
     val unifiedPlayerDf: DataFrame = new UnifiedPlayersDataProvider(gameweekFilteredDf, understatPlayersFilteredDf).getData
+    LOGGER.info(s"Unified players data created.")
+
     val unifiedTeamsDf: DataFrame = new UnifiedTeamsDataProvider(fixturesFilteredDf, understatTeamsFilteredDf).getData
+    LOGGER.info(s"Unified teams data created.")
 
     val fileWriter: FileWriter = new FileWriter("csv", writeFilePath)
     fileWriter.writeToFile(unifiedPlayerDf, FileNames.UNIFIED_PLAYERS_CALC_FILENAME)
