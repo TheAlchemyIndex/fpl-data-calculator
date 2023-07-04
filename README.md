@@ -29,7 +29,7 @@ project.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-After ensuring that Scala and Spark are installed, clone this repo and run the main method in Main.java.
+After ensuring that Scala and Spark are installed, clone this repo and run the main method in Main.scala.
 </br>
 </br>
 The config parameters for this project can be accessed in src/main/resources/fpl_understat_processor.conf. The default 
