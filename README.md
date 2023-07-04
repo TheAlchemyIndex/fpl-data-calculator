@@ -13,6 +13,7 @@
 
 The intention of this project is to create data that will be used downstream in a machine learning project.
 </br>
+</br>
 Fpl data is provided by the [fpl-data-extractor](https://github.com/TheAlchemyIndex/fpl-data-extractor) project, and 
 Understat data is provided by the [understat-data-extractor](https://github.com/TheAlchemyIndex/understat-data-extractor) 
 project.
@@ -30,10 +31,12 @@ project.
 
 After ensuring that Scala and Spark are installed, clone this repo and run the main method in Main.java.
 </br>
+</br>
 The config parameters for this project can be accessed in src/main/resources/fpl_understat_processor.conf. The default 
 fileName variables are set to the default files found in the data folder. If new files are created using the fpl-data-extractor
 or understat-data-extractor projects, load these files into the data folder and update the fileName variables in the config file
 to match the new data files.
+</br>
 </br>
 Hadoop may also be required, if so, instructions to install Hadoop can be found through various online sources. Windows 
 users may have issues with Hadoop installation, in particular with a winutils file, binaries for your relevant Hadoop
