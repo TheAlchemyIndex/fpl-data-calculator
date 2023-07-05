@@ -25,8 +25,8 @@ object UnderstatTeamsColumns {
   final var SEASON = "season"
 
   // new columns
-  final var TEAM_1_TYPE = "team1_type"
-  final var TEAM_2_TYPE = "team2_type"
+  final var TEAM_1_TYPE = "team_1_type"
+  final var TEAM_2_TYPE = "team_2_type"
   final var PPDA_ALLOWED_ATT = "ppda_allowed_att"
   final var PPDA_ALLOWED_DEF = "ppda_allowed_def"
   final var PPDA_ATT = "ppda_att"
