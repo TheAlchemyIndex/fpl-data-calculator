@@ -4,7 +4,7 @@ ThisBuild / scalaVersion := "2.13.10"
 
 lazy val root = (project in file("."))
   .settings(
-    name := "fpl-data-calculator"
+    name := "fpl-understat-processor"
   )
 
 val spark_version = "3.3.2"
